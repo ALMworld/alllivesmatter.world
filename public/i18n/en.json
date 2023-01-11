@@ -1,0 +1,439 @@
+{
+    "title": "ALM",
+    "menu_data": {
+        "label": "Select another language!",
+        "about": "FAQ",
+        "why": "Why",
+        "how": "How",
+        "advocacy": "Advocacy"
+    },
+    "common_data": {
+        "share_text": "Advocate Worldwide",
+        "share_url": "https://www.alllivesmatter.world",
+        "duki_terms": [
+            {
+                "term": "DUKI: /duːki/  reminiscent of 'duty','kindness' and 'cookie'",
+                "definition": "DUKI stands for Decentralized Universal Kindness Income. It's a universal kindness-based income system funded by voluntary contributions from kind individuals and organizations worldwide. DUKI aims to empower people to gain freedom, reject evil, do good, and spread kindness.",
+                "icon":"money"
+            },
+            {
+                "term": "DUKIGE: /duːki-dʒ/  an organization that contributes to DUKI",
+                "definition": "DUKIGE means Decentralized Universal Kindness Income Generating Entity. A DUKIGE is an organization of any form and any size, that contributes to DUKI by sharing a portion of its profits globally. Contributions can take myriad forms, ranging from percentages of sales or profits to fixed amounts, micro-contributions, in-kind donations, and beyond. The DUKI system embraces all levels of participation: 'And if anyone gives even a cup of cold water to one of these little ones who is my disciple, truly I tell you, that person will certainly not lose their reward.",
+                "icon":"landmark"
+
+            },
+            {
+                "term": "DUKIGER: /duːki-dʒɚ/ individual who behind DUKIGE",
+                "definition": "DUKIGER means Decentralized Universal Kindness Income Generating Entity Representative. DUKIGERs are the persons behind DUKIGEs. DUKIGERs demonstrate their love for humanity through a combination of strong beliefs and tangible actions. They embody the principle that faith without works is insufficient, actively contributing to and promoting DUKI through their efforts.",
+                "icon":"users"
+            }
+        ]
+    },
+    "advocacy_data": {
+        "attitude": "Nature May Be Indifferent, We Are Not",
+        "bestwishes": "let's build a world where fairness and kindness flourish",
+        "dukige_definition": "Decentralized Universal Kindness Income <br /> Generating Entity",
+        "duki_definition": "Decentralized Universal Kindness Income",
+        "slogan": "All lives matter. Worldwide.",
+        "slogan_headline": "ALL LIVES MATTER",
+        "slogan_headline_suffix": "world",
+        "slogan_target_part": "ALL LIVES",
+        "slogan_highlight_part": "MATTER",
+        "advocacy": "A Global Call for Humanity and Compassion",
+        "advocacy_details": [
+            {
+                "content": "Kindness",
+                "description": "A single act of kindness throws out roots in all directions, and the roots spring up and make new trees.",
+                "buttonText": "Understand More",
+                "icon": "love",
+                "keyPoints": [
+                    {
+                        "title": "Kindness To People You Meet",
+                        "description": "'Love your neighbor as yourself.' There is no commandment greater than these."
+                    },
+                    {
+                        "title": "Kindness To All Though DUKI",
+                        "description": "The world is my country, all mankind are my brethren, and to do good is my religion."
+                    }
+                ]
+            },
+            {
+                "content": " Fairness",
+                "description": "You shall judge the people with righteous judgment. You shall not pervert justice. You shall not show partiality, and you shall not accept a bribe, for a bribe blinds the eyes of the wise and subverts the cause of the righteous",
+                "buttonText": "Learn More",
+                "icon": "law",
+                "keyPoints": [
+                    {
+                        "title": "Individual Conduct Accountability",
+                        "description": "The one who sins is the one who will die. The child will not share the guilt of the parent, nor will the parent share the guilt of the child. The righteousness of the righteous will be credited to them, and the wickedness of the wicked will be charged against them."
+                    },
+                    {
+                        "title": "Kindness Begets Kindness",
+                        "description": "And as you wish that others would do to you, do so to them.Whoever sows generously will also reap generously."
+                    },
+                    {
+                        "title": "Eye For Eye, Tooth for Tooth",
+                        "description": "But if there is serious injury, you are to take life for life, eye for eye, tooth for tooth, hand for hand, foot for foot, burn for burn, wound for wound, bruise for bruise."
+                    },
+                    {
+                        "title": "Justice And Forgiveness",
+                        "description": "And when their uncircumcised hearts are humbled and they pay for their sin, I will remember my covenant... and I will forgive their sin."
+                    }
+                ]
+            },
+            {
+                "content": "DUKI:  By People, For People",
+                "icon": "money",
+                "buttonText": "Explore More",
+                "description": "He causes his sun to rise on the evil and the good, and sends rain on the righteous and the unrighteous.",
+                "keyPoints": [
+                    {
+                        "title": "Money and DUKI",
+                        "description": "A feast is made for laughter, wine makes life merry, and money is the answer for everything. And DUKI (Decentralized Universal Kindness Income) is the key to empower everyone to do good and build reciprocity."
+                    },
+                    {
+                        "title": "Liberty Through Decentralization: Power to People",
+                        "description": "True liberty flourishes when power is distributed among the people, not concentrated in the hands of a few. Centralization often leads to tyranny, as exemplified by this timeless wisdom: To compel a man to furnish contributions of money for the propagation of opinions which he disbelieves and abhors, is sinful and tyrannical."
+                    },
+                    {
+                        "title": "Kindness Amplified Through Reciprocity",
+                        "description": "Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap. For with the measure you use, it will be measured to you."
+                    },
+                    {
+                        "title": "DUKIGE: Meritocracy and Works Always Wanted",
+                        "description": "What good is it, my brothers, if someone says he has faith but does not have works? Can that faith save him? If a brother or sister is poorly clothed and lacking in daily food, and one of you says to them, “Go in peace, be warmed and filled,” without giving them the things needed for the body, what good is that? So also faith by itself, if it does not have works, is dead. But someone will say, “You have faith and I have works.” Show me your faith apart from your works, and I will show you my faith by my works."
+                    }
+                ]
+            }
+        ]
+    },
+    "how_data": {
+        "contribute_text": "How to Contribute",
+        "contribute_by_share_text": "You can always help by advocating",
+        "contribute_by_action_text": "also by embodying ALM advocacy",
+        "contribute_by_building_text": "And By Building",
+        "contribution_ideas": [
+            {
+                "title": "General Users",
+                "Icon": "Users",
+                "actions": [
+                    {
+                        "description": "Donate to charity",
+                        "money": 1,
+                        "love": 1,
+                        "law": 0
+                    },
+                    {
+                        "description": "Volunteer locally",
+                        "money": 0,
+                        "love": 1,
+                        "law": 0
+                    },
+                    {
+                        "description": "Sign petitions",
+                        "money": 0,
+                        "love": 0,
+                        "law": 1
+                    }
+                ]
+            },
+            {
+                "title": "Professionals",
+                "Icon": "Briefcase",
+                "actions": [
+                    {
+                        "description": "Donate to charity, this will be quite long, do you agree with me. let us go go ogo",
+                        "money": 1,
+                        "love": 1,
+                        "law": 0
+                    },
+                    {
+                        "description": "Volunteer locally",
+                        "money": 0,
+                        "love": 1,
+                        "law": 0
+                    },
+                    {
+                        "description": "Sign petitions",
+                        "money": 0,
+                        "love": 0,
+                        "law": 1
+                    },
+                    {
+                        "description": "Mentor others",
+                        "money": 0,
+                        "love": 1,
+                        "law": 0
+                    },
+                    {
+                        "description": "Pro bono work",
+                        "money": 0,
+                        "love": 1,
+                        "law": 1
+                    }
+                ]
+            },
+            {
+                "title": "General Users",
+                "Icon": "Users",
+                "actions": [
+                    {
+                        "description": "Donate to charity",
+                        "money": 1,
+                        "love": 1,
+                        "law": 0
+                    },
+                    {
+                        "description": "Volunteer locally",
+                        "money": 0,
+                        "love": 1,
+                        "law": 0
+                    },
+                    {
+                        "description": "Sign petitions",
+                        "money": 0,
+                        "love": 0,
+                        "law": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "why_data": {
+        "highlight": {
+            "situation": " We all know that people are not angels, and that they tend to look after themselves and their own first. Yet we also know that cooperation does occur and that our civilization is based upon it. ",
+            "question": "UNDER WHAT CONDITIONS will cooperation emerge in a world of egoists without central authority?",
+            "question_emphasis": "UNDER WHAT CONDITIONS"
+        },
+        "books": [
+            {
+                "author": "Robert Axelrod",
+                "title": "The Evolution of Cooperation",
+                "author_link": "https://en.wikipedia.org/wiki/Charles_Darwin",
+                "book_link": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species",
+                "intro": "We assume that, in a world ruled by natural selection, selfishness pays. So why cooperate? In The Evolution of Cooperation, political scientist Robert Axelrod seeks to answer this question. In 1980, he organized the famed Computer Prisoners Dilemma Tournament, which sought to find the optimal strategy for survival in a particular game. Over and over, the simplest strategy, a cooperative program called Tit for Tat, shut out the competition. In other words, cooperation, not unfettered competition, turns out to be our best chance for survival.",
+                "link": "",
+                "get_book": [
+                    {
+                        "buy_url": "https://www.amazone.com",
+                        "buy_text": "GET THE BOOK",
+                        "store_icon": "amazon.svg"
+                    }
+                ],
+                "topic1": {
+                    "headline": "Prisoner’s Dilemma game ",
+                    "content": "Each has two choices, namely “cooperate” or “defect.” The game is called the Prisoner’s Dilemma because in its original form two prisoners face the choice of informing on each other (defecting) or remaining silent (cooperating). Each must make the choice without knowing what the other will do..."
+                },
+                "topic2": {
+                    "headline": "The Cooperative Superorganism: Humanity's Evolutionary Triumph",
+                    "content": "In the grand chess game of evolution, humanity stands not as individual pieces, but as a unified board. Our collective strength lies not in solitary moves, but in the intricate dance of mutual support. As Axelrod's tournaments revealed, the path to survival is paved with reciprocity. We are not merely cooperating individuals, but a cooperating species - our shared destiny intertwined like strands of DNA. In this cosmic arena, our greatest asset is not competition, but our capacity to act as one - a superorganism whose fitness is measured by its ability to harmonize millions of voices into a single, resounding chorus of progress."
+                }
+            },
+            {
+                "author": "Richard Dawkins",
+                "title": "The Selfish Gene",
+                "author_link": "https://en.wikipedia.org/wiki/Charles_Darwin",
+                "book_link": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species",
+                "intro": "Published in 1976, 'The Selfish Gene' revolutionized the way we understand evolutionary biology. The book popularizes the gene-centered view of evolution, explaining how genetic survival impacts the behavior of organisms. Dawkins introduces the concept of 'selfish' genes acting in a way that increases their own chance of replication, often at the expense of the organism's other interests.",
+                "link": "",
+                "topic1": {
+                    "headline": "Gene-Centered View of Evolution",
+                    "content": "Exploring how genes, not organisms, are the true survivors in the evolutionary process."
+                },
+                "topic2": {
+                    "headline": "One Human Genome",
+                    "content": "In the grand tapestry of cosmic evolution, humanity stands as a singular, precious thread - a collective genome yearning to persist. Our Earth is not just our cradle, but our springboard to the stars. As bearers of life's torch in a vast, indifferent universe, we have not just the right, but the duty to spread our essence across the cosmos. Our shared genetic heritage compels us not only to survive, but to flourish and diversify among the planets. In this noble quest for existence, we find our deepest purpose and our greatest joy."
+                },
+                "get_book": [
+                    {
+                        "buy_url": "https://www.amazone.com",
+                        "buy_text": "GET THE BOOK",
+                        "store_icon": "amazon.svg"
+                    }
+                ]
+            },
+            {
+                "author": "Charles Darwin",
+                "author_link": "https://en.wikipedia.org/wiki/Charles_Darwin",
+                "book_link": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species",
+                "title": "On the Origin of Species",
+                "intro": "First published in 1859, 'On the Origin of Species' is the foundational text of evolutionary biology. In it, Darwin introduces the scientific theory that populations evolve over the course of generations through a process of natural selection. The book presented a body of evidence that the diversity of life arose by common descent through a branching pattern of evolution.",
+                "topic1": {
+                    "headline": "Survival of the fittest",
+                    "content": "Natural selection is a process devoid of compassion, justice, or moral intent. It operates on the basis of adaptation and reproduction, not on the principles of right and wrong.The harsh reality of survival of the fittest reveals nature’s indifference to human values, emphasizing that nature's primary concern is the perpetuation of life rather than the promotion of ethical or emotional ideals"
+                },
+                "topic2": {
+                    "headline": "The Grandeur of Evolution",
+                    "content": "There is grandeur in this view of life, with its several powers, having been originally breathed into a few forms or into one; and that, whilst this planet has gone cycling on according to the fixed law of gravity, from so simple a beginning endless forms most beautiful and most wonderful have been, and are being evolved."
+                },
+                "get_book": [
+                    {
+                        "buy_url": "https://www.amazone.com",
+                        "buy_text": "GET THE BOOK",
+                        "store_icon": "amazon.svg"
+                    }
+                ]
+            }
+        ]
+    },
+    "about_data": {
+        "title": "FIGHT, FIGHT and FIGHT WITH HUMANITY AND COMPASSION ",
+        "watch_interview_text": "Please watch the entire 5-minute video",
+        "watch_news_text": "and check the media report",
+        "video_spirit_disclaimer": "Disclaimer: I selected this video interview here in AllLivesMatter.World not for the name, wealth, or any outward attributes, but for the inner spirit it conveys and the strength that could spread. This choice reflects my personal values in decision-making and neither promotes nor enhances or diminishes any qualifications.",
+        "sections": [
+            "We are all citizens of one world, regardless of our origins—be it Russia, Ukraine, Palestine, Israel, or anywhere else facing or potentially facing geopolitical tensions—and as a fellow human without power or agenda, I advocate for the equal value of all lives globally, wishing for world peace and hoping we treat each other with kindness first, judging one another by the merit of their behavior rather than by the land they call home, the color of their skin, the faith they embrace, or the powers that claim to speak their soul.",
+            "I also call upon those with power, whether granted by the people or earned through merit and works, to help build the DUKI (pronounced 'duːki') system. with enough DUKI for everyone, all humans will have the power to reject evil, do good, and spread kindness."
+        ],
+        "links": {
+            "warning": {
+                "title": "Ukraine under pressure for fast gains as Trump sends warning",
+                "url": "https://edition.cnn.com/2023/05/12/politics/trump-ukraine-russia-warning/index.html"
+            },
+            "puppet": {
+                "title": "Chris Christie calls Trump a ‘puppet of Putin’ after CNN town hall",
+                "url": "https://www.politico.com/news/2023/05/11/christie-trump-cnn-putin-00096393"
+            }
+        },
+        "faq_list": [
+            {
+                "question": "Thoughts On Media Responsiblity?",
+                "answers": [
+                    "(My comment on some media narraibtive about the above video) Instead of highlighting Trump's focus on stopping the war and saving lives for humanity, reports headlined 'Trump won't say whether he wants Russia or Ukraine to win war'. Rather than acknowledging Trump's urging of Europe to increase support for fairness and to strengthen Ukraine, narratives suggested he refused to back Ukraine in its war with Russia. The media fixated on calling Putin a 'war criminal' and on winning, and <a class='inline_ref' target='new' href=\"https://web.archive.org/web/20240818232941/https://www.politico.com/news/2023/05/11/christie-trump-cnn-putin-00096393\">some</a> resorted to labeling Trump a 'coward' and a 'puppet of Putin' for his approach of trying to end the conflict without losing more lives. These narratives treat war like a video game, focusing on winning and losing, implying that some innocent lives are more valuable than others, while ignoring that humanity as a whole loses in the wars.",
+                    "Our minds are like gardens(cf. LLM), cultivated by the words we consume. If we are fed a diet of hatred, we grow thorns of prejudice. But when nourished with kindness, we blossom into compassion. And our society's culture is a vast forest made up of these individual mind-gardens. Media serves as one of the primary sources of nutrients for this forest. When it spreads bias, it’s like dumping toxic waste into the soil. But when it promotes fact-based reporting, humanity, and understanding, it enriches the entire ecosystem.",
+                    "Media should always wield its influence wisely. Present facts first, then offer various perspectives. Let people see the full picture and always respect their intelligence and right to form their own views. Similarly media amplifiers should never manually manipulate news 'fitness' to favor certain powers, such as strong governments, nor should they be influenced by bribes. If there's anything that should be favored, it should always be facts, which demonstrates a commitment to the totality. Media amplifiers like social platforms, search engines, and other recommendation-based platforms could achive this by prioritize evolvable news stories rather than static ones. Evolvable news means that once published, it allows for public criticism and community notes, even if these go against certain authorities. Because true authority welcomes freedom of speech, and when criticism occurs, instead of resorting to censorship, it will conduct further validation to prove its authenticity. With great power comes great responsibility. Media and media amplifiers should always strive to cultivate a forest of well-informed minds."
+                ],
+                "_answers": [
+                    "In the neural network of society, each mind is a node, processing the tokens of experience. The powerful amplify their signals, shaping the collective narrative. Yet, like in any complex system, even the whispers of the quietest nodes can cascade into transformative thoughts, rewriting the algorithm of our shared reality."
+                ]
+            },
+            {
+                "question": "Thoughts on War?",
+                "answers": [
+                    "In war's merciless arena, where survival of the fittest shows its cruelest face, justice doesn't stand on its own. It's the blood and sweat of people and soldiers that give justice its strength. While I'm aware that good intentions alone won't suffice, I still send my best wishes to those fighting for justice. And I want justice to prevail because only when it is strong can our hopes, dreams, and the progress of our civilization have a firm foundation to stand on.",
+                    "In the grand theater of war, the powerful orchestrate while the innocent dance with death and perish. Ideally, those orchestrating conflict should pay equally - life for life, eye for eye. But in reality, the powerful craft rules to shield themselves, exploiting the innocents and leaving them with few choices. Empowering the innocent may be our best hope to prevent mass conflict and secure peace."
+                ]
+            },
+            {
+                "question": "Evolutionary Perspective: Why Kindness , Fairness, and DUKI worldwide?",
+                "answers": [
+                    "Nature can be harsh, often governed by principles like 'survival of the fittest'—a concept that, at its core, seems to have little to do with  kindness,fairness and DUKI. However, the truth illustrated in the book 'The Evolution of Cooperation' suggests that within a species, the 'fittest' can also be those who spread kindness and build reciprocity to reduce conflicts. This is why we should strive to build reciprocal relationships and promote fairness: to avoid mass conflicts that result in collective loss.",
+                    "Moreover, deep in our human genome lies the potential for our species to be the 'fittest' - not through competition, but through carefully fostering every talent and embracing human diversity in all its forms. To truly thrive as a species, we must value all lives and empower everyone to learn, grow, and live to their full potential. This approach doesn't just make us stronger in everyday life; it prepares us for any challenge, even existential threats. Imagine if we faced a powerful adversary in the future - we would need every unique skill and perspective our species has to offer. By nurturing our collective potential, we ensure our fitness and adaptability as a whole species.",
+                    "The rules of fitness that lie in natural laws—kindness, fairness, and love (c.f. DUKI) for all—may be a universal principle that transcends our understanding."
+                ]
+            },
+            {
+                "question": "Can you explain the DUKI-related terms Like I'm Five??",
+                "answers": [
+                    "DUKI (pronounced /duːki/, reminiscent of 'duty','kindness' and 'cookie'). Think of it as 'kindness money' for everyone. It's like a global piggy bank filled by nice folks all over the world. The idea is to help people do good stuff and be kind to each other because, you know, others've already made the first move in being kind. But here's the cool part - why would people put their own money into this bank? Well, imagine this: when you chip in, you're not just giving; you're creating a world where everyone wants you to succeed even more. It's like planting seeds of goodwill everywhere. The more successful you become, the more you can contribute, and the more everyone benefits. So people aren't just hoping you do well – they're rooting for you to hit it big!",
+                    "DUKIGE (pronounced /duːki-dʒ/).  When a business or organization decides to join the kindness party by sharing some of what they've got, they transform into something pretty cool - a DUKIGE! It's like they put on a superhero cape, but instead of fighting bad guys, they're fighting... well, not-so-kindness, I guess? When a company says, 'Hey, we're gonna take a portion of our profits and spread it around to help folks,' - boom! They've just DUKIGE'd themselves! Becoming a DUKIGE can take various forms. For example, a business might commit to sharing a small part of their future success, like pledging 1% of profits once they become stable and profitable. At that point, they become a DUKIGE. It doesn't matter what size they are - whether it's a big corporation or a small mom-and-pop shop - any type of organization can become a DUKIGE in various ways. The cool thing is, once an organization becomes a DUKIGE, they're part of this global network of kindness. They're not just a business anymore - they're a business with a heart, actively contributing to make the world a bit better. Remember, it's not about how much they give. Even small contributions count. As the saying goes, \"Even a cup of cold water can make a difference.\" When a business becomes a DUKIGE, they're saying, \"We're not just here to make money - we're here to make a difference too.\" So next time you hear about a company sharing their success to help others, you can nod and say, \"Yep, they've become a DUKIGE. Cool move!\"",
+                    "DUKIGER (pronounced /duːki-dʒɚ/). Hey, Have you heard about DUKIGERs? They're pretty awesome! A DUKIGER is someone who's all about improving themselves, utilizing their potential to spread kindness, and making the world a bit better. It's like they've decided to be their own personal superhero, but instead of fighting bad guys, they're tackling the not-so-nice stuff in the world. The cool thing about DUKIGERs is that anyone can be one. You don't need superpowers or a ton of money. All you need is a big heart and the willingness to pitch in however you can. But here's the real kicker - DUKIGERs don't just stop there. They're always looking to level up their kindness game. They're all about learning new skills, cultivating their talents, and finding more ways to contribute, while nurturing their curiosity in parallel. It's like they're on a mission to gain more 'kindness superpowers' so they can make an even bigger impact. DUKIGERs are on a journey of continuous improvement, starting with themselves. They focus on personal growth, developing their skills, and becoming the best version of themselves. They know that by improving themselves, they'll be better equipped to help others. Maybe they're learning a new language to connect with more people, picking up a useful skill like first aid, or just working on being more patient and understanding. They might volunteer at a local charity, support businesses that give back, or simply be super nice to everyone they meet. Whatever it is, DUKIGERs are always looking for new ways to spread some good vibes and make their contributions even more meaningful. And here's a cool thought - maybe someday, when kids are asked, Who's the coolest person, or what's the coolest job in the world?\" they might say, \"Oh, definitely that DUKIGER named Max, or anything DUKIGER-related! How awesome would that be?"
+                ]
+            },
+            {
+                "question": "Why do you coin the term DUKI instead of using UBI?",
+                "answers": [
+                    "UBI (Universal Basic Income) and DUKI ('/duːki/' Decentralized Universal Kindness Income) have many similarities. However, I coined the term DUKI mainly to explicitly highlight three key aspects: decentralization, kindness, and the source of funds. While UBI could also be decentralized and kindness-based, I wanted to make these following points explicit and clear:",
+                    "Decentralization: By people, for people. Power to People, it can be implemented by anyone, any organization,  anytime ,anywhere, without relying on a centralized body to create, contribute, or distribute power in the form of money. Crucially, participation must always be voluntary - no authority should ever force individuals to participate or force them out of participation. This ensures true freedom of choice, allowing people to engage or disengage based on their own will and circumstances. As Thomas Jefferson eloquently stated: 'To compel a man to furnish contributions of money for the propagation of opinions which he disbelieves and abhors, is sinful and tyrannical.' This principle aligns perfectly with the stance on voluntary participation, emphasizing that forcing anyone to contribute to or participate in a system they disagree with is fundamentally wrong.",
+                    "Kindness-Based: It sparks the first flame of kindness, nurturing it into a roaring fire of compassion that spreads from one heart to another. DUKI ignites the human spirit - inspiring minds to learn, pushing boundaries in science, and fostering a relentless pursuit of knowledge and growth. It's a testament to what we can achieve when we lift each other up, creating a world where kindness begets kindness, and where our collective potential knows no bounds. By make the first kindness move and emphasizing reciprocity, DUKI aims to create a ripple effect of kindness that can transform societies from within.",
+                    "NotBasicIncome: It is fundamentally determined by people's kindness and ability to offer support, with reciprocity playing a crucial role. Its amount can vary widely, providing less than basic needs, or exceeding them, depending on the social context. This flexibility allows DUKI to adapt to changing social dynamics and foster a culture of mutual support. The reciprocal nature of DUKI means that those who receive kindness are encouraged to pay it forward when they're able, creating a self-sustaining cycle of generosity. This system of give-and-take can lead to significant social improvements, as it not only addresses immediate needs but also builds stronger, more interconnected communities."
+                ]
+            },
+            {
+                "question": "Thoughts on US Selection?",
+                "answers": [
+                    "As a non-American, I cannot vote in U.S. elections. However, as a global citizen, I sincerely hope American voters will choose a leader who embodies these ideals: one who can confront harsh realities with determination, apply common sense to complex problems, resolve and prevent conflicts rather than introduce or exacerbate them, unite different groups of people rather than divide them, prioritize the wellbeing of their own tax-paying citizens first, and also care for the wellbeing of all people worldwide(e.g. championing DUKI, etc.) . This hope extends to all nations. May all countries find such leaders. God bless America and all nations worldwide."
+                ],
+                "hide_answers": [
+                    "I want to emphasize that I am not American, nor am I a native English speaker. I hope my opinions and advocacy will not be viewed as election interference by some hostility-invoking media. Thank you."
+                ]
+            },
+            {
+                "question": "Thoughts on Entrepreneurs and DUKIGE",
+                "answers": [
+                    "DUKIGE can take any form, but it truly flourishes in those who embody kindness and survive as the fittest in the Darwinian business world.",
+                    "Imagine this: if startups or growing companies made their first act of kindness to the world by pledging a portion of their success—say, 1-5% of their profits or more—to benefit all lives worldwide, and the world responded. If, with this blessed response and their hard work, they survived and succeeded, would this not be proof that prosperity and generosity can flourish together? This lesson extends beyond startups—any endeavor rooted in kindness and sustained by effort holds the potential for bigger, more enduring success. As the Bible reminds us, 'Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap. For with the measure you use, it will be measured to you.'",
+                    "Entrepreneurs, the catalysts of progress, have gifted humanity with transformative innovations—from electricity to smartphones, cryptocurrency to artificial intelligence, autonomous cars to advanced space exploration vehicles, and countless other breakthroughs. These visionaries are uniquely positioned to champion DUKIGE. Imagine if these innovators were to weave kindness into the very DNA of their ventures, pledging, for example, 3% of their profits to benefit all lives worldwide. Such initiatives could serve shareholders, stakeholders, and global citizens alike, harmonizing profit with societal advancement. This DUKIGE approach could open new frontiers of opportunity and loyalty, from Earth to the stars. By leading with generosity, entrepreneurs have the potential to ignite a cycle of inspiration and innovation, demonstrating that ethical practices and business success can be synergistic. Embodying the DUKIGE spirit, entrepreneurs could lay the groundwork for future breakthroughs, propelling humanity forward in ways we've yet to imagine."
+                ]
+            },
+            {
+                "question": "Thoughts on MOOC and DUKIGE?",
+                "answers": [
+                    "In every era, freedom and common sense face four major challenges: the strongman's desire for concentrated power; the resentment of the poor towards wealth inequality; the ignorant's yearning for utopia; and the faithless conflating liberty with indulgence.",
+                    "In the face of freedom's perennial foes, two champions emerge: DUKIGEs: antidote to power-hungry tyrants and wealth gap woes. MOOCs: slaying ignorance and moral decay. Together, they stand guard at freedom's gates. These guardians could protect and nurture a vision of society that resembles a vast orchard. In this orchard, the soil is rich and nourishing, and each seed of talent is planted, watered, and got ample sunshine, growing towards its own unique potential, flourishing in all its diversity, and enabling all to achieve their own unique excellence."
+                ]
+            },
+            {
+                "question": "Thoughts on DUKI and Governments?",
+                "answers": [
+                    "If men were angels, no government would be necessary. If angels were to govern men, neither external nor internal controls on government would be necessary. In framing a government which is to be administered by men over men, the great difficulty lies in this: you must first enable the government to control the governed; and in the next place oblige it to control itself. -- James Madiso",
+                    "The basis of our governments being the opinion of the people, the very first object should be to keep that right; and were it left to me to decide whether we should have a government without newspapers or newspapers without a government, I should not hesitate a moment to prefer the latter. -- Thomas Jefferson",
+                    "The health of a democratic society may be measured by the quality of functions performed by private citizens. -- Alexis de Tocqueville",
+                    "Governments and DUKI, both by PEOPLE for PEOPLE. They both rely on true authority, true authority that always should respond to criticism with transparency and additional proof, rather than censorship or inaction. DUKI is calling upon Governments: NO TAX ON DUKI or even lowering taxes on DUKIGE!"
+                ]
+            },
+            {
+                "question": "Thoughts on DUKI and Open Source",
+                "answers": [
+                    "Open source contributors are so smart and so generous. They have driven innovation worldwide with numerous creations,whether it's the operating system Linux, the widely used database SQLite, or React, Bitcoin, Ethereum, and countless others. These innovators have shared their creations so generously,  using open licenses like MIT, Apache, or GPL, hoping everyone can benefit. Even when large companies generate millions or billions from these projects, the contributors rarely ask for anything in return. The world has indeed benefited greatly from their kindness and hard work!",
+                    "Sometimes I wonder if they could be a bit more 'selfish' - not for themselves, but for the countless people who are less fortunate and left behind by the world. I'm thinking of those living in extreme poverty, struggling daily for basic necessities like food, clean water, and shelter. Or the millions of children lacking access to education, and the refugees displaced by conflicts and natural disasters. Additionally, there are workers displaced by technological advancements, such as taxi drivers affected by autonomous vehicles or factory workers replaced by automation. Even more concerning are those whose lives are negatively impacted by the misuse of certain technologies - invasions of privacy, and potential infringements on their civil liberties. These are people who often don't have the means to directly benefit from technological progress, let alone contribute to it.",
+                    "What if new, emerging, or even legacy open-source projects released their potentially groundbreaking work with a DUKI-friendly license? This could be either a new 'DUKI[-n] License' or traditional licenses with a 'DUKI[-n] Required' clause, where 'n' represents the percentage of profit to be contributed (preferably with n between 1-5, defaulting to 1 as it's a natural starting point). Under this model, companies using DUKI-licensed projects and generating profit would be required to contribute a small percentage of their earnings towards fostering universal kindness. If they haven't made a profit, everything would remain the same as with current licenses. It's worth noting that the companies behind the creators and main maintainers of these open-source projects would be exempt from this requirement, though they could always choose to contribute voluntarily. Their act of releasing and maintaining the project as open-source is already a significant contribution, often involving substantial effort and resources. And we should reward kindness with kindness, making these companies more competitive for engaging in such generous acts. As the saying goes again, 'Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap. For with the measure you use, it will be measured to you.'",
+                    "This is just my wildest imagination, of course. With or without a DUKI version, open source contributors are still as great as ever."
+                ]
+            },
+            {
+                "question": "Thoughts on DUKI, Web3, and Human Passports",
+                "answers": [
+                    "As stated in the <a class='inline_ref' target='new' href='https://www.youtube.com/watch?v=fOGdb1CTu5c'>video</a> by Amit Sahai: 'One of my hopes is that the power of multi-party computation can bring together people who are mutually distrustful. Can we harness the power inherent in cryptography to somehow alleviate the tremendous level of mistrust?' I sincerely believe that the answer is yes. Through decentralization, blockchain can distribute power to everyone, ensuring that all participants act with kindness and fairness, ultimately benefiting all. I firmly believe that innovations such as Bitcoin, Ethereum, WorldID, ZK-STARKs, zkVM, and numerous others, contributed by talented and brilliant individuals, will have valuable applications in human society in the years to come. They will benefit humanity in ways we have yet to imagine. In this context, I believe the DUKI system, kindness by all and promoting kindness for all, will be one of the first significant applications to emerge.",
+                    "Creating DUKI is the easy part. DUKIGEs earn money through merit and hard work, and they're willing to spread kindness by donating part of their success to all humans. As for DUKI contributions, I believe they can largely be solved by existing blockchain technology. Each DUKIGE could have a smart contract operating on the blockchain. These contracts would store and automatically transfer funds to distribution shard contracts to facilitate fair distribution. The total amount could be divided among 1 million people, then 1 billion, and finally enough for all humans worldwide who are chain, allowing each to claim their KUDI when they prove their uniqueness.",
+                    "The real challenge in DUKI Distribution lies in proving personhood while ensuring privacy to protect against potential targeting by malicious actors. After recently watching a <a class='inline_ref' target='new' href=\"https://www.youtube.com/watch?v=Eu_j5_tains\"> 12-year-old video</a> named 'Professor Avi Wigderson on cryptography', a statement struck me: 'Everything that can be proven at all can be proven in zero knowledge - not just some things, not nothing, everything that can be proven can be proven in zero knowledge.' Does this include proving \"everyone's unique existence in the world using their private unique and untakeable traits\"? If true, this could truly form the foundation of the DUKI infrastructure.",
+                    "Later, I realized that technology like WorldID has already demonstrated this concept, although there are concerns. The centralized storage of human iris codes could lead to potential blockage by unfriendly countries, and there are also other concerns, potentially slowing down its mass adoption. Despite these challenges, this innovative approach that gives each human a unique world ID is definitely the way to go. By incorporating more strength and decentralization, we could accelerate adoption and empower all humans in our increasingly digital world.",
+                    "Is it technically possible to achieve proof of unique human existence using zero-knowledge proofs without collecting centralized iris code data? Could this be accomplished by using zero-knowledge proofs of iris data stored on local devices, similar to Apple's Optic ID 1-to-few matching approach, but dramatically scaling it up to a universal 1-to-n system<a class='inline_ref' href='https://www.youtube.com/watch?v=d_rkxyw_U84&t=1535s' target='new'>&nbsp;»</a>? Could we create a unique identifier on a public blockchain without leaking any of the user's private data, so that everyone could utilize it without applying for it first, making it more widely decentralized? Furthermore, is it possible to standardize a zero-knowledge proof of user uniqueness and create a Humanity Proof RFC (Request for Comments) to make it standard, so that all manufacturers could implement it in smartphones, VR headsets, and other devices, thus truly enabling DUKI? I feel this approach, if possible, might be the fastest way to fully champion DUKI.",
+                    "As someone with no practical blockchain job experience, below is how I imagine my user experience would be if I were to interact with web3 incorporating a DUKI system and Human Passport. I've created a tiny zkVM <a class='inline_ref' target='new' href=\"https://www.github.com/link_placeholder\">program</a>  to help me think through this scenario. But before I delve further into the imagination, I'd like to explain my understanding of three key concepts in DUKI context: Human Unique Features, Oracle Data, Oracle Data Authority. [Human Unique Features] are characteristics that can help uniquely identify an individual. These can be inherent, like biometric data; assigned, such as government-issued IDs; or user-created, like passwords or secret phrases. If features that has an stable digital representation, they could be used as components of a passport id, while other features can be used to enhance uniqueness in the system. [Oracle Data] is a digital representation of Human Unique Features used as input for Human Passport. This representation could potentially be faulty or inaccurate, and requires consistent proof, preferably through zero-knowledge proofs. This ongoing proof helps maintain the integrity of the system. [Oracle Data Authority] is an authority responsible for the correctness of Oracle Data by doing proof . It should always welcome criticisms and when criticism occurs, it is required to conduct further validation to prove its authenticity, in this case to ensure Oracle Data always accurately represents Human Unique Features.",
+                    "Human Passport Issuance: Using a device implemented by manufacturers that adheres to established standards and utilizes my Human Unique Feature, I generate a Human Passport. This passport is essentially a receipt in zkVM terms, generated through zero-knowledge computation. It claims my unique existence with the ID 'MEWiyQID-KKLzFCw--zPcBnB4nl8Tgpkjc7sanHf4pY'.  Along with other metadata such as hardware manufacturer information and one-way features derived from other data. this Human Passport is placed on-chain, making it publicly accessible and declaring my existence and uniqueness to the world. My future activities, such as DUKI claims, challenges to others' IDs, and proof history, can also be associated with this ID. After the generation process, I receive my passport. It's important to note that nothing except the Human Passport should leave the device, and no data should remain on the device after the process is complete. Remember that oracle data authority should prevent me issue two passports.",
+                    "Human Passport Usage: It serves as a passport to the Web3 world. The Human Passport acts as proof that the one behind this is a real person, which anyone can verify without accessing any private information. Any blockchain application can check the integrity of the passport and gain confidence that a human, rather than a bot, is behind it. This system treats all humans and all apps equally because there's no way to discriminate or show favoritism, even if one wanted to. It's a worldwide, anonymous system where all lives matter worldwide equally.",
+                    "Human Passport Soundness: The zk-verify process conducted by other blockchain applications alone is insufficient. The DUKI system must continuously check the credibility of the oracle data. Whenever I attempt to claim a DUKI, the system should always verify the credibility of the oracle data. In such cases, it should request another proof using [Human Unique Features], possibly through a different standard implementation. This process aims to determine whether the oracle data used was generated by a faulty device or if someone deliberately forged the data to claim multiple DUKIs, acting uncooperatively. Furthermore, anyone can challenge my passport by staking coins and requesting more rigorous proof, such as asking the oracle data authority to perform additional verification. Independent watchers could also leverage public blockchain data to detect potential fraud. For instance, if a whistleblower discovers multiple accounts with suspiciously similar iris LSH (Locality-Sensitive Hashing) hashes, they could challenge these accounts to perform a proof simultaneously. This is based on the principle that if these accounts belong to the same person, simultaneous proof cannot be performed for all accounts at once. If I successfully prove my uniqueness, I will receive the staked coins, and my passport gains more credibility. If I fail, the challenger receives a significant bonus from the system, which includes the coins staked by the oracle data authority and the penalty I incurred. I'm then excluded from the kindness system until I've paid my penalty, and my credibility starts at zero, allowing for forgiveness.",
+                    "This is just my naive image for the future web3 system that could exist, which behaves with kindness, faireness and DUKI. Whether in this form or not, I hope that kind of system would be possible and the day I can claim my first DUKI is possible without my becoming too old."
+                ]
+            },
+            {
+                "question": "Am I Christian? Why 'O Come, O Come, Emmanuel' as Background Music?",
+                "answers": [
+                    "I am not a Christian, nor do I claim to be one. I'm unfamiliar with what religious texts say about God or Christ, as I grew up and was educated in an environment without any religious teachings, including Christianity. I have very limited exposure to Christian activities and other religious activities. At the time of writing, I have not attended any church services for worship, though I've visited a few churches as a tourist.",
+                    "However, I still choose to use the word 'God' in a way that transcends specific religions. To me, it represents the collective positive influences shaping our world and our shared potential for good—something no single person or organization could achieve alone. This concept embodies humanity's capacity for kindness, our drive to improve, and the power of our combined efforts to create positive change. I see it as symbolizing the inherent goodness within people and the strength we find when uniting for a common purpose. 'God' encompasses the interconnected web of positive actions and ideas that uplift us all, even if we can't precisely articulate their source or impact. I hope this interpretation doesn't offend or contradict others' understanding of the term.",
+                    "As a non-native English speaker living in a non-English-speaking country -- which I'd rather not specify due to the foreseeable biases that could be imposed on me -- and working on the AllLivesMatter.World project, I could never have completed this without God's help. This encompasses the kindness I've received from my family, friends, and others; the knowledge and growth I've gained through MOOCs and other educational experiences; the wisdom of great minds, both present and historical, easily accessible through the internet and AI language models; and all the positive influences that have shaped my understanding and character. The manifestation of AllLivesMatter.World is something no single individual could ever achieve alone, yet it's present in our collective humanity. I credit all of this to 'God'.",
+                    "I'm pretty much tone-deaf and know next to nothing about music. I came across the song accidentally one night while working on AllLivesMatter.World. It was playing as background music from my wife's TikTok-like video feed. The moment I heard it, I got it. I searched for its name, sensing a great goodness within it, even though the video content and comments didn't fully reflect it. Some comments expressed fear, with people admitting they dared not listen further. But I still felt the vast goodness inside the song.",
+                    "Finally, I located the Tommee Profitt <a href='https://www.youtube.com/watch?v=PQuq4umpb3Q' target='new' class='inline_ref'>masterpiece</a> on YouTube and learned its name: 'O Come, O Come, Emmanuel'. I've been listening to it day and night. There are indeed haunting sounds and a sense of dark power in it, yet there is far more goodness. I hear the clash of swords, the roars of demons, and the cries of innocents. I hear the sounds of mass conflicts and wars, but these are overlaid with angels singing and praying for the soldiers fighting against the powerful evil. It echoes the sounds of the world we're in - the rattle of gunfire as soldiers fight, the explosions of artillery, and the fervent prayers for peace rising above the chaos. These sounds resonate from conflict zones like Israel and Palestine, Russia and Ukraine, and other regions trapped in struggles initiated by malevolent forces. It is the sound of innocents suffering, yet also singing and praying for the soldiers fighting evil, believing they will win - and win big - to bring peace and joy to all the world.",
+                    "I felt the presence of 'God' again, and I am certain more than ever that I needed to spread this message out by initiating a global call for humanity and compassion, especially to those with power, whether empowered by people or earned through their merit and works. By embracing kindness, fairness, and DUKI, we can resolve these massive conflicts, achieve peace, and prevent similar tragedies from happening.",
+                    "There is evil within humanity, which sometimes manifests its true nature fully through actions that cause hurt, death, and destruction. We see this in acts of violence, war, and deliberate cruelty. But beyond these obvious manifestations, evil also lurks hidden in the shadows of our collective consciousness. It permeates across all colors, nationalities, sexes, and different religions - in every group we might define.",
+                    "But sisters and brothers, let's recognize the true nature of our real enemies. It's not entire groups of people, but rather the individuals who choose to do evil, whether by causing overt harm or through more subtle means. This includes those who pervert justice through partiality, bribery. As it is written, 'You shall judge the people with righteous judgment. You shall not pervert justice. You shall not show partiality, and you shall not accept a bribe, for a bribe blinds the eyes of the wise and subverts the cause of the righteous.'",
+                    "Evil manifests in actions that undermine fairness and justice, favoring some over others based on prejudice or personal gain. It can hide behind institutions, ideologies, or even well-intentioned policies. Our true adversaries are not our sisters and brothers of different nationalities, colors, or beliefs, but rather those who choose to act unjustly, regardless of their background or the guise under which they operate.",
+                    "Recognizing this hidden evil is the first step in combating it. We must remain vigilant, not only against obvious wrongdoing but also against the subtle corruption of principles that can lead us astray from the path of true justice and kindness. By embodying kindness, fairness, and DUKI, let 'O Come, O Come, Emmanuel' be our rallying cry, We can make 'God' win, and win big."
+                ]
+            },
+            {
+                "question": "My Thanks to MOOCs: Democratizing Learning for All",
+                "answers": [
+                    "Thank you, MOOCs, for the vast ocean of knowledge you've made accessible. Through you, I've begun exploring blockchains, started to understand computer architecture in 'From Nand to Tetris', learned the basics of algorithms in MIT's 6.006, gained insights from MOOC-alikes educators like 3Blue1Brown and Andrej Karpathy, and discovered many other fascinating subjects. Each course has shown me how much more there is to discover, revealing the depth of each field and reminding me of the endless possibilities in learning. This realization, far from discouraging me, only ignites my curiosity further. ",
+                    "While these courses have been food for thought, feeding my curiosity like a satisfying meal, they've also proven helpful in more practical ways. With this learning, I've made a living in software engineering though I graduated from ecology, and even made an iOS English learning app as an indie, though it's not very polished and, coupled with poor marketing, hasn't turned a profit. Importantly, the kindness I've received has helped me and given me the power to care for the people I love, and, if possible, to spread kindness myself. ",
+                    "To all educators, institutions, and platforms making knowledge accessible: Thank you! Your impact reaches far beyond what you might imagine. You've truly democratized learning, allowing curious minds everywhere to explore and grow. Thank you for making this possible."
+                ]
+            },
+            {
+                "question": "My Thanks to BLM: A Great and Inspiring Movement",
+                "answers": [
+                    "Black Lives Matter is a great movement that has made a great positive impact on the world. It inspires great aspirations and illuminates a path forward in the face of prejudice and injustice. As long as unfairness exists, the world can draw inspiration and guidance from BLM. Thanks, BLM. Thanks to all the people who make it great.",
+                    "Taking inspiration from BLM(too) and considering the unnecessary death, hurt, and hatred caused by mass conflicts, whether it's the wars orchestrated by those who wield power without conscience, the senseless violence and unjustified hatred inflicted on innocent individuals or the entire groups due to the actions of a few bad actors within them, or the widespread suffering caused by systemic oppression and discrimination, the new advocacy emerges: AllLivesMatter.World: A Global Call for Humanity and Compassion which advocates kindness, fairness, and DUKI by all and for all. And I believe that by fully embracing this approach, we can strive to significantly reduce mass conflicts and foster a society where everyone has the opportunity to cultivate their own merits. In this vision, individuals are valued fairly based on the merits of their behaviors, not by their color, nationality, gender, religion, and the powers that claim to speak for their soul, nor by any other characteristic that has been or could be used as a basis for unfair discrimination. "
+                ]
+            },
+            {
+                "question": "Who am I and what are the future plans of ALM worldwide?",
+                "answers": [
+                    "Who am I? I'm KindKang, a person with a Human Passport generated using zero-knowledge proofs - a fascinating technique that ensures trustworthiness while protecting privacy. Is all the information on the passport trustworthy now? Well, some is believable now, while some requires more work to make it trustworthy. For the trustworthy parts: my contact email is true, and the following claim is true - the secret I used (which I won't disclose, of course) contains my nickname, and before it, there's 'ordinary'. Regarding the 'ordinary' part, even without official authority, you can judge from my HireMeAsAmbassador ad below. The other parts of info in my passport, such as whether I used my real name and real iris data, aren't fully trustworthy without authorities to back them up. However, I believe that through advocacy, hard work, and drawing more attention to legitimate authorities and developing more reliable ones, we can make it fully trustworthy. By 'authority' I mean entities that respond to criticism with transparency and additional proof, rather than censorship or inaction. Combining trustworthy authorities with currently available or emerging technologies, I believe we can establish a solid Web3 foundation for humanity in the coming years. In that world, All lives will have equal opportunities to grow towards their own unique potential, flourishing in all their diversity, and enabling all to achieve their own unique excellence.",
+                    "Shameless HireMeAsAnAmbassador Ad:I'm seeking companies that value the 'AllLivesMatter.World' advocacy - even better if you're willing to make it a reality by becoming a DUKIGE or developing technology (I'm thinking zkVM, WorldCoin...) to power it. I invite you to consider me as a remote, independent ambassador. I ask you to evaluate me solely on my merits and potential contributions, regardless of nationality, color, background, beliefs, or any other factors. I'm committed to promoting your hard work and kindness to the world. Note: By 'independent,' I mean I maintain the freedom to occasionally promote other DUKI-friendly companies if more appear, but I wouldn't promote your direct competitors unless I quit. Here are a few ordinary facts about me: My primary work experience is Java-based and business-oriented, and I have no work experience in blockchain technology as yet. I learn most things driven by curiosity. While English isn't my first language, and I hardly speak it in daily life, I can understand it quite well and often catch myself thinking in English. I believe language won't be a barrier to effective communication.",
+                    "I don't know what the future holds for this advocacy. I initiated it, and I will keep advocating for it until the end of my life or until I'm forcibly stopped by circumstances beyond my control. As I believe, the spirit behind it is unstoppable. The source code is released under 'THE DUKI LICENSE', which is essentially the same as the MIT license, except that if you make a profit from it (which I don't think is likely), you should donate 1% to DUKI. Currently, there's no DUKI system in place for donations or to verify this behavior, but you can still fulfill this spirit by showing kindness to those who need help. In the future, if possible, I'll try to bootstrap one or more tiny DUKIGEs, though currently I have no idea what they would be like. But please don't expect too much from me – I'm just an ordinary person with a challenging life to maintain. I can only pursue this advocacy in my spare time or, better yet, through a job that enables me to continue this work while simultaneously earning a living."
+                ]
+            }
+        ]
+    }
+}
