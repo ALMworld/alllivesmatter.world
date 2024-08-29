@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DollarSign, Gavel, AlertCircle, CircleDollarSign, Scale, Heart, Building, Users, Landmark } from 'lucide-react';
+import { DollarSign, Gavel, AlertCircle, CircleDollarSign, Scale, Heart, Building, Users, Landmark, Network } from 'lucide-react';
 
 const AlmIcon = ({ value,...props }) => {
     let IconComponent;
@@ -20,6 +20,9 @@ const AlmIcon = ({ value,...props }) => {
             break;
         case 'users':
             IconComponent = Users;
+            break;
+        case 'network':
+            IconComponent = Network;
             break;
         default:
             IconComponent = Heart; // Default icon if no match is found

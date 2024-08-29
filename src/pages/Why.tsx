@@ -1,11 +1,5 @@
 import React, { Suspense, useEffect, useRef, useState } from 'react';
 
-import * as topojson from 'topojson-client';
-
-import landTopology from '../assets/land_10m.json';
-import pointsData from '../assets/random-locations.json';
-import texture from '../assets/texture.jpg';
-import { Loader } from 'lucide-react';
 import World, { LazyWorld } from '../components/World';
 import { useWhyData } from '../data/data_provider';
 import BookButtons from '../components/BookButtons';
@@ -34,7 +28,7 @@ const Why = () => {
 
                             {parts.map((part, index) => (
                                 <React.Fragment key={index}>
-                                    {part}
+                                    <span className="selectable-text">{part}</span>
                                     {index === 0 && parts.length > 1 && (
                                         <span className="text-yellow-400 font-bold selectable-text">{data.highlight.question_emphasis}</span>
                                     )}
