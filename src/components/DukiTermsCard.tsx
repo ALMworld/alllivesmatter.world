@@ -18,8 +18,8 @@ const DukiTermsCard = ({ onClose }) => {
             onClick={handleOutsideClick}
         >
             <div className="bg-slate-800 text-white p-6 rounded-lg shadow-lg max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl w-full max-h-[80vh] overflow-y-auto relative">
-                <div className="flex justify-between items-center mb-6 w-full">
-                    {/* <h2 className="text-xl font-bold text-yellow-500" dangerouslySetInnerHTML={{__html: advocate.content}}  /> */}
+                <div className="flex justify-center items-center mb-6 w-full">
+                    <h2 className="text-xl font-bold text-yellow-500">{commonData.duki_terms_header}</h2>  
                     {/* <div className="text-yellow-500">
                         <AlmIcon value='money' size={24} />
                     </div> */}
