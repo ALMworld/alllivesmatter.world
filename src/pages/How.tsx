@@ -30,19 +30,6 @@ const How = () => {
                         </div>
                     </div>
                 </main>
-
-                {/* <p className="text-center">{data.contribute_by_building_text}</p>
-                <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {data.contribution_ideas.map((detail, index) => (
-                        <ActionGroup
-                            key={index}
-                            index={index}
-                            detail={detail}
-                            isSelected={selectedGroupIndex === index}
-                            onSelect={setSelectedGroupIndex}
-                        />
-                    ))}
-                </div> */}
             </div>
         </div>
     );

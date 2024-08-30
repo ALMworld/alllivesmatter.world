@@ -34,17 +34,16 @@ fn main() -> Result<()> {
 
     let computation_type = MainRunType::ProofComputationGeneratingReceipt;
     // let computation_type = MainRunType::VerifyComputationUsingReceipt;
-    // let serialization_type = ReceiptSerializationType::Binary;
-    let serialization_type = ReceiptSerializationType::Json;
+    let serialization_type = ReceiptSerializationType::Binary;
+    // let serialization_type = ReceiptSerializationType::Json;
 
 
     match computation_type {
         MainRunType::ProofComputationGeneratingReceipt => {
             let mut request = HumanPassportIssueRequest {
-                real_name_oracle_input: "secret".to_string(),
+                real_name_oracle_input: "social_privacy_data".to_string(),
                 nick_name: "KindKang".to_string(),
-                contact_email_1: "kindkang@alllivesmatter.world".to_string(),
-                contact_email_2: "kindkang2024@gmail.com".to_string(),
+                contact_email: "kindkang@alllivesmatter.world".to_string(),
                 hire_me_as_ambassador: "hire me as ambassador".to_string(),
                 custom_secret_data: "ordinary KindKang_".into(),
                 metadata_1: "20240826".into(),
@@ -175,8 +174,7 @@ fn display_passport_values(receipt: &Receipt) {
 
     println!("HumanId: {}", journal_data.human_id);
     println!("NickName: {}", journal_data.nick_name);
-    println!("ContactEmail1: {}", journal_data.contact_email_1);
-    println!("ContactEmail2: {}", journal_data.contact_email_2);
+    println!("ContactEmail: {}", journal_data.contact_email);
     println!("SecretHasOrdinaryNickName: {}", journal_data.custom_secret_has_ordinary_nick_name_inside);
     println!("realNameAndSocialIdHasNoSepChar: {}", journal_data.real_name_and_social_id_has_no_sep_char);
     println!("socialOracleDataProofData: {}", journal_data.social_oracle_data_proof_data);

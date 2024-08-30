@@ -19,7 +19,7 @@ const AdvocateCard = ({ advocate, isOpen, openModal, closeModal, children }) => 
                             }>DUKI ? </span>
                             <span className="relative">
                                 {showDukiTerms && (
-                                    <div className="absolute right-0 top-full h-full mb-2 w-64 p-2 text-sm text-white bg-gray-700 rounded-md shadow-lg z-10">
+                                    <div className="absolute right-0 top-full h-full mb-2 p-2 text-sm text-white bg-gray-700 rounded-md shadow-lg z-10">
                                         {advocate.tooltip}
                                         <div className="absolute w-full right-0 mb-2 z-20">
                                             <DukiTermsCard

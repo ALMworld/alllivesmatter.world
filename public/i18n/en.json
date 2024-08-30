@@ -29,10 +29,17 @@
                 "icon":"users"
             },
             {
+                "term": "Dukiness:/ˈduːkiːnəs/: spirit behind DUKI, just like kindness and fairness",
+                "definition":"Dukiness embodies the mindset and actions aligned with principles of universal kindness, fairness, and decentralized empowerment. It inspires individuals to pursue freedom, reject negativity, cultivate goodness, and spread kindness, ultimately striving to elevate the value and dignity of all lives globally.",
+                "icon":"network"
+            },
+            {
                 "term": "Why DUKI Thrives on Freedom And Decentralization",
                 "definition": "DUKI emphasizes decentralization as its core principle, placing it at the forefront of its name. This approach reflects the idea that DUKI is truly by people and for people. The blockchain technology that could underpin DUKI is well-suited for this kind of infrastructure, making it a viable option for implementation. Freedom is another crucial aspect of DUKI. In the blockchain world, establishing better connections often requires oracle data authorities to bridge the gap between the virtual and real worlds. The virtual world alone is insufficient, as it lacks the necessary ties to reality. There's a concern that if  authorities were to become tyrannical, they might not respond to issues or could even censor criticisms. This raises the question: can we truly trust what happens in virtual worlds under such circumstances? I've elaborated on these topics and their possible implications for DUKI's vision and implementation in the FAQ section, specifically item 11. However, I should note that I have very limited experience in this area. My thoughts may be naive or contain errors, so I welcome any insights or corrections that could enlighten me further on these complex issues.",
                 "icon":"network"
             }
+
+
         ]
     },
     "advocacy_data": {
@@ -64,7 +71,7 @@
                 ]
             },
             {
-                "content": " Fairness",
+                "content": " Fairness Always",
                 "description": "You shall judge the people with righteous judgment. You shall not pervert justice. You shall not show partiality, and you shall not accept a bribe, for a bribe blinds the eyes of the wise and subverts the cause of the righteous",
                 "buttonText": "Learn More",
                 "icon": "law",
@@ -84,14 +91,14 @@
                 ]
             },
             {
-                "content": "DUKI",
+                "content": "DUKI In Action",
                 "icon": "money",
                 "buttonText": "Explore More",
                 "description": "He causes his sun to rise on the evil and the good, and sends rain on the righteous and the unrighteous.",
                 "keyPoints": [
                     {
                         "title": "DUKI Powers Freedom",
-                        "description": "A feast is made for laughter, wine makes life merry, and money is the answer for everything. And DUKI is the key to empower people to gain freedom, reject evil, do good and spread kindness."
+                        "description": "A feast is made for laughter, wine makes life merry, and money is the answer for everything. And DUKI is the key to empower everyone to gain freedom, reject evil, do good and spread kindness."
                     },
                     {
                         "title": "DUKI Thrives on Freedom And Decentralization",
@@ -113,94 +120,7 @@
     "how_data": {
         "contribute_text": "How to Contribute",
         "contribute_by_share_text": "You can always help by advocating",
-        "contribute_by_action_text": "also by embodying ALM advocacy",
-        "contribute_by_building_text": "And By Building",
-        "contribution_ideas": [
-            {
-                "title": "General Users",
-                "Icon": "Users",
-                "actions": [
-                    {
-                        "description": "Donate to charity",
-                        "money": 1,
-                        "love": 1,
-                        "law": 0
-                    },
-                    {
-                        "description": "Volunteer locally",
-                        "money": 0,
-                        "love": 1,
-                        "law": 0
-                    },
-                    {
-                        "description": "Sign petitions",
-                        "money": 0,
-                        "love": 0,
-                        "law": 1
-                    }
-                ]
-            },
-            {
-                "title": "Professionals",
-                "Icon": "Briefcase",
-                "actions": [
-                    {
-                        "description": "Donate to charity, this will be quite long, do you agree with me. let us go go ogo",
-                        "money": 1,
-                        "love": 1,
-                        "law": 0
-                    },
-                    {
-                        "description": "Volunteer locally",
-                        "money": 0,
-                        "love": 1,
-                        "law": 0
-                    },
-                    {
-                        "description": "Sign petitions",
-                        "money": 0,
-                        "love": 0,
-                        "law": 1
-                    },
-                    {
-                        "description": "Mentor others",
-                        "money": 0,
-                        "love": 1,
-                        "law": 0
-                    },
-                    {
-                        "description": "Pro bono work",
-                        "money": 0,
-                        "love": 1,
-                        "law": 1
-                    }
-                ]
-            },
-            {
-                "title": "General Users",
-                "Icon": "Users",
-                "actions": [
-                    {
-                        "description": "Donate to charity",
-                        "money": 1,
-                        "love": 1,
-                        "law": 0
-                    },
-                    {
-                        "description": "Volunteer locally",
-                        "money": 0,
-                        "love": 1,
-                        "law": 0
-                    },
-                    {
-                        "description": "Sign petitions",
-                        "money": 0,
-                        "love": 0,
-                        "law": 1
-                    }
-                ]
-            }
-        ]
+        "contribute_by_action_text": "also by embodying ALM advocacy"
     },
     "why_data": {
         "highlight": {
@@ -218,7 +138,7 @@
                 "link": "",
                 "get_book": [
                     {
-                        "buy_url": "https://www.amazone.com",
+                        "buy_url": "https://amzn.to/3Z3uztI",
                         "buy_text": "GET THE BOOK",
                         "store_icon": "amazon.svg"
                     }
@@ -249,7 +169,7 @@
                 },
                 "get_book": [
                     {
-                        "buy_url": "https://www.amazone.com",
+                        "buy_url": "https://amzn.to/473GBp3",
                         "buy_text": "GET THE BOOK",
                         "store_icon": "amazon.svg"
                     }
@@ -271,7 +191,7 @@
                 },
                 "get_book": [
                     {
-                        "buy_url": "https://www.amazone.com",
+                        "buy_url": "https://amzn.to/479gIUE",
                         "buy_text": "GET THE BOOK",
                         "store_icon": "amazon.svg"
                     }
@@ -304,7 +224,7 @@
                 "answers": [
                     "(My comment on some media narraibtive about the above video) Instead of highlighting Trump's focus on stopping the war and saving lives for humanity, reports headlined 'Trump won't say whether he wants Russia or Ukraine to win war'. Rather than acknowledging Trump's urging of Europe to increase support for fairness and to strengthen Ukraine, narratives suggested he refused to back Ukraine in its war with Russia. The media fixated on calling Putin a 'war criminal' and on winning, and <a class='inline_ref' target='new' href=\"https://web.archive.org/web/20240818232941/https://www.politico.com/news/2023/05/11/christie-trump-cnn-putin-00096393\">some</a> resorted to labeling Trump a 'coward' and a 'puppet of Putin' for his approach of trying to end the conflict without losing more lives. These narratives treat war like a video game, focusing on winning and losing, implying that some innocent lives are more valuable than others, while ignoring that humanity as a whole loses in the wars.",
                     "Our minds are like gardens(cf. LLM), cultivated by the words we consume. If we are fed a diet of hatred, we grow thorns of prejudice. But when nourished with kindness, we blossom into compassion. And our society's culture is a vast forest made up of these individual mind-gardens. Media serves as one of the primary sources of nutrients for this forest. When it spreads bias, it’s like dumping toxic waste into the soil. But when it promotes fact-based reporting, humanity, and understanding, it enriches the entire ecosystem.",
-                    "Media should always wield its influence wisely. Present facts first, then offer various perspectives. Let people see the full picture and always respect their intelligence and right to form their own views. Similarly media amplifiers should never manually manipulate news 'fitness' to favor certain powers, such as strong governments, nor should they be influenced by bribes. If there's anything that should be favored, it should always be facts, which demonstrates a commitment to the totality. Media amplifiers like social platforms, search engines, and other recommendation-based platforms could achive this by prioritize evolvable news stories rather than static ones. Evolvable news means that once published, it allows for public criticism and community notes, even if these go against certain authorities. Because true authority welcomes freedom of speech, and when criticism occurs, instead of resorting to censorship, it will conduct further validation to prove its authenticity. With great power comes great responsibility. Media and media amplifiers should always strive to cultivate a forest of well-informed minds."
+                    "Media should always wield its influence wisely. Present facts first, then offer various perspectives. Let people see the full picture and always respect their intelligence and right to form their own views. Similarly, media amplifiers should never manually manipulate news 'fitness' to favor certain powers, such as strong governments, nor should they be influenced by bribes. If anything should be favored, it should always be facts, demonstrating a commitment to the whole truth. Media amplifiers like social platforms, search engines, and other recommendation-based platforms could achieve this by prioritizing evolvable news stories rather than static ones. Evolvable news means that once published, it remains open to iterative updates and refinements. It allows for public criticism and community notes, both positive and negative. This iterative process enables people to witness the evolution of the story over time and form their own views, even when those views may challenge some authority. True authorities welcome freedom of speech. When faced with criticism, instead of resorting to censorship or inaction, they conduct further validation to prove their authenticity. With great power comes great responsibility. Media and media amplifiers should always strive to cultivate a forest of well-informed minds."
                 ],
                 "_answers": [
                     "In the neural network of society, each mind is a node, processing the tokens of experience. The powerful amplify their signals, shaping the collective narrative. Yet, like in any complex system, even the whispers of the quietest nodes can cascade into transformative thoughts, rewriting the algorithm of our shared reality."
@@ -330,7 +250,8 @@
                 "answers": [
                     "DUKI (pronounced /duːki/, reminiscent of 'duty','kindness' and 'cookie'). Think of it as 'kindness money' for everyone. It's like a global piggy bank filled by nice folks all over the world. The idea is to help people do good stuff and be kind to each other because, you know, others've already made the first move in being kind. But here's the cool part - why would people put their own money into this bank? Well, imagine this: when you chip in, you're not just giving; you're creating a world where everyone wants you to succeed even more. It's like planting seeds of goodwill everywhere. The more successful you become, the more you can contribute, and the more everyone benefits. So people aren't just hoping you do well – they're rooting for you to hit it big!",
                     "DUKIGE (pronounced /duːki-dʒ/).  When a business or organization decides to join the kindness party by sharing some of what they've got, they transform into something pretty cool - a DUKIGE! It's like they put on a superhero cape, but instead of fighting bad guys, they're fighting... well, not-so-kindness, I guess? When a company says, 'Hey, we're gonna take a portion of our profits and spread it around to help folks,' - boom! They've just DUKIGE'd themselves! Becoming a DUKIGE can take various forms. For example, a business might commit to sharing a small part of their future success, like pledging 1% of profits once they become stable and profitable. At that point, they become a DUKIGE. It doesn't matter what size they are - whether it's a big corporation or a small mom-and-pop shop - any type of organization can become a DUKIGE in various ways. The cool thing is, once an organization becomes a DUKIGE, they're part of this global network of kindness. They're not just a business anymore - they're a business with a heart, actively contributing to make the world a bit better. Remember, it's not about how much they give. Even small contributions count. As the saying goes, \"Even a cup of cold water can make a difference.\" When a business becomes a DUKIGE, they're saying, \"We're not just here to make money - we're here to make a difference too.\" So next time you hear about a company sharing their success to help others, you can nod and say, \"Yep, they've become a DUKIGE. Cool move!\"",
-                    "DUKIGER (pronounced /duːki-dʒɚ/). Hey, Have you heard about DUKIGERs? They're pretty awesome! A DUKIGER is someone who's all about improving themselves, utilizing their potential to spread kindness, and making the world a bit better. It's like they've decided to be their own personal superhero, but instead of fighting bad guys, they're tackling the not-so-nice stuff in the world. The cool thing about DUKIGERs is that anyone can be one. You don't need superpowers or a ton of money. All you need is a big heart and the willingness to pitch in however you can. But here's the real kicker - DUKIGERs don't just stop there. They're always looking to level up their kindness game. They're all about learning new skills, cultivating their talents, and finding more ways to contribute, while nurturing their curiosity in parallel. It's like they're on a mission to gain more 'kindness superpowers' so they can make an even bigger impact. DUKIGERs are on a journey of continuous improvement, starting with themselves. They focus on personal growth, developing their skills, and becoming the best version of themselves. They know that by improving themselves, they'll be better equipped to help others. Maybe they're learning a new language to connect with more people, picking up a useful skill like first aid, or just working on being more patient and understanding. They might volunteer at a local charity, support businesses that give back, or simply be super nice to everyone they meet. Whatever it is, DUKIGERs are always looking for new ways to spread some good vibes and make their contributions even more meaningful. And here's a cool thought - maybe someday, when kids are asked, Who's the coolest person, or what's the coolest job in the world?\" they might say, \"Oh, definitely that DUKIGER named Max, or anything DUKIGER-related! How awesome would that be?"
+                    "DUKIGER (pronounced /duːki-dʒɚ/). Hey, Have you heard about DUKIGERs? They're pretty awesome! A DUKIGER is someone who's all about improving themselves, utilizing their potential to spread kindness, and making the world a bit better. It's like they've decided to be their own personal superhero, but instead of fighting bad guys, they're tackling the not-so-nice stuff in the world. The cool thing about DUKIGERs is that anyone can be one. You don't need superpowers or a ton of money. All you need is a big heart and the willingness to pitch in however you can. But here's the real kicker - DUKIGERs don't just stop there. They're always looking to level up their kindness game. They're all about learning new skills, cultivating their talents, and finding more ways to contribute, while nurturing their curiosity in parallel. It's like they're on a mission to gain more 'kindness superpowers' so they can make an even bigger impact. DUKIGERs are on a journey of continuous improvement, starting with themselves. They focus on personal growth, developing their skills, and becoming the best version of themselves. They know that by improving themselves, they'll be better equipped to help others. Maybe they're learning a new language to connect with more people, picking up a useful skill like first aid, or just working on being more patient and understanding. They might volunteer at a local charity, support businesses that give back, or simply be super nice to everyone they meet. Whatever it is, DUKIGERs are always looking for new ways to spread some good vibes and make their contributions even more meaningful. And here's a cool thought - maybe someday, when kids are asked, Who's the coolest person, or what's the coolest job in the world?\" they might say, \"Oh, definitely that DUKIGER named Max, or anything DUKIGER-related! How awesome would that be?",
+                    "Dukiness (pronounced /ˈduːkiːnəs/). Alright, let's dive into Dukiness. It's a powerful idea about reshaping how we approach making the world better. At its core, Dukiness is about decentralization. We're not waiting for some president or politicians to solve everything. Sure, there are good folks in those roles, but Dukiness says it's about all of us stepping up. We're talking about supporting the just ones, building systems that truly serve people, and using tech like blockchain to keep things fair. Picture a world where power is spread out, not just concentrated at the top. When Dukiness talks about kindness, it means action. It's like that saying, \"Show me your faith without deeds, and I'll show you my faith by my deeds.\" In Dukiness, being kind means you've got a responsibility – to grow, to live up to your full potential. It's about doing the work, not just talking about it. And here's the key – Dukiness is universal. It's not limited to certain people or places. It's a global concept, a human idea, originating from the goodness of humanity. We're talking kindness and fairness for everyone, everywhere. So, Dukiness isn't just a nice thought – it's a call to action. It's about creating a world where everyone has the power to make things better, where kindness is shown through actions, and where these principles apply to all. Ready to be part of the Dukiness movement?"
                 ]
             },
             {
@@ -378,7 +299,7 @@
             {
                 "question": "Thoughts on DUKI and Open Source",
                 "answers": [
-                    "Open source contributors are so smart and so generous. They have driven innovation worldwide with numerous creations,whether it's the operating system Linux, the widely used database SQLite, or React, Bitcoin, Ethereum, and countless others. These innovators have shared their creations so generously,  using open licenses like MIT, Apache, or GPL, hoping everyone can benefit. Even when large companies generate millions or billions from these projects, the contributors rarely ask for anything in return. The world has indeed benefited greatly from their kindness and hard work!",
+                    "Open source contributors are so smart and so generous. They have driven innovation worldwide with numerous creations,whether it's the operating system Linux, the widely used database SQLite, or React, Bitcoin, Ethereum, and countless others. These innovators have shared their creations so generously,  using open licenses like MIT, Apache, or GPL, hoping everyone can benefit. Even when large companies generate millions or billions from these projects, the contributors never ask for anything in return. The world has indeed benefited greatly from their kindness and hard work!",
                     "Sometimes I wonder if they could be a bit more 'selfish' - not for themselves, but for the countless people who are less fortunate and left behind by the world. I'm thinking of those living in extreme poverty, struggling daily for basic necessities like food, clean water, and shelter. Or the millions of children lacking access to education, and the refugees displaced by conflicts and natural disasters. Additionally, there are workers displaced by technological advancements, such as taxi drivers affected by autonomous vehicles or factory workers replaced by automation. Even more concerning are those whose lives are negatively impacted by the misuse of certain technologies - invasions of privacy, and potential infringements on their civil liberties. These are people who often don't have the means to directly benefit from technological progress, let alone contribute to it.",
                     "What if new, emerging, or even legacy open-source projects released their potentially groundbreaking work with a DUKI-friendly license? This could be either a new 'DUKI[-n] License' or traditional licenses with a 'DUKI[-n] Required' clause, where 'n' represents the percentage of profit to be contributed (preferably with n between 1-5, defaulting to 1 as it's a natural starting point). Under this model, companies using DUKI-licensed projects and generating profit would be required to contribute a small percentage of their earnings towards fostering universal kindness. If they haven't made a profit, everything would remain the same as with current licenses. It's worth noting that the companies behind the creators and main maintainers of these open-source projects would be exempt from this requirement, though they could always choose to contribute voluntarily. Their act of releasing and maintaining the project as open-source is already a significant contribution, often involving substantial effort and resources. And we should reward kindness with kindness, making these companies more competitive for engaging in such generous acts. As the saying goes again, 'Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap. For with the measure you use, it will be measured to you.'",
                     "This is just my wildest imagination, of course. With or without a DUKI version, open source contributors are still as great as ever."

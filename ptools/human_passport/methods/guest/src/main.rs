@@ -48,8 +48,7 @@ fn prove_my_unique_existence(request: &HumanPassportIssueRequest) -> HumanPasspo
     HumanPassportData {
         human_id,
         nick_name: request.nick_name.clone(),
-        contact_email_1: request.contact_email_1.clone(),
-        contact_email_2: request.contact_email_2.clone(),
+        contact_email: request.contact_email.clone(),
         social_id_has_abc: true, // computation do not support this
         social_oracle_data_proof_data: request.social_oracle_data_proof_data.clone(),
         custom_secret_has_ordinary_nick_name_inside: request.custom_secret_data.contains(&ordinary_nick_name),

@@ -19,9 +19,7 @@ pub struct HumanPassportIssueRequest {
 
     pub nick_name: String, // we do not care its privacy, it is public
 
-    pub contact_email_1: String, //data that we do not care its privacy, it is public
-
-    pub contact_email_2: String, //data that we do not care its privacy, it is public
+    pub contact_email: String, //data that we do not care its privacy, it is public
 
     pub hire_me_as_ambassador: String, // data that we do not care its privacy, it is public
 
@@ -59,9 +57,9 @@ pub struct HumanPassportIssueRequest {
 // -- true
 // claim 2: the real_name and social_id are indeed real data. nothing is absolute, 'oracle data' which need consistently verified by DUKI system
 // -- could have type-2 fake
-// claim 3: real_name and secret and social_id data do not have - in it.
+// claim 3: real_name and secret and social_id data do not have '-' in it.
 // -- true
-// claim 4: custom secret (never fully show), contains string 'Ordinary KindKang'
+// claim 4: custom secret (never fully show), contains string 'ordinary KindKang'
 // -- true
 // claim 5: social_id has 'abc' in it
 // -- false (type-3)
@@ -70,12 +68,11 @@ pub struct HumanPassportIssueRequest {
 pub struct HumanPassportData {
     pub human_id: String, // type-2
     pub nick_name: String, // do not care
-    pub contact_email_1: String,
-    pub contact_email_2: String,
+    pub contact_email: String,
 
     pub custom_secret_has_ordinary_nick_name_inside: bool, // trustful
     pub real_name_and_social_id_has_no_sep_char: bool, // trust full
-    pub iris_lsh_value: String,
+    pub iris_lsh_value: String, // one-way feature for example
     pub social_id_has_abc: bool, // type-3
 
     pub social_oracle_data_proof_data: String,
@@ -89,6 +86,8 @@ pub struct HumanPassportData {
 
 impl HumanPassportIssueRequest {
     // Computed property for human_id_generation_data
+    //  could we derive some stable bio-metric feature, and put it in human_id? or just random one?
+    //  maybe do not need human_id_generation_data, any unique string is ok?
     pub fn human_id_generation_data(&self) -> String {
         format!("{}-{}-{}", self.real_name_oracle_input, self.custom_secret_data, self.social_id_oracle_input)
     }
