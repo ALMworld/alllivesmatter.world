@@ -67,40 +67,28 @@ export interface AdvocacyDetail {
 }
 
 export interface KeyPoint {
-    title:       string;
-    description: string;
+    title:         string;
+    description:   string;
+    description_?: string;
 }
 
 export interface CommonData {
-    share_text: string;
-    share_url:  string;
-    duki_terms: DukiTerm[];
+    share_text:        string;
+    share_url:         string;
+    duki_terms_header: string;
+    duki_terms:        DukiTerm[];
 }
 
 export interface DukiTerm {
     term:       string;
     definition: string;
+    icon:       string;
 }
 
 export interface HowData {
-    contribute_text:             string;
-    contribute_by_share_text:    string;
-    contribute_by_action_text:   string;
-    contribute_by_building_text: string;
-    contribution_ideas:          ContributionIdea[];
-}
-
-export interface ContributionIdea {
-    title:   string;
-    Icon:    string;
-    actions: Action[];
-}
-
-export interface Action {
-    description: string;
-    money:       number;
-    love:        number;
-    law:         number;
+    contribute_text:           string;
+    contribute_by_share_text:  string;
+    contribute_by_action_text: string;
 }
 
 export interface MenuData {
@@ -365,33 +353,23 @@ const typeMap: any = {
     "KeyPoint": o([
         { json: "title", js: "title", typ: "" },
         { json: "description", js: "description", typ: "" },
+        { json: "description_", js: "description_", typ: u(undefined, "") },
     ], false),
     "CommonData": o([
         { json: "share_text", js: "share_text", typ: "" },
         { json: "share_url", js: "share_url", typ: "" },
+        { json: "duki_terms_header", js: "duki_terms_header", typ: "" },
         { json: "duki_terms", js: "duki_terms", typ: a(r("DukiTerm")) },
     ], false),
     "DukiTerm": o([
         { json: "term", js: "term", typ: "" },
         { json: "definition", js: "definition", typ: "" },
+        { json: "icon", js: "icon", typ: "" },
     ], false),
     "HowData": o([
         { json: "contribute_text", js: "contribute_text", typ: "" },
         { json: "contribute_by_share_text", js: "contribute_by_share_text", typ: "" },
         { json: "contribute_by_action_text", js: "contribute_by_action_text", typ: "" },
-        { json: "contribute_by_building_text", js: "contribute_by_building_text", typ: "" },
-        { json: "contribution_ideas", js: "contribution_ideas", typ: a(r("ContributionIdea")) },
-    ], false),
-    "ContributionIdea": o([
-        { json: "title", js: "title", typ: "" },
-        { json: "Icon", js: "Icon", typ: "" },
-        { json: "actions", js: "actions", typ: a(r("Action")) },
-    ], false),
-    "Action": o([
-        { json: "description", js: "description", typ: "" },
-        { json: "money", js: "money", typ: 0 },
-        { json: "love", js: "love", typ: 0 },
-        { json: "law", js: "law", typ: 0 },
     ], false),
     "MenuData": o([
         { json: "label", js: "label", typ: "" },

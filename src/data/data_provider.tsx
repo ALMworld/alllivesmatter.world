@@ -1,6 +1,6 @@
 import React, { useState, createContext, useContext } from 'react';
 import { useTranslation } from 'react-i18next';
-import { AboutData, AdvocacyData, CommonData, DataTypes, HomeData, HowData, MenuData, TheoryData, WhyData } from './data_types';
+import { AboutData, AdvocacyData, CommonData, DataTypes,  HowData, MenuData, WhyData } from './data_types';
 import i18next from 'i18next';
 
 // Create the context

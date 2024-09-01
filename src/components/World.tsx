@@ -1,9 +1,7 @@
 import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 import { MeshBasicMaterial } from "three";
 import Globe from "react-globe.gl";
-// import countries from "../assets/simplifiedCountries.json";
-import countries from "../../ptools/countries.json";
-import { Loader } from "lucide-react";
+import countries from "../assets/countries.json";
 
 
 export function LazyWorld() {

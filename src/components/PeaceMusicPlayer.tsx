@@ -34,9 +34,7 @@ const PeaceMusicPlayer = () => {
         );
     }
 
-    const playerStyle = playerState === 'shrunk'
-        ? { position: 'fixed', bottom: '1rem', right: '1rem', zIndex: 50 }
-        : { position: 'fixed', bottom: '1rem', right: '1rem', zIndex: 50 };
+    const playerStyle = { position: 'fixed', bottom: '1rem', right: '1rem', zIndex: 50 } as React.CSSProperties;
 
     const handleShrunkClick = (e) => {
         e.preventDefault();

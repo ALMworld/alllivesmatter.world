@@ -23,7 +23,9 @@ const How = () => {
                             {advocacyData.advocacy_details.map((advocate, index) => (
                                 <div className="flex items-center justify-center space-x-2  ">
                                     <AlmIcon value={advocate.icon} className="text-yellow-500 " size={16} />
-                                    <h4 className="text-2xl font-bold selectable-text" dangerouslySetInnerHTML={{ __html: advocate.content }} />
+                                    <h4 className="text-2xl font-bold selectable-text">
+                                        {advocate.content.replace(/DUKI/g, 'Dukiness')}
+                                    </h4>
                                     <AlmIcon value={advocate.icon} className="text-yellow-500" size={16} />
                                 </div>
                             ))}
