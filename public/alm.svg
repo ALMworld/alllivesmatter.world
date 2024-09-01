@@ -4,7 +4,7 @@
   <rect width="100%" height="100%" fill="none" />
 
   <!-- Large Circle -->
-  <circle cx="150" cy="150" r="140" fill="black" stroke="none" stroke-width="0" />
+  <circle cx="150" cy="150" r="140" fill="#d20033" stroke="none" stroke-width="0" />
 
   <!-- Small Circle -->
   <circle cx="150" cy="150" r="123" fill="#101143" />
