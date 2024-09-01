@@ -1,6 +1,6 @@
-import React, { Suspense, useEffect, useRef, useState } from 'react';
+import React from 'react';
 
-import World, { LazyWorld } from '../components/World';
+import  { LazyWorld } from '../components/LazyWorld';
 import { useWhyData } from '../data/data_provider';
 import BookButtons from '../components/BookButtons';
 
