@@ -25,6 +25,7 @@ ContactEmail: kindkang@alllivesmatter.world
 SecretHasOrdinaryNickName: true
 realNameAndSocialIdHasNoSepChar: true
 socialOracleDataProofData: social_oracle_data_proof_data_123
+realNameAndSecretSignature: BkO42IggGlL7p4Kbama3uKK8jnV7nQ6-7lJR8NTHSNI
 biometricsOracleDataProofData: biometrics_oracle_data_proof_data_ref_456
 Iris Hash: nlKypitNbF2cq67HkFXbAnrlbRP9bCZpkGNmhVoINWQ
 SocialIdHasAbc: true
@@ -56,7 +57,7 @@ is an authority responsible for the correctness of Oracle Data by doing proof . 
 
 
 ### Human Passport Usage: 
-It serves as a passport to the Web3 world . The Human Passport acts as proof that the one behind this is a real person, which anyone can verify without accessing any private information(It serves as a passport to the Web3 world). The Human Passport acts as proof that the one behind it is a real person, which anyone can verify without accessing any private information. Any blockchain application can check the integrity of the passport and may request a simple proof of ownership and gain confidence that a human, rather than a bot, is behind it. This system treats all humans and all apps equally because there's no way to discriminate or show favoritism, even if one wanted to. It's a worldwide, anonymous system where all lives matter worldwide equally.
+It serves as a passport to the Web3 world . The Human Passport acts as proof that the one behind this is a real person, which anyone can verify without accessing any private information. The Human Passport acts as proof that the one behind it is a real person, which anyone can verify without accessing any private information. Any blockchain application can check the integrity of the passport and may request a simple proof of ownership and gain confidence that a human, rather than a bot, is behind it. This system treats all humans and all apps equally because there's no way to discriminate or show favoritism, even if one wanted to. It's a worldwide, anonymous system where all lives matter worldwide equally.
 If compare it with a MetaMask wallet, for example, the passport could also signify that a unique person is behind it. This person could use secret data and human-unique features together to prove ownership instead of private keys only.
 
 ### Human Passport Soundness:

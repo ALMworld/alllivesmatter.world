@@ -75,6 +75,9 @@ pub struct HumanPassportData {
     pub iris_lsh_value: String, // one-way feature for example
     pub social_id_has_abc: bool, // type-3
 
+    // signature of (real_name +  custom_secret_data)
+    pub real_name_and_secret_signature: String,
+
     pub social_oracle_data_proof_data: String,
     pub biometrics_oracle_data_proof_data: String,
 

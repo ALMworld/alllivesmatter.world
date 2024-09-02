@@ -45,11 +45,19 @@ fn prove_my_unique_existence(request: &HumanPassportIssueRequest) -> HumanPasspo
 
     let ordinary_nick_name = "ordinary ".to_string() + &request.nick_name;
 
+    let real_name_signature_input = request.real_name_oracle_input.clone() + "_" + &request.custom_secret_data;
+
+    // envelope could be used to prove the real name and secret are indeed real data
+    let mut real_name_and_secret_one_way_hasher = Sha256::new();
+    real_name_and_secret_one_way_hasher.update(real_name_signature_input.as_bytes());
+    let real_name_signature = general_purpose::URL_SAFE_NO_PAD.encode(real_name_and_secret_one_way_hasher.finalize());
+
     HumanPassportData {
         human_id,
         nick_name: request.nick_name.clone(),
         contact_email: request.contact_email.clone(),
         social_id_has_abc: true, // computation do not support this
+        real_name_and_secret_signature: real_name_signature,
         social_oracle_data_proof_data: request.social_oracle_data_proof_data.clone(),
         custom_secret_has_ordinary_nick_name_inside: request.custom_secret_data.contains(&ordinary_nick_name),
         real_name_and_social_id_has_no_sep_char: !contains_sep_char,

@@ -1,7 +1,4 @@
 import { Suspense, useCallback, useEffect, useRef, useState } from "react";
-import { MeshBasicMaterial } from "three";
-import Globe from "react-globe.gl";
-import countries from "../assets/countries.json";
 import React from "react";
 
 const World = React.lazy(() => import('./World'));

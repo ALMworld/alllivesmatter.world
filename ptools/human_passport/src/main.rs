@@ -178,6 +178,7 @@ fn display_passport_values(receipt: &Receipt) {
     println!("SecretHasOrdinaryNickName: {}", journal_data.custom_secret_has_ordinary_nick_name_inside);
     println!("realNameAndSocialIdHasNoSepChar: {}", journal_data.real_name_and_social_id_has_no_sep_char);
     println!("socialOracleDataProofData: {}", journal_data.social_oracle_data_proof_data);
+    println!("realNameAndSecretSignature: {}", journal_data.real_name_and_secret_signature);
     println!("biometricsOracleDataProofData: {}", journal_data.biometrics_oracle_data_proof_data);
     println!("Iris Hash: {}", journal_data.iris_lsh_value);
     println!("SocialIdHasAbc: {}", journal_data.social_id_has_abc);

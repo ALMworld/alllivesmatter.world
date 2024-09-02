@@ -130,3 +130,13 @@ nav select {
   -moz-user-select: text;
   -ms-user-select: text;
 }
+
+
+@keyframes slowFloat {
+  0%, 10%, 90%, 100% { opacity: 1; transform: scale(1.2); }
+  50% { opacity: 0.96; transform: scale(0.98); }
+}
+
+.slow-float {
+  animation: slowFloat 6s ease-in-out infinite;
+}
