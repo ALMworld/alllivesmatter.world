@@ -1,0 +1,5 @@
+## KindKang's Invitation: Embrace the Superpower of AllLivesMatter·World
+
+Hi everyone! My name is KindKang, an advocate for www.AllLivesMatter.World. The advocacy is a global call for humanity and compassion, calling for peace and advocating for "Kindness First, Fairness Always, and DUKI In Action". (DUKI stands for Decentralized Universal Kindness Income.). As an ordinary person with very limited resources, I'm facing challenges spreading this message. Some platforms have blocked or restricted my new accounts, making outreach difficult. 
+
+I am inviting you to join the cause and help spread the message out. I sincerely believe that "ALL LIVES MATTER" is not just a truth to uphold but also a unifying superpower that all lives can hold. Holding this superpower, every voice and action will matter, whether in the spotlight or the shadows. By uniting in both word and deed, we can build a world where all lives truly matter.
