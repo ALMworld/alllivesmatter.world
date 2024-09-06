@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "dev": "vite",
+    "dev": "vite --host",
     "generate-types": "quicktype public/i18n/en.json -o src/data/data_types.ts"
   },
   "dependencies": {

@@ -41,14 +41,15 @@ It relies on  freedom of criticism, ensuring that authorities truly fulfill thei
 
 ###  Three Elements in DUKI context
 #### [Human Unique Features]
-are characteristics that can help uniquely identify an individual. These can be inherent, like biometric data; assigned, such as government-issued IDs; or user-created, like passwords or secret phrases. If features that has an stable digital representation, they could be used as components of a passport id, while other features can be used to enhance uniqueness in the system. 
-Analogy: the Human Passport is like a 'username', while these Human Unique Features are like a 'password'.
+Human Unique Features are characteristics that can help uniquely identify an individual. These can be inherent, like biometric data; assigned, such as government-issued IDs; or user-created, like passwords. If features have a stable digital representation, they could be used as components of a passport ID, while other features can be used to enhance uniqueness in the system.
+To put it simply: the Human Passport is like a 'username', while these Human Unique Features can be used to prove you own it. This is similar to how we use passwords and two-factor authentication in digital systems today, or how Web3 wallets use public addresses (like a username) and private keys (to prove ownership).
+
 
 #### [Oracle Data] 
-is a digital representation of Human Unique Features used as input for Human Passport. This representation could potentially be faulty or inaccurate, and requires consistent proof, preferably through zero-knowledge proofs. This ongoing proof helps maintain the integrity of the system. 
+Oracle Data is a digital representation of Human Unique Features used as input for Human Passport. This representation could potentially be faulty or inaccurate, and requires consistent proof, preferably through zero-knowledge proofs. This ongoing proof helps maintain the integrity of the system. 
 
 #### [Oracle Data Authority]
-is an authority responsible for the correctness of Oracle Data by doing proof . It should always welcome criticisms and when criticism occurs, it is required to conduct further validation to prove its authenticity, in this case to ensure Oracle Data always accurately represents Human Unique Features.
+ Oracle Data Authority is an authority responsible for the correctness of Oracle Data by doing proof . It should always welcome criticisms and when criticism occurs, it is required to conduct further validation to prove its authenticity, in this case to ensure Oracle Data always accurately represents Human Unique Features.
 
 ### Human Passport Issuance: 
 - Using a device implemented by manufacturers that adheres to established standards and utilizes my Human Unique Feature, I generate a Human Passport. This passport is essentially a receipt in zkVM terms, generated through zero-knowledge computation. It claims my unique existence with the ID '-4k7lEJJeVV480eVe9HCoCTDwVI1zMPQMswSaJf6F0s'. Along with other metadata such as hardware manufacturer information and one-way features derived from other data. 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import { LANGUAGES } from '../constants/index';
@@ -10,6 +10,8 @@ export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [langMenuOpen, setLangMenuOpen] = useState(false);
     const menuData = useMenuData();
+    const langMenuRef = useRef(null);
+
 
     const onChangeLang = (code: string) => {
         i18n.changeLanguage(code);
@@ -18,6 +20,19 @@ export const Header = () => {
     const closeMenu = () => {
         setIsOpen(false);
     };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (langMenuRef.current && !langMenuRef.current.contains(event.target)) {
+                setLangMenuOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
         <header className="bg-gray-800 text-white w-full">
@@ -42,7 +57,7 @@ export const Header = () => {
 
                     <div className="flex-grow"></div>
 
-                    <div className="relative ml-4 p-2">
+                    <div className="relative ml-4 p-2" ref={langMenuRef}>
                         <button
                             className="flex items-center space-x-1 hover:text-yellow-400"
                             onClick={() => setLangMenuOpen(!langMenuOpen)}
