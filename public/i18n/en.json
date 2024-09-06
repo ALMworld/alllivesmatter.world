@@ -9,7 +9,8 @@
     },
     "common_data": {
         "share_text": "Advocate Worldwide",
-        "share_url": "https://www.alllivesmatter.world",
+        "share_url": "Www.AllLivesMatter.World",
+        "share_advocacy": "Global Call for Humanity and Compassion, Calling for Peace and Advocating for Kindness First, Fairness Always, and DUKI In Action.",
         "duki_terms_header": "DUKI TERMS",
         "duki_terms": [
             {
@@ -49,7 +50,7 @@
         "slogan_headline_suffix": "world",
         "slogan_target_part": "ALL LIVES",
         "slogan_highlight_part": "MATTER",
-        "advocacy": "A Global Call for Humanity and Compassion, Calling for Peace",
+        "advocacy": "Global Call for Humanity and Compassion, Calling for Peace",
         "advocacy_details": [
             {
                 "content": "Kindness First",
@@ -129,8 +130,8 @@
                 "author": "Robert Axelrod",
                 "title": "The Evolution of Cooperation",
                 "author_link": "https://en.wikipedia.org/wiki/Robert_Axelrod_(political_scientist)",
+                "link":"https://en.wikipedia.org/wiki/The_Evolution_of_Cooperation",
                 "intro": "We assume that, in a world ruled by natural selection, selfishness pays. So why cooperate? In The Evolution of Cooperation, political scientist Robert Axelrod seeks to answer this question. In 1980, he organized the famed Computer Prisoners Dilemma Tournament, which sought to find the optimal strategy for survival in a particular game. Over and over, the simplest strategy, a cooperative program called Tit for Tat, shut out the competition. In other words, cooperation, not unfettered competition, turns out to be our best chance for survival.",
-                "link": "",
                 "get_book": [
                     {
                         "buy_url": "https://amzn.to/3Z3uztI",
@@ -152,7 +153,7 @@
                 "title": "The Selfish Gene",
                 "author_link": "https://en.wikipedia.org/wiki/Richard_Dawkins",
                 "intro": "Published in 1976, 'The Selfish Gene' revolutionized the way we understand evolutionary biology. The book popularizes the gene-centered view of evolution, explaining how genetic survival impacts the behavior of organisms. Dawkins introduces the concept of 'selfish' genes acting in a way that increases their own chance of replication, often at the expense of the organism's other interests.",
-                "link": "",
+                "link": "https://en.wikipedia.org/wiki/The_Selfish_Gene",
                 "topic1": {
                     "headline": "Gene-Centered View of Evolution",
                     "content": "Exploring how genes, not organisms, are the true survivors in the evolutionary process."
@@ -173,6 +174,7 @@
                 "author": "Charles Darwin",
                 "author_link": "https://en.wikipedia.org/wiki/Charles_Darwin",
                 "title": "On the Origin of Species",
+                "link": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species",
                 "intro": "First published in 1859, 'On the Origin of Species' is the foundational text of evolutionary biology. In it, Darwin introduces the scientific theory that populations evolve over the course of generations through a process of natural selection. The book presented a body of evidence that the diversity of life arose by common descent through a branching pattern of evolution.",
                 "topic1": {
                     "headline": "Survival of the fittest",
@@ -318,7 +320,7 @@
                     "As a non-native English speaker living in a non-English-speaking country -- which I'd rather not specify due to the foreseeable biases that could be imposed on me -- and working on the AllLivesMatter.World project, I could never have completed this without God's help. This encompasses the kindness I've received from my family, friends, and others; the knowledge and growth I've gained through MOOCs and other educational experiences; the wisdom of great minds, both present and historical, easily accessible through the internet and AI language models; and all the positive influences that have shaped my understanding and character. The manifestation of AllLivesMatter.World is something no single individual could ever achieve alone, yet it's present in our collective humanity. I credit all of this to 'God'.",
                     "I'm pretty much tone-deaf and know next to nothing about music. I came across the song accidentally one night while working on AllLivesMatter.World. It was playing as background music from my wife's TikTok-like video feed. The moment I heard it, I got it. I searched for its name, sensing a great goodness within it, even though the video content and comments didn't fully reflect it. Some comments expressed fear, with people admitting they dared not listen further. But I still felt the vast goodness inside the song.",
                     "Finally, I located the Tommee Profitt <a href='https://www.youtube.com/watch?v=PQuq4umpb3Q' target='new' class='inline_ref'>masterpiece</a> on YouTube and learned its name: 'O Come, O Come, Emmanuel'. I've been listening to it day and night. There are indeed haunting sounds and a sense of dark power in it, yet there is far more goodness. I hear the clash of swords, the roars of demons, and the cries of innocents. I hear the sounds of mass conflicts and wars, but these are overlaid with angels singing and praying for the soldiers fighting against the powerful evil. It echoes the sounds of the world we're in - the rattle of gunfire as soldiers fight, the explosions of artillery, and the fervent prayers for peace rising above the chaos. These sounds resonate from conflict zones like Israel and Palestine, Russia and Ukraine, and other regions trapped in struggles initiated by malevolent forces. It is the sound of innocents suffering, yet also singing and praying for the soldiers fighting evil, believing they will win - and win big - to bring peace and joy to all the world.",
-                    "I felt the presence of 'God' again, and I am certain more than ever that I needed to spread this message out by initiating a global call for humanity and compassion, especially to those with power, whether empowered by people or earned through their merit and works. By embracing kindness, fairness, and DUKI, we can resolve these massive conflicts, achieve peace, and prevent similar tragedies from happening.",
+                    "I felt the presence of 'God' again, and I am certain more than ever that I needed to spread this message out by initiating the global call for humanity and compassion, especially to those with power, whether empowered by people or earned through their merit and works. By embracing kindness, fairness, and DUKI, we can resolve these massive conflicts, achieve peace, and prevent similar tragedies from happening.",
                     "There is evil within humanity, which sometimes manifests its true nature fully through actions that cause hurt, death, and destruction. We see this in acts of violence, war, and deliberate cruelty. But beyond these obvious manifestations, evil also lurks hidden in the shadows of our collective consciousness. It permeates across all colors, nationalities, sexes, and different religions - in every group we might define.",
                     "But sisters and brothers, let's recognize the true nature of our real enemies. It's not entire groups of people, but rather the individuals who choose to do evil, whether by causing overt harm or through more subtle means. This includes those who pervert justice through partiality, bribery. As it is written, 'You shall judge the people with righteous judgment. You shall not pervert justice. You shall not show partiality, and you shall not accept a bribe, for a bribe blinds the eyes of the wise and subverts the cause of the righteous.'",
                     "Evil manifests in actions that undermine undermine kindess and fairness, favoring some over others based on prejudice or personal gain. It can hide behind institutions, ideologies, or even well-intentioned policies. Our true adversaries are not our sisters and brothers of different nationalities, colors, or beliefs, but rather those who choose to act unjustly, regardless of their background or the guise under which they operate.",
@@ -337,7 +339,7 @@
                 "question": "My Thanks to BLM: A Great and Inspiring Movement",
                 "answers": [
                     "Black Lives Matter is a great movement that has made a great positive impact on the world. It inspires great aspirations and illuminates a path forward in the face of prejudice and injustice. As long as unfairness exists, the world can draw inspiration and guidance from BLM. Thanks, BLM. Thanks to all the people who make it great.",
-                    "Taking inspiration from BLM(too) and considering the unnecessary death, hurt, and hatred caused by mass conflicts, whether it's the wars orchestrated by those who wield power without conscience, the senseless violence and unjustified hatred inflicted on innocent individuals or the entire groups due to the actions of a few bad actors within them, or the widespread suffering caused by systemic oppression and discrimination, the new advocacy emerges: AllLivesMatter.World: A Global Call for Humanity and Compassion which advocates kindness, fairness, and DUKI by all and for all. And I believe that by fully embracing this approach, we can strive to significantly reduce mass conflicts and foster a society where everyone has the opportunity to cultivate their own merits. In this vision, individuals are valued fairly based on the merits of their behaviors, not by their color, nationality, gender, religion, and the powers that claim to speak for their soul, nor by any other characteristic that has been or could be used as a basis for unfair discrimination. "
+                    "Taking inspiration from BLM(too) and considering the unnecessary death, hurt, and hatred caused by mass conflicts, whether it's the wars orchestrated by those who wield power without conscience, the senseless violence and unjustified hatred inflicted on innocent individuals or the entire groups due to the actions of a few bad actors within them, or the widespread suffering caused by systemic oppression and discrimination, the new advocacy emerges: AllLivesMatter.World - A Global Call for Humanity and Compassion which advocates kindness, fairness, and DUKI by all and for all. And I believe that by fully embracing this approach, we can strive to significantly reduce mass conflicts and foster a society where everyone has the opportunity to cultivate their own merits. In this vision, individuals are valued fairly based on the merits of their behaviors, not by their color, nationality, gender, religion, and the powers that claim to speak for their soul, nor by any other characteristic that has been or could be used as a basis for unfair discrimination. "
                 ]
             },
             {

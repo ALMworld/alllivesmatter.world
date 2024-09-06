@@ -133,7 +133,7 @@ nav select {
 
 
 @keyframes slowFloat {
-  0%, 10%, 90%, 100% { opacity: 1; transform: scale(1.18); }
+  0%, 10%, 90%, 100% { opacity: 1; transform: scale(1.16); }
   50% { opacity: 0.96; transform: scale(0.98); }
 }
 
@@ -143,16 +143,12 @@ nav select {
   60% { transform: translateY(-5px); }
 }
 
-.slow-float {
-  animation: slowFloat 6s ease-in-out infinite;
-}
-
 .slow-bounce.slow-float {
-  animation: slowFloat 6s ease-in-out 6, bounce 4s 6;
+  animation: slowFloat 6s ease-in-out infinite, bounce 4s 3;
   /* transition: transform 0.6s ease; */
 }
 
 .slow-bounce:hover {
   animation: none;
-  transform: scale(1.1);
+  transform: scale(1.28);
 }

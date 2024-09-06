@@ -49,7 +49,7 @@ const Why = () => {
                                 <div>
                                     <div className="flex justify-between items-center mb-4">
                                         <span className="text-2xl font-bold text-yellow-400 selectable-text">
-                                            <a href={book.book_link} target="_blank" rel="noopener noreferrer selectable-text">
+                                            <a href={book.link} target="_blank" rel="noopener noreferrer selectable-text">
                                                 <span className='selectable-text'>
                                                     {book.title}
                                                 </span>

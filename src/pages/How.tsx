@@ -21,7 +21,7 @@ const How = () => {
                         <h3 className="text-2xl mb-6 text-[#d20033] selectable-text">{data.contribute_by_action_text}</h3>
                         <div className="space-y-6 mb-8">
                             {advocacyData.advocacy_details.map((advocate, index) => (
-                                <div className="flex items-center justify-center space-x-2  ">
+                                <div key={index} className="flex items-center justify-center space-x-2  ">
                                     <AlmIcon value={advocate.icon} className="text-yellow-500 " size={16} />
                                     <h4 className="text-2xl font-bold selectable-text">
                                         {advocate.content.replace(/DUKI/g, 'Dukiness')}

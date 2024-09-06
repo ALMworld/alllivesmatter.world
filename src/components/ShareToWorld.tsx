@@ -59,7 +59,8 @@ export default function ShareToWorld({ data }) {
 
     // const shareUrl = 'https://www.alllivesmatter.world';
     const shareUrl = data.share_url;
-    const title = data.share_title;
+    // const title = data.share_title;
+    const title = data.share_advocacy;
     const exampleImage = "/alm.jpg"
                             // <img src="" alt="ALM" width={64} height={64} />
 

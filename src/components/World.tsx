@@ -1,10 +1,11 @@
 import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 import { MeshBasicMaterial } from "three";
-import Globe from "react-globe.gl";
+import Globe from "globe.gl";
 import countries from "../assets/countries.json";
 
 
 export default function World() {
+  const globeContainerRef = useRef(null);
   const globeRef = useRef(null);
 
   const [isGlobeLoaded, setIsGlobeLoaded] = useState(false);
@@ -46,7 +47,8 @@ export default function World() {
   const globeMaterial = new MeshBasicMaterial({
     color: globeMaterialColor,
     opacity: 0.95,
-    transparent: true
+    transparent: true,
+    precision: 'mediump'
   });
 
   const rendererConfig = {
@@ -56,23 +58,6 @@ export default function World() {
     powerPreference: "low-power"
   };
 
-  const globeReady = () => {
-    if (globeRef.current) {
-      globeRef.current.controls().autoRotate = true;
-      globeRef.current.controls().enableZoom = false;
-      globeRef.current.controls().autoRotateSpeed = 0.5;
-
-      globeRef.current.pointOfView({
-        lat: 19.054339351561637,
-        lng: -50.421161072148465,
-        altitude: 1.8,
-      });
-      setTimeout(() => {
-        setIsGlobeLoaded(true);
-      }, 100);
-
-    }
-  };
 
   const [hexPolygonColor, setHexPolygonColor] = useState(hexStartPolygonColor);
 
@@ -125,6 +110,71 @@ export default function World() {
     }, arcFlightTime);
   }, [labelsData]);
 
+  useEffect(() => {
+    if (globeContainerRef.current && !globeRef.current) {
+      globeRef.current = Globe({ rendererConfig })(globeContainerRef.current)
+        .globeMaterial(globeMaterial)
+        .width(300)
+        .height(300)
+        .backgroundColor("rgba(0,0,0,0)")
+        .atmosphereAltitude(0.1)
+        .hexPolygonsData(countriesData)
+        .hexPolygonAltitude(0.02)
+        .hexPolygonCurvatureResolution(0)
+        .hexPolygonResolution(3)
+        .hexPolygonMargin(0.3)
+        .hexPolygonUseDots(true)
+        .hexPolygonColor(() => hexPolygonColor)
+        .labelsData(labelsData)
+        .labelLat(d => d.properties.LABEL_Y) 
+        .labelLng(d => d.properties.LABEL_X)
+        .labelText(d => d.properties.NAME)
+        .labelSize(labelSize)
+        .labelDotRadius(0.8)
+        .labelColor((labelData) => {
+          const uuid = labelData.__threeObj.uuid;
+          const hash = uuid.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
+          return hash % 3 >= 1 ? "#ffba49" : "#ffffff";
+        })
+        .labelAltitude(0.03)
+        .labelResolution(labelResolution)
+        .arcsData(arcsData)
+        .arcDashLength(arcRelativeLength)
+        .arcDashGap(2)
+        .arcDashInitialGap(1)
+        .arcDashAnimateTime(arcFlightTime)
+        .arcColor(() => "#ffba49")
+        .arcAltitudeAutoScale(0.3)
+        .arcsTransitionDuration(0)
+        .ringsData(ringsData)
+        .ringMaxRadius(ringMaxRadius)
+        .ringPropagationSpeed(ringPropagationSpeed)
+        .ringRepeatPeriod(ringRepeatPeriod)
+        .ringColor(() => t => `rgba(255, 186, 73, ${1 - t})`)
+        .ringAltitude(0.03)
+        .onGlobeReady(() => {
+          globeRef.current.controls().autoRotate = true;
+          globeRef.current.controls().enableZoom = false;
+          globeRef.current.controls().autoRotateSpeed = 0.5;
+          globeRef.current.pointOfView({
+            lat: 19.054339351561637,
+            lng: -50.421161072148465,
+            altitude: 1.8,
+          });
+          setTimeout(() => setIsGlobeLoaded(true), 100);
+        });
+    }
+  }, []);
+
+  useEffect(() => {
+    if (globeRef.current) {
+      globeRef.current
+        .hexPolygonColor(() => hexPolygonColor)
+        .arcsData(arcsData)
+        .ringsData(ringsData);
+    }
+  }, [hexPolygonColor, arcsData, ringsData]);
+
   // spawn arcs regularly
   useEffect(() => {
     if (arcsData.length < maxNumArcs) {
@@ -139,7 +189,8 @@ export default function World() {
 
   return (
     <div className="App" style={{ visibility: isGlobeLoaded ? 'visible' : 'hidden' }}>
-      <Globe
+      <div ref={globeContainerRef} />
+      {/* <Globe
         ref={globeRef}
         // globeImageUrl="//unpkg.com/three-globe/example/img/earth-dark.jpg"
         width={300}
@@ -206,7 +257,7 @@ export default function World() {
         ringAltitude={0.03}
         waitForGlobeReady={true}
         rendererConfig={rendererConfig}
-      />
+      /> */}
     </div>
   );
 }

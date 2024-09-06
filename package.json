@@ -10,12 +10,12 @@
     "generate-types": "quicktype public/i18n/en.json -o src/data/data_types.ts"
   },
   "dependencies": {
+    "globe.gl": "^2.32.5",
     "i18next": "22.4.9",
     "i18next-http-backend": "2.1.1",
     "lucide-react": "^0.427.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-globe.gl": "^2.27.2",
     "react-i18next": "12.1.4",
     "react-resizable": "^3.0.5",
     "react-router-dom": "6.6.2",

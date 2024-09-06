@@ -9,7 +9,7 @@ const About = () => {
     const faqData = aboutData.faq_list;
 
     return (
-        <div className="w-full bg-gray-900 text-white p-8 rounded-xl">
+        <div className="w-full bg-gray-900 text-white p-8">
             <div className='mx-auto max-w-4xl' >
                 <h2 className="text-xl text-yellow-400 mb-4 selectable-text">
                     {aboutData.title}
@@ -18,7 +18,7 @@ const About = () => {
                 <FightWarWithHumanity watch_interview_text={aboutData.watch_interview_text} watch_news_text={aboutData.watch_news_text} disclaimer={aboutData.video_spirit_disclaimer} />
 
                 {aboutData.sections.map((section, index) => (
-                    <p className="text-gray-300 mb-4 selectable-text" dangerouslySetInnerHTML={{ __html: section }} />
+                    <p key={index} className="text-gray-300 mb-4 selectable-text" dangerouslySetInnerHTML={{ __html: section }} />
                 ))}
 
                 {faqData.map((item, index) => (

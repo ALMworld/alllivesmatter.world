@@ -67,14 +67,14 @@ export interface AdvocacyDetail {
 }
 
 export interface KeyPoint {
-    title:         string;
-    description:   string;
-    description_?: string;
+    title:       string;
+    description: string;
 }
 
 export interface CommonData {
     share_text:        string;
     share_url:         string;
+    share_advocacy:    string;
     duki_terms_header: string;
     duki_terms:        DukiTerm[];
 }
@@ -108,9 +108,8 @@ export interface Book {
     author:      string;
     title:       string;
     author_link: string;
-    book_link:   string;
+    link:        string;
     intro:       string;
-    link?:       string;
     get_book:    GetBook[];
     topic1:      Topic;
     topic2:      Topic;
@@ -353,11 +352,11 @@ const typeMap: any = {
     "KeyPoint": o([
         { json: "title", js: "title", typ: "" },
         { json: "description", js: "description", typ: "" },
-        { json: "description_", js: "description_", typ: u(undefined, "") },
     ], false),
     "CommonData": o([
         { json: "share_text", js: "share_text", typ: "" },
         { json: "share_url", js: "share_url", typ: "" },
+        { json: "share_advocacy", js: "share_advocacy", typ: "" },
         { json: "duki_terms_header", js: "duki_terms_header", typ: "" },
         { json: "duki_terms", js: "duki_terms", typ: a(r("DukiTerm")) },
     ], false),
@@ -386,9 +385,8 @@ const typeMap: any = {
         { json: "author", js: "author", typ: "" },
         { json: "title", js: "title", typ: "" },
         { json: "author_link", js: "author_link", typ: "" },
-        { json: "book_link", js: "book_link", typ: "" },
+        { json: "link", js: "link", typ: "" },
         { json: "intro", js: "intro", typ: "" },
-        { json: "link", js: "link", typ: u(undefined, "") },
         { json: "get_book", js: "get_book", typ: a(r("GetBook")) },
         { json: "topic1", js: "topic1", typ: r("Topic") },
         { json: "topic2", js: "topic2", typ: r("Topic") },

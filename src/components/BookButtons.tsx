@@ -1,4 +1,5 @@
 import React from 'react';
+import { GetBook } from '../data/data_types';
 
 const BookButton = ({ buyUrl, buyText, storeIcon }) => (
   <a
@@ -18,14 +19,14 @@ const BookButton = ({ buyUrl, buyText, storeIcon }) => (
   </a>
 );
 
-const BookButtons = ({ getBook }) => (
+const BookButtons: React.FC<{ getBook: GetBook[] }> = ({ getBook }) => (
   <div className="flex flex-wrap items-center gap-2 mt-4">
-    {getBook.map((bookGet, index) => (
+    {getBook.map((book_get, index) => (
       <BookButton
         key={index}
-        buyUrl={bookGet.buy_url}
-        buyText={bookGet.buy_text}
-        storeIcon={bookGet.store_icon}
+        buyUrl={book_get.buy_url}
+        buyText={book_get.buy_text}
+        storeIcon={book_get.store_icon}
       />
     ))}
   </div>
