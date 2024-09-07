@@ -126,12 +126,16 @@ export default function World() {
         .hexPolygonUseDots(true)
         .hexPolygonColor(() => hexPolygonColor)
         .labelsData(labelsData)
+        // @ts-ignore
         .labelLat(d => d.properties.LABEL_Y) 
+        // @ts-ignore
         .labelLng(d => d.properties.LABEL_X)
+        // @ts-ignore
         .labelText(d => d.properties.NAME)
         .labelSize(labelSize)
         .labelDotRadius(0.8)
         .labelColor((labelData) => {
+        // @ts-ignore
           const uuid = labelData.__threeObj.uuid;
           const hash = uuid.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
           return hash % 3 >= 1 ? "#ffba49" : "#ffffff";
@@ -190,74 +194,6 @@ export default function World() {
   return (
     <div className="App" style={{ visibility: isGlobeLoaded ? 'visible' : 'hidden' }}>
       <div ref={globeContainerRef} />
-      {/* <Globe
-        ref={globeRef}
-        // globeImageUrl="//unpkg.com/three-globe/example/img/earth-dark.jpg"
-        width={300}
-        height={300}
-        backgroundColor="rgba(0,0,0,0)"
-        globeMaterial={globeMaterial}
-        atmosphereAltitude={0.1}
-        hexPolygonsData={countriesData}
-        hexPolygonAltitude={0.02}
-        // hexPolygonResolution={2}
-        // hexPolygonMargin={0.85}
-        // hexPolygonColor={useCallback(() => "#000000", [])}
-        hexPolygonCurvatureResolution={0}
-        // globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
-        hexPolygonResolution={3}
-        hexPolygonMargin={0.3}
-        animateIn={true}
-
-        hexPolygonUseDots={true}
-        // hexPolygonColor={(d) =>
-        //   //   d.properties.REGION_UN == "Americas" ? "#dbdbdb" : "#000"
-        //   hexPolygonColor
-        // }
-        hexPolygonColor={useCallback((d) => {
-          return hexPolygonColor;  // Return default color if data is incomplete
-        }, [hexPolygonColor])}
-        onGlobeReady={globeReady}
-
-        labelsData={labelsData}
-        labelLat={useCallback((d) => d.properties.LABEL_Y, [])}
-        labelLng={useCallback((d) => d.properties.LABEL_X, [])}
-        labelText={useCallback((d) => d.properties.NAME, [])}
-        labelSize={labelSize}
-        labelDotRadius={0.8}
-        // labelColor={useCallback(() => "#ffba49", [])}
-        labelColor={useCallback((labelData) => {
-          // Get the UUID of the three.js object
-          const uuid = labelData.__threeObj.uuid;
-          // Create a deterministic "random" color based on the UUID
-          const hash = uuid.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
-          // Use the hash to determine the color
-          const color = hash % 3 >= 1 ? "#ffba49" : "#ffffff";
-
-          return color;
-        }, [])}
-
-
-        labelAltitude={0.03}
-        labelResolution={labelResolution}
-        arcsData={arcsData}
-        arcDashLength={arcRelativeLength}
-        arcDashGap={2}
-        arcDashInitialGap={1}
-        arcDashAnimateTime={arcFlightTime}
-        arcColor={useCallback(() => "#ffba49", [])}
-        arcAltitudeAutoScale={0.3}
-        arcsTransitionDuration={0}
-        ringsData={ringsData}
-        ringMaxRadius={ringMaxRadius}
-        ringPropagationSpeed={ringPropagationSpeed}
-        ringRepeatPeriod={ringRepeatPeriod}
-        // ringColor={useCallback(() => (t) => `rgba(255,255,255,${1 - t})`, [])}
-        ringColor={useCallback(() => (t) => `rgba(255, 186, 73, ${1 - t})`, [])}
-        ringAltitude={0.03}
-        waitForGlobeReady={true}
-        rendererConfig={rendererConfig}
-      /> */}
     </div>
   );
 }
