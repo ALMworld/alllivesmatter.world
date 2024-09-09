@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Users, GraduationCap, Briefcase, HeartPulse, Scale, MoreHorizontal, X } from 'lucide-react';
 import ShareToWorld from '../components/ShareToWorld';
 import { useAdvocacyData, useCommonData, useHowData } from '../data/data_provider';
-import AlmIcon from '../components/AlmIcon';
+import AlmIconUnit from '../components/AlmIconUnit';
 
 const How = () => {
     const data = useHowData();
@@ -22,11 +22,11 @@ const How = () => {
                         <div className="space-y-6 mb-8">
                             {advocacyData.advocacy_details.map((advocate, index) => (
                                 <div key={index} className="flex items-center justify-center space-x-2  ">
-                                    <AlmIcon value={advocate.icon} className="text-yellow-500 " size={16} />
+                                    <AlmIconUnit value={advocate.icon} className="text-yellow-500 " size={16} />
                                     <h4 className="text-2xl font-bold selectable-text">
                                         {advocate.content.replace(/DUKI/g, 'Dukiness')}
                                     </h4>
-                                    <AlmIcon value={advocate.icon} className="text-yellow-500" size={16} />
+                                    <AlmIconUnit value={advocate.icon} className="text-yellow-500" size={16} />
                                 </div>
                             ))}
                         </div>

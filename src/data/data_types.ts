@@ -21,6 +21,8 @@ export interface AboutData {
     title:                   string;
     watch_interview_text:    string;
     watch_news_text:         string;
+    invitation_letter_text:  string;
+    invitation_letter:       string;
     video_spirit_disclaimer: string;
     sections:                string[];
     links:                   Links;
@@ -28,10 +30,11 @@ export interface AboutData {
 }
 
 export interface FAQList {
-    question:      string;
-    answers:       string[];
-    _answers?:     string[];
-    hide_answers?: string[];
+    question:           string;
+    answer_image_list?: string[];
+    answers:            string[];
+    _answers?:          string[];
+    hide_answers?:      string[];
 }
 
 export interface Links {
@@ -54,7 +57,6 @@ export interface AdvocacyData {
     slogan_headline_suffix: string;
     slogan_target_part:     string;
     slogan_highlight_part:  string;
-    advocacy:               string;
     advocacy_details:       AdvocacyDetail[];
 }
 
@@ -310,6 +312,8 @@ const typeMap: any = {
         { json: "title", js: "title", typ: "" },
         { json: "watch_interview_text", js: "watch_interview_text", typ: "" },
         { json: "watch_news_text", js: "watch_news_text", typ: "" },
+        { json: "invitation_letter_text", js: "invitation_letter_text", typ: "" },
+        { json: "invitation_letter", js: "invitation_letter", typ: "" },
         { json: "video_spirit_disclaimer", js: "video_spirit_disclaimer", typ: "" },
         { json: "sections", js: "sections", typ: a("") },
         { json: "links", js: "links", typ: r("Links") },
@@ -317,6 +321,7 @@ const typeMap: any = {
     ], false),
     "FAQList": o([
         { json: "question", js: "question", typ: "" },
+        { json: "answer_image_list", js: "answer_image_list", typ: u(undefined, a("")) },
         { json: "answers", js: "answers", typ: a("") },
         { json: "_answers", js: "_answers", typ: u(undefined, a("")) },
         { json: "hide_answers", js: "hide_answers", typ: u(undefined, a("")) },
@@ -339,7 +344,6 @@ const typeMap: any = {
         { json: "slogan_headline_suffix", js: "slogan_headline_suffix", typ: "" },
         { json: "slogan_target_part", js: "slogan_target_part", typ: "" },
         { json: "slogan_highlight_part", js: "slogan_highlight_part", typ: "" },
-        { json: "advocacy", js: "advocacy", typ: "" },
         { json: "advocacy_details", js: "advocacy_details", typ: a(r("AdvocacyDetail")) },
     ], false),
     "AdvocacyDetail": o([

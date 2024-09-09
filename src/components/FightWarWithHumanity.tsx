@@ -1,5 +1,6 @@
 import { BarChart, Film, Loader2, Video } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
+import AlmIcon from './AlmIcon';
 
 function FightWarWithHumanity({ watch_interview_text, watch_news_text, disclaimer }: { watch_interview_text: string, watch_news_text: string, disclaimer: string }) {
     const [isLoading, setIsLoading] = useState(true);
@@ -44,7 +45,7 @@ function FightWarWithHumanity({ watch_interview_text, watch_news_text, disclaime
                 <br />
                 <p className='text-white-300 selectable-text text-sm leading-none'>{disclaimer}</p>
             </div>
-        </div>
+        </div >
     );
 }
 

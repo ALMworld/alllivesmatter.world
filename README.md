@@ -8,13 +8,15 @@
 
 DUKI (pronounced 'duːki', reminiscent of 'duty','kindness' and 'cookie') stands for Decentralized Universal Kindness Income. It refers to money distributed to everyone as an act of kindness, generated through the hard works of kind people around the world. DUKI aim to empower people to gain freedom, reject evil, do good, and spread kindness.
 
-### Why do you coin the term DUKI instead of using UBI 
-- UBI (Universal Basic Income) and DUKI ('/duːki/' Decentralized Universal Kindness Income) have many similarities. However, I coined the term DUKI mainly to explicitly highlight three key aspects: decentralization, kindness, and the source of funds. While UBI could also be decentralized and kindness-based, I wanted to make these following points explicit and clear:
-- Decentralization: By people, for people. Power to People, it can be implemented by anyone, any organization, anytime ,anywhere, without relying on a centralized body to create, contribute, or distribute power in the form of money. Crucially, participation must always be voluntary - no authority should ever force individuals to participate or force them out of participation. This ensures true freedom of choice, allowing people to engage or disengage based on their own will and circumstances. As Thomas Jefferson eloquently stated: 'To compel a man to furnish contributions of money for the propagation of opinions which he disbelieves and abhors, is sinful and tyrannical.' This principle aligns perfectly with the stance on voluntary participation, emphasizing that forcing anyone to contribute to or participate in a system they disagree with is fundamentally wrong.
-- Kindness-Based: It sparks the first flame of kindness, nurturing it into a roaring fire of compassion that spreads from one heart to another. DUKI ignites the human spirit - inspiring minds to learn, pushing boundaries in science, and fostering a relentless pursuit of knowledge and growth. It's a testament to what we can achieve when we lift each other up, creating a world where kindness begets kindness, and where our collective potential knows no bounds. By make the first kindness move and emphasizing reciprocity, DUKI aims to create a ripple effect of kindness that can transform societies from within.
-- NotBasicIncome: It is fundamentally determined by people's kindness and ability to offer support, with reciprocity playing a crucial role. Its amount can vary widely, providing less than basic needs, or exceeding them, depending on the social context. This flexibility allows DUKI to adapt to changing social dynamics and foster a culture of mutual support. The reciprocal nature of DUKI means that those who receive kindness are encouraged to pay it forward when they're able, creating a self-sustaining cycle of generosity. This system of give-and-take can lead to significant social improvements, as it not only addresses immediate needs but also builds stronger, more interconnected communities.
+Dukiness:/ˈduːkiːnəs/: Spirit behind "All Lives Matter Worldwide," which is not just a truth to uphold but also a unifying superpower that all lives can hold. Dukiness embodies the mindset and actions aligned with principles of universal kindness, fairness, and decentralized empowerment. It inspires individuals to pursue freedom, reject negativity, cultivate goodness, and spread kindness, ultimately striving to elevate the value and dignity of all lives globally.
 
-Dukiness:/ˈduːkiːnəs/: spirit behind DUKI, just like kindness and fairness. Dukiness embodies the mindset and actions aligned with principles of universal kindness, fairness, and decentralized empowerment. It inspires individuals to pursue freedom, reject negativity, cultivate goodness, and spread kindness, ultimately striving to elevate the value and dignity of all lives globally.
+
+### Why do you coin the term DUKI instead of using UBI 
+![DUKI Concept](ptools/assets/outreach/x/5_why_do_you_coin_the_term_duki_instead_of_using_ubi.png)
+
+
+### KindKang's Invitation: Embrace the Superpower of AllLivesMatter·World
+![DUKI Concept](ptools/assets/outreach/x/0_ordinary_kindkang_invitation.png)
 
 [Learn more about AllLivesMatter.World here](https://www.alllivesmatter.world).
 

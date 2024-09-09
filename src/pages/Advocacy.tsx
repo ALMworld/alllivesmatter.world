@@ -12,9 +12,6 @@ const Advocacy = () => {
     const commonData = useCommonData();
     const data = useAdvocacyData();
 
-    const [showTooltip, setShowTooltip] = useState(false);
-
-
     const [activePrincipleIndex, setActivePrincipleIndex] = useState(null);
 
     const openPrincipleModal = (modalId) => {
@@ -34,8 +31,7 @@ const Advocacy = () => {
                         <span className='text-sm selectable-text'>&nbsp;{data.slogan_headline_suffix}</span>
                     </span>
                     <p className="text-xl py-6 selectable-text">
-                        {/* <WordTooltip text={data.advocacy} word="DUKIGE" tooltip={data.dukige_definition} /> */}
-                        {data.advocacy}
+                        {data.slogan}
                     </p>
                 </h1>
 

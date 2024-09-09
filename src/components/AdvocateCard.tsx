@@ -13,9 +13,8 @@ const AdvocateCard = ({ advocate, isOpen, openModal, closeModal, children }) => 
                 {
                     dukiCard && (
                         <div className="absolute top-6 right-2 flex items-center">
-                            <span className="text-yellow-400 text-sm mr-4 cursor-help" onClick={() => 
-                            setShowDukiTerms(!showDukiTerms)
-                                
+                            <span className="text-yellow-400 text-sm mr-4 cursor-help" onClick={() =>
+                                setShowDukiTerms(!showDukiTerms)
                             }>DUKI ? </span>
                             <span className="relative">
                                 {showDukiTerms && (

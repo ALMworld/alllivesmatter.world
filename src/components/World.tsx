@@ -3,6 +3,13 @@ import { MeshBasicMaterial } from "three";
 import Globe from "globe.gl";
 import countries from "../assets/countries.json";
 
+  // const globeMaterialColor = "#101143"
+const globeMaterial = new MeshBasicMaterial({
+  color: "#101143",
+  opacity: 0.95,
+  transparent: true,
+  precision: 'mediump'
+});
 
 export default function World() {
   const globeContainerRef = useRef(null);
@@ -33,7 +40,6 @@ export default function World() {
   const hexStartPolygonColor = "#6C946F"
   // const hexPolygonColor = "#102542";  // Define a default color
 
-  const globeMaterialColor = "#101143"
   // const globeMaterialColor = "#1c3144"
   // const polygonSideColor =  '#eed31f'
   // const polygonSideColor = '#f4f1de'
@@ -44,12 +50,7 @@ export default function World() {
   // const customLayerDataColor = '#faadfd'
   // const hexEndPolygonColor = "#ffd166"
 
-  const globeMaterial = new MeshBasicMaterial({
-    color: globeMaterialColor,
-    opacity: 0.95,
-    transparent: true,
-    precision: 'mediump'
-  });
+
 
   const rendererConfig = {
     antialias: false,
