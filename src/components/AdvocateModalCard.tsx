@@ -1,6 +1,7 @@
 import React from 'react';
 import { Settings, Lock, Bot, CircleCheckBig, Flower2 } from 'lucide-react';
 import AlmIcon from './AlmIcon';
+import AlmIconUnit from './AlmIconUnit';
 
 const AdvocateModalCard = ({ advocate, onClose }) => {
     const handleOutsideClick = (e) => {
@@ -16,7 +17,7 @@ const AdvocateModalCard = ({ advocate, onClose }) => {
                 <div className="flex justify-between items-center mb-6 w-full">
                     <h2 className="text-xl font-bold text-yellow-500" dangerouslySetInnerHTML={{__html: advocate.content}}  />
                     <div className="text-yellow-500">
-                        <AlmIcon value={advocate.icon} size={24} />
+                        <AlmIconUnit value={advocate.icon} size={24} />
                     </div>
                 </div>
                 <div className="space-y-6">

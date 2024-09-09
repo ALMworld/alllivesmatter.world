@@ -1,56 +1,27 @@
-import { Suspense, useCallback, useEffect, useRef, useState } from "react";
-import { MeshBasicMaterial } from "three";
+import { useEffect, useRef, useState, useCallback } from "react";
 import Globe from "globe.gl";
 import countries from "../assets/countries.json";
-
-  // const globeMaterialColor = "#101143"
-const globeMaterial = new MeshBasicMaterial({
-  color: "#101143",
-  opacity: 0.95,
-  transparent: true,
-  precision: 'mediump'
-});
 
 export default function World() {
   const globeContainerRef = useRef(null);
   const globeRef = useRef(null);
-
   const [isGlobeLoaded, setIsGlobeLoaded] = useState(false);
+  const [hexPolygonColor, setHexPolygonColor] = useState("#FF0000");
+  const [arcsData, setArcsData] = useState([]);
+  const [ringsData, setRingsData] = useState([]);
 
-  // data
   const countriesData = countries.features;
-  // const labelsData = countriesData.filter((d) => d.properties.POP_RANK >= 0);
-  const labelsData = countriesData
-  // print out the labelsData length
-  // console.log(labelsData.length)
+  const labelsData = countriesData;
 
-
-  // config
-  const showLabelText = false;
-  const labelSize = showLabelText ? 1.5 : 0;
-  const labelResolution = showLabelText ? 3 : 1;
+  // Config
   const maxNumArcs = 12;
-  const arcRelativeLength = 0.6; // relative to whole arc
   const arcFlightTime = 3000; // ms
   const arcSpawnInterval = arcFlightTime / maxNumArcs;
+  const arcRelativeLength = 0.6; // relative to whole arc
   const numRings = 3;
   const ringMaxRadius = 5; // deg
   const ringPropagationSpeed = 2; // deg/sec
   const ringRepeatPeriod = (arcFlightTime * arcRelativeLength) / numRings;
-  const hexStartPolygonColor = "#6C946F"
-  // const hexPolygonColor = "#102542";  // Define a default color
-
-  // const globeMaterialColor = "#1c3144"
-  // const polygonSideColor =  '#eed31f'
-  // const polygonSideColor = '#f4f1de'
-  // const atmosphereColor = 'red'
-  // const pointColor = '#e07a5f'
-  // // '#49ac8f'
-  // const polygonCapMaterialColor = "#e07a5f"  // color of land
-  // const customLayerDataColor = '#faadfd'
-  // const hexEndPolygonColor = "#ffd166"
-
-
 
   const rendererConfig = {
     antialias: false,
@@ -59,15 +30,9 @@ export default function World() {
     powerPreference: "low-power"
   };
 
-
-  const [hexPolygonColor, setHexPolygonColor] = useState(hexStartPolygonColor);
-
-  // logic
-  const [arcsData, setArcsData] = useState([]);
-  const [ringsData, setRingsData] = useState([]);
-
   const spawnArc = useCallback(() => {
-    // random source and destination
+    if (labelsData.length === 0) return;
+
     const srcIdx = Math.floor(Math.random() * labelsData.length);
     let destIdx;
     do {
@@ -75,46 +40,35 @@ export default function World() {
     } while (destIdx === srcIdx);
 
     const { LABEL_Y: srcLat, LABEL_X: srcLng } = labelsData[srcIdx].properties;
-    const { LABEL_Y: destLat, LABEL_X: destLng } = labelsData[
-      destIdx
-    ].properties;
+    const { LABEL_Y: destLat, LABEL_X: destLng } = labelsData[destIdx].properties;
 
-
-    // add and remove source rings
+    const arc = { startLat: srcLat, startLng: srcLng, endLat: destLat, endLng: destLng };
+    
     const srcRing = { lat: srcLat, lng: srcLng };
-    setRingsData((curRingsData) => [...curRingsData, srcRing]);
+    setRingsData(rings => [...rings, srcRing]);
     setTimeout(() => {
-      setRingsData((curRingsData) => curRingsData.filter((r) => r !== srcRing));
+      setRingsData(rings => rings.filter(r => r !== srcRing));
     }, arcFlightTime * arcRelativeLength);
 
-    // add and remove arc after 1 cycle
-    const arc = {
-      startLat: srcLat,
-      startLng: srcLng,
-      endLat: destLat,
-      endLng: destLng
-    };
-    setArcsData((curArcsData) => [...curArcsData, arc]);
+    setArcsData(arcs => [...arcs, arc]);
     setTimeout(() => {
-      setArcsData((curArcsData) => curArcsData.filter((d) => d !== arc));
+      setArcsData(arcs => arcs.filter(d => d !== arc));
     }, arcFlightTime * 2);
 
-    // add and remove destination rings
     setTimeout(() => {
       const destRing = { lat: destLat, lng: destLng };
-      setRingsData((curRingsData) => [...curRingsData, destRing]);
+      setRingsData(rings => [...rings, destRing]);
       setTimeout(() => {
-        setRingsData((curRingsData) =>
-          curRingsData.filter((r) => r !== destRing)
-        );
+        setRingsData(rings => rings.filter(r => r !== destRing));
       }, arcFlightTime * arcRelativeLength);
     }, arcFlightTime);
-  }, [labelsData]);
+  }, [labelsData, arcFlightTime, arcRelativeLength]);
 
   useEffect(() => {
     if (globeContainerRef.current && !globeRef.current) {
-      globeRef.current = Globe({ rendererConfig })(globeContainerRef.current)
-        .globeMaterial(globeMaterial)
+      const globe = Globe({ rendererConfig })(globeContainerRef.current);
+      
+      globe
         .width(300)
         .height(300)
         .backgroundColor("rgba(0,0,0,0)")
@@ -126,23 +80,6 @@ export default function World() {
         .hexPolygonMargin(0.3)
         .hexPolygonUseDots(true)
         .hexPolygonColor(() => hexPolygonColor)
-        .labelsData(labelsData)
-        // @ts-ignore
-        .labelLat(d => d.properties.LABEL_Y) 
-        // @ts-ignore
-        .labelLng(d => d.properties.LABEL_X)
-        // @ts-ignore
-        .labelText(d => d.properties.NAME)
-        .labelSize(labelSize)
-        .labelDotRadius(0.8)
-        .labelColor((labelData) => {
-        // @ts-ignore
-          const uuid = labelData.__threeObj.uuid;
-          const hash = uuid.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
-          return hash % 3 >= 1 ? "#ffba49" : "#ffffff";
-        })
-        .labelAltitude(0.03)
-        .labelResolution(labelResolution)
         .arcsData(arcsData)
         .arcDashLength(arcRelativeLength)
         .arcDashGap(2)
@@ -158,16 +95,18 @@ export default function World() {
         .ringColor(() => t => `rgba(255, 186, 73, ${1 - t})`)
         .ringAltitude(0.03)
         .onGlobeReady(() => {
-          globeRef.current.controls().autoRotate = true;
-          globeRef.current.controls().enableZoom = false;
-          globeRef.current.controls().autoRotateSpeed = 0.5;
-          globeRef.current.pointOfView({
+          console.log("Globe is ready");
+          globe.controls().autoRotate = true;
+          globe.controls().enableZoom = false;
+          globe.controls().autoRotateSpeed = 0.5;
+          globe.pointOfView({
             lat: 19.054339351561637,
             lng: -50.421161072148465,
             altitude: 1.8,
           });
           setTimeout(() => setIsGlobeLoaded(true), 100);
         });
+      globeRef.current = globe;
     }
   }, []);
 
@@ -180,21 +119,23 @@ export default function World() {
     }
   }, [hexPolygonColor, arcsData, ringsData]);
 
-  // spawn arcs regularly
   useEffect(() => {
     if (arcsData.length < maxNumArcs) {
-      const id = setTimeout(() => {
-        spawnArc();
-      }, arcSpawnInterval);
-      return () => {
-        clearTimeout(id);
-      };
+      const timeoutId = setTimeout(spawnArc, arcSpawnInterval);
+      return () => clearTimeout(timeoutId);
     }
-  }, [arcsData, arcSpawnInterval, spawnArc]);
+  }, [arcsData, arcSpawnInterval, spawnArc, maxNumArcs]);
+
+  // const changeHexagonColor = () => {
+  //   const newColor = hexPolygonColor === "#6C946F" ? "#FF0000" : "#6C946F";
+  //   console.log("Changing hexagon color to:", newColor);
+  //   setHexPolygonColor(newColor);
+  // };
 
   return (
     <div className="App" style={{ visibility: isGlobeLoaded ? 'visible' : 'hidden' }}>
       <div ref={globeContainerRef} />
+      {/* <button onClick={changeHexagonColor}>Change Hexagon Color</button> */}
     </div>
   );
 }

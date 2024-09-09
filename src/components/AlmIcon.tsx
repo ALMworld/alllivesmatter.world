@@ -86,7 +86,7 @@ const AlmIcon = ({ value, expand_image_list = [], ...props }) => {
         <>
             <div
                 onClick={handleIconClick}
-                className="p-1 rounded-full rounded-lg hover:bg-[#d20033] cursor-pointer"
+                className="cursor-pointer"
             >
                 <ActionIconUnit value={value} {...props} />
             </div>
