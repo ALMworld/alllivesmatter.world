@@ -46,7 +46,7 @@ const Advocacy = () => {
                             openModal={() => openPrincipleModal(index)}
                             closeModal={closeAdvocateModal}
                         >
-                            <AdvocateModalCard advocate={advocate} onClose={closeAdvocateModal} />
+                            <AdvocateModalCard key={index} advocate={advocate} onClose={closeAdvocateModal} />
                         </AdvocateCard>
                     ))}
                 </div>

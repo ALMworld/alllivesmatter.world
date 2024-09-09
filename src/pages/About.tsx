@@ -74,12 +74,12 @@ const FAQItem = ({ number, item }) => {
                     <span className="flex-grow text-white font-semibold text-start">{item.question}</span>
                 </div>
 
-                <div className="flex items-center ml-2">
-                    {isOpen ? <ChevronUp className="text-[#d20033]" /> : <ChevronDown className="text-white hover:text-[#d20033]" />}
-                    &nbsp;
+                <div className="flex items-center ml-3">
                     {item.answer_image_list && item.answer_image_list.length > 0 && (
                         <AlmIcon value={'image-up'} expand_image_list={item.answer_image_list} />
                     )}
+                    &nbsp;
+                    {isOpen ? <ChevronUp className="text-[#d20033]" /> : <ChevronDown className="text-white hover:text-[#d20033]" />}
                 </div>
 
             </button>

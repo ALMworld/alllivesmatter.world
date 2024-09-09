@@ -1,34 +1,35 @@
-import { useEffect, useRef, useState, useCallback } from "react";
+import React, { useEffect, useRef, useState, useCallback, useMemo } from "react";
 import Globe from "globe.gl";
 import countries from "../assets/countries.json";
+
+const rendererConfig = {
+  antialias: true,
+  alpha: false,
+  precision: "lowp",
+  powerPreference: "low-power"
+}
 
 export default function World() {
   const globeContainerRef = useRef(null);
   const globeRef = useRef(null);
   const [isGlobeLoaded, setIsGlobeLoaded] = useState(false);
-  const [hexPolygonColor, setHexPolygonColor] = useState("#FF0000");
+  const [hexPolygonColor] = useState("#FF0000"); // Remove setHexPolygonColor if not used
   const [arcsData, setArcsData] = useState([]);
   const [ringsData, setRingsData] = useState([]);
 
-  const countriesData = countries.features;
-  const labelsData = countriesData;
+  const countriesData = useMemo(() => countries.features, []);
+  const labelsData = useMemo(() => countries.features, []);
 
   // Config
   const maxNumArcs = 12;
-  const arcFlightTime = 3000; // ms
+  const arcFlightTime = 5000; // ms
   const arcSpawnInterval = arcFlightTime / maxNumArcs;
   const arcRelativeLength = 0.6; // relative to whole arc
-  const numRings = 3;
-  const ringMaxRadius = 5; // deg
+  const numRings = 6;
+  const ringMaxRadius = 6; // deg
   const ringPropagationSpeed = 2; // deg/sec
   const ringRepeatPeriod = (arcFlightTime * arcRelativeLength) / numRings;
 
-  const rendererConfig = {
-    antialias: false,
-    alpha: false,
-    precision: "lowp",
-    powerPreference: "low-power"
-  };
 
   const spawnArc = useCallback(() => {
     if (labelsData.length === 0) return;
@@ -43,7 +44,7 @@ export default function World() {
     const { LABEL_Y: destLat, LABEL_X: destLng } = labelsData[destIdx].properties;
 
     const arc = { startLat: srcLat, startLng: srcLng, endLat: destLat, endLng: destLng };
-    
+
     const srcRing = { lat: srcLat, lng: srcLng };
     setRingsData(rings => [...rings, srcRing]);
     setTimeout(() => {
@@ -64,78 +65,100 @@ export default function World() {
     }, arcFlightTime);
   }, [labelsData, arcFlightTime, arcRelativeLength]);
 
-  useEffect(() => {
-    if (globeContainerRef.current && !globeRef.current) {
-      const globe = Globe({ rendererConfig })(globeContainerRef.current);
-      
-      globe
-        .width(300)
-        .height(300)
-        .backgroundColor("rgba(0,0,0,0)")
-        .atmosphereAltitude(0.1)
-        .hexPolygonsData(countriesData)
-        .hexPolygonAltitude(0.02)
-        .hexPolygonCurvatureResolution(0)
-        .hexPolygonResolution(3)
-        .hexPolygonMargin(0.3)
-        .hexPolygonUseDots(true)
-        .hexPolygonColor(() => hexPolygonColor)
-        .arcsData(arcsData)
-        .arcDashLength(arcRelativeLength)
-        .arcDashGap(2)
-        .arcDashInitialGap(1)
-        .arcDashAnimateTime(arcFlightTime)
-        .arcColor(() => "#ffba49")
-        .arcAltitudeAutoScale(0.3)
-        .arcsTransitionDuration(0)
-        .ringsData(ringsData)
-        .ringMaxRadius(ringMaxRadius)
-        .ringPropagationSpeed(ringPropagationSpeed)
-        .ringRepeatPeriod(ringRepeatPeriod)
-        .ringColor(() => t => `rgba(255, 186, 73, ${1 - t})`)
-        .ringAltitude(0.03)
-        .onGlobeReady(() => {
-          console.log("Globe is ready");
-          globe.controls().autoRotate = true;
-          globe.controls().enableZoom = false;
-          globe.controls().autoRotateSpeed = 0.5;
-          globe.pointOfView({
-            lat: 19.054339351561637,
-            lng: -50.421161072148465,
-            altitude: 1.8,
-          });
-          setTimeout(() => setIsGlobeLoaded(true), 100);
+  const initGlobe = useCallback(() => {
+    if (!globeContainerRef.current || globeRef.current) return;
+
+    const globe = Globe({rendererConfig})(globeContainerRef.current);
+
+    globe
+      .width(300)
+      .height(300)
+      .backgroundColor("rgba(0,0,0,0)")
+      .atmosphereAltitude(0.1)
+      .hexPolygonsData(countriesData)
+      .hexPolygonAltitude(0.02)
+      .hexPolygonCurvatureResolution(0)
+      .hexPolygonResolution(3)
+      .hexPolygonMargin(0.3)
+      .hexPolygonUseDots(true)
+      .hexPolygonColor(() => hexPolygonColor)
+      .arcsData(arcsData)
+      // .arcDashLength(arcRelativeLength)
+      // .arcDashGap(2)
+      .arcDashInitialGap(1)
+      .arcDashAnimateTime(arcFlightTime)
+      .arcDashLength(0.9)
+      .arcDashGap(3)
+      .arcDashInitialGap(1)
+      .arcStroke(0.36) // Increased arc thickness
+      .arcColor(() => "#ffba49")
+      .arcAltitudeAutoScale(0.3)
+      .arcsTransitionDuration(0.1)
+      .ringsData(ringsData)
+      .ringMaxRadius(ringMaxRadius)
+      .ringPropagationSpeed(ringPropagationSpeed)
+      .ringRepeatPeriod(ringRepeatPeriod)
+      // .ringColor(() => t => `rgba(255, 186, 73, ${1 - t})`)
+      .ringColor(() => (t: number) => `rgba(255, 186, 73, ${Math.sqrt(1 - t)})`)
+      .ringAltitude(0.03)
+      .ringResolution(248) // Increased resolution for smoother rings
+      .ringMaxRadius(30) // 
+      .onGlobeReady(() => {
+        globe.controls().autoRotate = true;
+        globe.controls().enableZoom = false;
+        globe.controls().autoRotateSpeed = 0.5;
+        globe.pointOfView({
+          lat: 19.054339351561637,
+          lng: -50.421161072148465,
+          altitude: 1.8,
         });
-      globeRef.current = globe;
-    }
-  }, []);
+        setIsGlobeLoaded(true);
+      });
+
+    globeRef.current = globe;
+  }, [countriesData, hexPolygonColor, arcFlightTime, arcRelativeLength, rendererConfig, ringMaxRadius, ringPropagationSpeed, ringRepeatPeriod]);
+
+  useEffect(() => {
+    initGlobe();
+
+    return () => {
+      if (globeRef.current) {
+        globeRef.current.pauseAnimation();
+        if (globeContainerRef.current) {
+          while (globeContainerRef.current.firstChild) {
+            globeContainerRef.current.removeChild(globeContainerRef.current.firstChild);
+          }
+        }
+        globeRef.current = null;
+      }
+      setIsGlobeLoaded(false);
+    };
+  }, [initGlobe]);
 
   useEffect(() => {
     if (globeRef.current) {
       globeRef.current
-        .hexPolygonColor(() => hexPolygonColor)
         .arcsData(arcsData)
         .ringsData(ringsData);
     }
-  }, [hexPolygonColor, arcsData, ringsData]);
+  }, [arcsData, ringsData]);
 
   useEffect(() => {
-    if (arcsData.length < maxNumArcs) {
-      const timeoutId = setTimeout(spawnArc, arcSpawnInterval);
-      return () => clearTimeout(timeoutId);
-    }
-  }, [arcsData, arcSpawnInterval, spawnArc, maxNumArcs]);
+    const intervalId = setInterval(() => {
+      if (arcsData.length < maxNumArcs) {
+        spawnArc();
+      }
+    }, arcSpawnInterval);
 
-  // const changeHexagonColor = () => {
-  //   const newColor = hexPolygonColor === "#6C946F" ? "#FF0000" : "#6C946F";
-  //   console.log("Changing hexagon color to:", newColor);
-  //   setHexPolygonColor(newColor);
-  // };
+    return () => clearInterval(intervalId);
+  }, [arcsData, maxNumArcs, arcSpawnInterval, spawnArc]);
 
   return (
-    <div className="App" style={{ visibility: isGlobeLoaded ? 'visible' : 'hidden' }}>
-      <div ref={globeContainerRef} />
-      {/* <button onClick={changeHexagonColor}>Change Hexagon Color</button> */}
+    <div className="App" style={{
+      opacity: isGlobeLoaded ? 1 : 0,
+      transition: 'opacity 0.5s ease-in-out'
+    }}>
+      <div ref={globeContainerRef} style={{ width: '300px', height: '300px' }} />
     </div>
   );
 }

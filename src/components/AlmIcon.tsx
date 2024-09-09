@@ -5,12 +5,17 @@ import { ChevronLeft, ChevronRight, Loader, X } from 'lucide-react';
 
 const AlmIcon = ({ value, expand_image_list = [], ...props }) => {
     const { i18n, t } = useTranslation();
+
+    let r2Root = "https://www.alllivesmatter.world"
     const expandImageMap = {
-        love: [`/images/${i18n.language}/0_1_kindness_first`],
-        law: [`/images/${i18n.language}/0_2_fairness_always`],
-        money: [`/images/${i18n.language}/0_3_duki_in_action`]
+        love: [`${r2Root}/images/${i18n.language}/0_1_kindness_first`],
+        law: [`${r2Root}/images/${i18n.language}/0_2_fairness_always`],
+        money: [`${r2Root}/images/${i18n.language}/0_3_duki_in_action`]
     };
-    const defaultExpandImages = expandImageMap[value] || expand_image_list;
+
+    const defaultExpandImages = expandImageMap[value] || expand_image_list.map(url => 
+        url.startsWith('http') ? url : `${r2Root}/${url}`
+    );
     const [isExpanded, setIsExpanded] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isLoading, setIsLoading] = useState(false);
@@ -46,7 +51,8 @@ const AlmIcon = ({ value, expand_image_list = [], ...props }) => {
         return <ActionIconUnit value={value} {...props} />;
     }
 
-    const handleIconClick = () => {
+    const handleIconClick = (e) => {
+        e.stopPropagation();
         setIsExpanded(true);
         setIsLoading(true);
         setImageError(false);
@@ -99,12 +105,12 @@ const AlmIcon = ({ value, expand_image_list = [], ...props }) => {
                             </div>
                         )}
 
-                        <picture className="w-full h-full flex items-center justify-center">
+                        <picture key={defaultExpandImages[currentImageIndex]} className="w-full h-full flex items-center justify-center">
                             <source srcSet={`${defaultExpandImages[currentImageIndex]}.avif`} type="image/avif" />
-                            <source srcSet={`${defaultExpandImages[currentImageIndex]}.webp`} type="image/webp" />
                             <img
                                 src={`${defaultExpandImages[currentImageIndex]}.webp`}
                                 alt={`${value} details`}
+                                loading="lazy"
                                 className="max-w-full max-h-full object-contain"
                                 onLoad={handleImageLoad}
                                 onError={handleImageError}
