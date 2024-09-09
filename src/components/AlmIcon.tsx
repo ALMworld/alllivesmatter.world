@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight, Loader, X } from 'lucide-react';
 const AlmIcon = ({ value, expand_image_list = [], ...props }) => {
     const { i18n, t } = useTranslation();
 
-    let r2Root = "https://www.alllivesmatter.world"
+    let r2Root = "https://assets.alllivesmatter.world"
     const expandImageMap = {
         love: [`${r2Root}/images/${i18n.language}/0_1_kindness_first`],
         law: [`${r2Root}/images/${i18n.language}/0_2_fairness_always`],

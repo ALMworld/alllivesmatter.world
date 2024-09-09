@@ -1,4 +1,4 @@
-# [AllLivesMatter.World](https://www.alllivesmatter.world): All Lives Matter Worldwide
+# [All Lives Matter Worldwide](https://www.alllivesmatter.world) 
 
 ![DUKI Concept](ptools/assets/outreach/x/0_ordinary_kindkang_invitation.png)
 
