@@ -1,6 +1,8 @@
-# [AllLivesMatter&middot;World](https://www.alllivesmatter.world)
+# [AllLivesMatter.World](https://www.alllivesmatter.world): All Lives Matter Worldwide
 
-******A Global Call for Humanity and Compassion******
+![DUKI Concept](ptools/assets/outreach/x/0_ordinary_kindkang_invitation.png)
+
+## Global Call for Peace and Humanity
 
 * **Kindness First**  A single act of kindness throws out roots in all directions, and the roots spring up and make new trees.
 * **Fairness Always** You shall judge the people with righteous judgment. You shall not pervert justice. You shall not show partiality, and you shall not accept a bribe, for a bribe blinds the eyes of the wise and subverts the cause of the righteous
@@ -10,15 +12,26 @@ DUKI (pronounced 'duːki', reminiscent of 'duty','kindness' and 'cookie') stands
 
 Dukiness:/ˈduːkiːnəs/: Spirit behind "All Lives Matter Worldwide," which is not just a truth to uphold but also a unifying superpower that all lives can hold. Dukiness embodies the mindset and actions aligned with principles of universal kindness, fairness, and decentralized empowerment. It inspires individuals to pursue freedom, reject negativity, cultivate goodness, and spread kindness, ultimately striving to elevate the value and dignity of all lives globally.
 
+### What is DUKI?
+![DUKI Concept](ptools/assets/outreach/x/4_what_is_duki.png)
 
-### Why do you coin the term DUKI instead of using UBI 
-![DUKI Concept](ptools/assets/outreach/x/5_why_do_you_coin_the_term_duki_instead_of_using_ubi.png)
+### Why DUKI instead of UBI 
+![DUKI Concept](ptools/assets/outreach/x/5_why_duki_instead_of_ubi.png)
 
-
-### KindKang's Invitation: Embrace the Superpower of AllLivesMatter·World
-![DUKI Concept](ptools/assets/outreach/x/0_ordinary_kindkang_invitation.png)
 
 [Learn more about AllLivesMatter.World here](https://www.alllivesmatter.world).
+
+
+### License
+'DUKI LICENSE', which is essentially the same as the MIT license, except there is a clause 'Share your success: 1% profit to DUKI when earned.'
+
+The DUKI license requires companies using open-source projects to contribute n% (where n is typically 1-5) of their total business profit towards fostering universal kindness. This model addresses the imbalance where large corporations, for example cloud providers, benefit significantly from open-source without proportionate contribution. It exempts project creators and maintainers and aims for broader societal impact rather than direct developer compensation. While potentially discouraging adoption due to financial implications, DUKI represents a shift towards using open-source as a catalyst for corporate social responsibility and global well-being.
+
+While technology itself is inherently neutral, the DUKI license incorporates an ethical attitude towards its usage. It expresses a strong wish for the software to be used for good. By tying usage to universal kindness, DUKI encourages companies to consider the broader impact of their technological implementations. 
+
+![DUKI LICENSE](ptools/assets/outreach/x/10_thoughts_on_duki_and_open_source.png)
+
+AllLivesMatter&middot;World is [DUKI licensed](./LICENSE).
 
 
 ## Contributing
@@ -36,17 +49,3 @@ Currently, there are no specific implementations for RTL support. Contributions 
 
 The primary focus of this repository is public advocacy, rather than technical development. The original efforts are largely dedicated to cultivating ideas, refining thoughts, and carefully selecting words to express them. While there might be occasional errors or misused terms, the real value lies in the ideas themselves.
 Apart from Right-To-Left (RTL) language support, the most significant contributions often come from thoughtful word choice. In this spirit, selecting the most fitting terms in the native language to accurately convey the intended messages is encouraged.
-
-### License
-'DUKI LICENSE', which is essentially the same as the MIT license, except there is a clause 'Share your success: 1% profit to DUKI when earned.'
-
-### [The Ideas Behind DUKI License: FAQ#10](https://www.alllivesmatter.world/about):
-What if new, emerging, or even legacy open-source projects released their potentially groundbreaking work with a DUKI-friendly license? This could be either a new 'DUKI[-n] License' or traditional licenses with a 'DUKI[-n] Required' clause, where 'n' represents the percentage of profit to be contributed (preferably with n between 1-5, defaulting to 1 as it's a natural starting point). Under this model, companies using DUKI-licensed projects and generating profit would be required to contribute a small percentage of their earnings towards fostering universal kindness. If they haven't made a profit, everything would remain the same as with current licenses. It's worth noting that the companies behind the creators and main maintainers of these open-source projects would be exempt from this requirement, though they could always choose to contribute voluntarily. Their act of releasing and maintaining the project as open-source is already a significant contribution, often involving substantial effort and resources. And we should reward kindness with kindness, making these companies more competitive for engaging in such generous acts. As the saying goes again, 'Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap. For with the measure you use, it will be measured to you.'
-
-
-The DUKI license requires companies using open-source projects to contribute n% (where n is typically 1-5) of their total business revenue towards fostering universal kindness. This model addresses the imbalance where large corporations, for example cloud providers, benefit significantly from open-source without proportionate contribution. It exempts project creators and maintainers and aims for broader societal impact rather than direct developer compensation. While potentially discouraging adoption due to financial implications, DUKI represents a shift towards using open-source as a catalyst for corporate social responsibility and global well-being.
-
-While technology itself is inherently neutral, the DUKI license incorporates an ethical attitude towards its usage. It expresses a strong wish for the software to be used for good. By tying usage to universal kindness, DUKI encourages companies to consider the broader impact of their technological implementations. 
-
-
-AllLivesMatter&middot;World is [DUKI licensed](./LICENSE).
