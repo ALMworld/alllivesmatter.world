@@ -31,5 +31,5 @@ dist-ssr
 *.sw?
 *.blob
 
-data
+data/*
 public/images
