@@ -97,7 +97,7 @@ function randomSelectSrcIdx() {
   } else {
     let accumulatedWeight = countriesData.length;
     for (const country of TopGpcRegionsWithLocId) {
-      accumulatedWeight += country.weight;
+      accumulatedWeight += country.extraWeight;
       if (preSrcIdx < accumulatedWeight) {
         return country.loc_id;
       }
