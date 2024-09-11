@@ -1,0 +1,121 @@
+{
+  "en": {
+    "files": {
+      "love": {
+        "base_name": "0_1_kindness_first.webp",
+        "range": [
+          0,
+          108408
+        ]
+      },
+      "law": {
+        "base_name": "0_2_fairness_always.webp",
+        "range": [
+          108408,
+          318562
+        ]
+      },
+      "money": {
+        "base_name": "0_3_duki_in_action.webp",
+        "range": [
+          318562,
+          576528
+        ]
+      },
+      "0_ordinary_kindkang_invitation": {
+        "base_name": "0_ordinary_kindkang_invitation.webp",
+        "range": [
+          576528,
+          761970
+        ]
+      },
+      "1_thoughts_on_media_responsibility": {
+        "base_name": "1_thoughts_on_media_responsibility.webp",
+        "range": [
+          761970,
+          1045442
+        ]
+      },
+      "2_thoughts_on_war_and_peace": {
+        "base_name": "2_thoughts_on_war_and_peace.webp",
+        "range": [
+          1045442,
+          1225918
+        ]
+      },
+      "3_evolutionary_perspective_why_kindness_fairness_and_duki_worldwide": {
+        "base_name": "3_evolutionary_perspective_why_kindness_fairness_and_duki_worldwide.webp",
+        "range": [
+          1225918,
+          1459718
+        ]
+      },
+      "4_what_is_duki": {
+        "base_name": "4_what_is_duki.webp",
+        "range": [
+          1459718,
+          1710700
+        ]
+      },
+      "5_why_duki_instead_of_ubi": {
+        "base_name": "5_why_duki_instead_of_ubi.webp",
+        "range": [
+          1710700,
+          1991498
+        ]
+      },
+      "6_thoughts_on_us_selection": {
+        "base_name": "6_thoughts_on_us_selection.webp",
+        "range": [
+          1991498,
+          2139522
+        ]
+      },
+      "7_thoughts_on_entrepreneurs_and_duki": {
+        "base_name": "7_thoughts_on_entrepreneurs_and_duki.webp",
+        "range": [
+          2139522,
+          2409924
+        ]
+      },
+      "8_thoughts_on_mooc_and_duki": {
+        "base_name": "8_thoughts_on_mooc_and_duki.webp",
+        "range": [
+          2409924,
+          2572008
+        ]
+      },
+      "9_thoughts_on_duki_governments_and_immigration_policy": {
+        "base_name": "9_thoughts_on_duki_governments_and_immigration_policy.webp",
+        "range": [
+          2572008,
+          2838560
+        ]
+      },
+      "10_thoughts_on_duki_and_open_source": {
+        "base_name": "10_thoughts_on_duki_and_open_source.webp",
+        "range": [
+          2838560,
+          3112700
+        ]
+      },
+      "11_thoughts_on_duki_blockchain_and_authority": {
+        "base_name": "11_thoughts_on_duki_blockchain_and_authority.webp",
+        "range": [
+          3112700,
+          3374200
+        ]
+      },
+      "12_O_Come_O_Come_Emmanuel": {
+        "base_name": "12_O_Come_O_Come_Emmanuel.webp",
+        "range": [
+          3374200,
+          3634370
+        ]
+      }
+    },
+    "hash": "3ed5d1c7b02edcc99f326e444a4d6332",
+    "blob_uri_local": "./../public/en_3ed5d1c7b02edcc99f326e444a4d6332.blob",
+    "blob_uri": "https://assets.alllivesmatter.world/blobs/en_3ed5d1c7b02edcc99f326e444a4d6332.blob"
+  }
+}

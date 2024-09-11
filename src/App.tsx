@@ -9,6 +9,9 @@ import How from './pages/How';
 import Why from './pages/Why';
 import Footer from './components/Footer';
 import PeaceMusicPlayer from './components/PeaceMusicPlayer';
+import GalleryProvider from './data/gallery_provider';
+
+
 
 
 
@@ -18,15 +21,17 @@ const App = () => {
     <Suspense fallback={<AnimatedLoading />}>
       <BrowserRouter>
         <DataProvider>
-          <Header />
-          <Routes>
-            <Route path='/' element={<Advocacy />} />
-            <Route path='/why' element={<Why />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/how' element={<How />} />
-          </Routes>
-          <Footer />
-          <PeaceMusicPlayer />
+          <GalleryProvider>
+            <Header />
+            <Routes>
+              <Route path='/' element={<Advocacy />} />
+              <Route path='/why' element={<Why />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/how' element={<How />} />
+            </Routes>
+            <Footer />
+            <PeaceMusicPlayer />
+          </GalleryProvider>
         </DataProvider>
       </BrowserRouter>
     </Suspense>

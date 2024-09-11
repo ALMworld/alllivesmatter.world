@@ -3,7 +3,9 @@ import Globe from "globe.gl";
 import countries from "../assets/countries.json";
 
 const rendererConfig = {
-  antialias: true,
+  animateIn: true,
+  // antialias: true,
+  antialias: false,
   alpha: false,
   precision: "lowp",
   powerPreference: "low-power"
@@ -13,7 +15,7 @@ export default function World() {
   const globeContainerRef = useRef(null);
   const globeRef = useRef(null);
   const [isGlobeLoaded, setIsGlobeLoaded] = useState(false);
-  const [hexPolygonColor] = useState("#FF0000"); // Remove setHexPolygonColor if not used
+  // const [hexPolygonColor] = useState("#FF0000"); 
   const [arcsData, setArcsData] = useState([]);
   const [ringsData, setRingsData] = useState([]);
 
@@ -21,13 +23,13 @@ export default function World() {
   const labelsData = useMemo(() => countries.features, []);
 
   // Config
-  const maxNumArcs = 12;
-  const arcFlightTime = 5000; // ms
+  const maxNumArcs = 10;
+  const arcFlightTime = 7000; // ms
   const arcSpawnInterval = arcFlightTime / maxNumArcs;
   const arcRelativeLength = 0.6; // relative to whole arc
-  const numRings = 6;
-  const ringMaxRadius = 6; // deg
-  const ringPropagationSpeed = 2; // deg/sec
+  const numRings = 3;
+  const ringMaxRadius = 2; // deg
+  const ringPropagationSpeed = 1; // deg/sec
   const ringRepeatPeriod = (arcFlightTime * arcRelativeLength) / numRings;
 
 
@@ -68,12 +70,16 @@ export default function World() {
   const initGlobe = useCallback(() => {
     if (!globeContainerRef.current || globeRef.current) return;
 
-    const globe = Globe({rendererConfig})(globeContainerRef.current);
+    const globe = Globe({ rendererConfig })(globeContainerRef.current);
+    // const defaultGlobeMaterial = new MeshPhongMaterial({ color: 0x009000, });
+
 
     globe
       .width(300)
       .height(300)
       .backgroundColor("rgba(0,0,0,0)")
+      // .globeImageUrl("/640px-land_ocean_ice_2048.jpg")
+      // .globeImageUrl("/land_ocean_ice_2048.jpg")
       .atmosphereAltitude(0.1)
       .hexPolygonsData(countriesData)
       .hexPolygonAltitude(0.02)
@@ -81,7 +87,7 @@ export default function World() {
       .hexPolygonResolution(3)
       .hexPolygonMargin(0.3)
       .hexPolygonUseDots(true)
-      .hexPolygonColor(() => hexPolygonColor)
+      .hexPolygonColor(() => "#FF0000")
       .arcsData(arcsData)
       // .arcDashLength(arcRelativeLength)
       // .arcDashGap(2)
@@ -116,7 +122,7 @@ export default function World() {
       });
 
     globeRef.current = globe;
-  }, [countriesData, hexPolygonColor, arcFlightTime, arcRelativeLength, rendererConfig, ringMaxRadius, ringPropagationSpeed, ringRepeatPeriod]);
+  }, [countriesData, arcFlightTime, arcRelativeLength, rendererConfig, ringMaxRadius, ringPropagationSpeed, ringRepeatPeriod]);
 
   useEffect(() => {
     initGlobe();
