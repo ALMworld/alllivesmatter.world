@@ -48,7 +48,7 @@ const AlmIcon = ({ value, expand_image_list = [], ...props }) => {
     useEffect(() => {
         let loaderTimer;
         if (isLoading) {
-            loaderTimer = setTimeout(() => setShowLoader(true), 1000);
+            loaderTimer = setTimeout(() => setShowLoader(true), 300);
         } else {
             setShowLoader(false);
         }
