@@ -77,7 +77,7 @@ const Why = () => {
                                     <p className="text-sm selectable-text">{book.topic1.content}</p>
                                 </div>
                                 <div className='mt-2'>
-                                    <h3 className="text-lg font-semibold text-yellow-600 selectable-text">{book.topic2.headline}</h3>
+                                    <h3 className="text-lg font-semibold text-[#d20033] selectable-text">{book.topic2.headline}</h3>
                                     <p className="text-sm selectable-text">{book.topic2.content}</p>
                                 </div>
                             </div>

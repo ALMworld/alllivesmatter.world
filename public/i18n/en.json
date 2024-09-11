@@ -139,7 +139,7 @@
                     }
                 ],
                 "topic1": {
-                    "headline": "Prisoner’s Dilemma game ",
+                    "headline": "Prisoner’s Dilemma Game ",
                     "content": "Each has two choices, namely “cooperate” or “defect.” The game is called the Prisoner’s Dilemma because in its original form two prisoners face the choice of informing on each other (defecting) or remaining silent (cooperating). Each must make the choice without knowing what the other will do..."
                 },
                 "topic2": {
@@ -176,12 +176,12 @@
                 "link": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species",
                 "intro": "First published in 1859, 'On the Origin of Species' is the foundational text of evolutionary biology. In it, Darwin introduces the scientific theory that populations evolve over the course of generations through a process of natural selection. The book presented a body of evidence that the diversity of life arose by common descent through a branching pattern of evolution.",
                 "topic1": {
-                    "headline": "Survival of the fittest",
-                    "content": "Natural selection is a process devoid of compassion, justice, or moral intent. It operates on the basis of adaptation and reproduction, not on the principles of right and wrong.The harsh reality of survival of the fittest reveals nature’s indifference to human values, emphasizing that nature's primary concern is the perpetuation of life rather than the promotion of ethical or emotional ideals"
-                },
-                "topic2": {
                     "headline": "The Grandeur of Evolution",
                     "content": "There is grandeur in this view of life, with its several powers, having been originally breathed into a few forms or into one; and that, whilst this planet has gone cycling on according to the fixed law of gravity, from so simple a beginning endless forms most beautiful and most wonderful have been, and are being evolved."
+                },
+                "topic2": {
+                    "headline": "Survival of the Fittest",
+                    "content": "Natural selection is a process devoid of compassion, justice, or moral intent. It operates on the basis of adaptation and reproduction, not on the principles of right and wrong.The harsh reality of survival of the fittest reveals nature’s indifference to human values, emphasizing that nature's primary concern is the perpetuation of life rather than the promotion of ethical or emotional ideals"
                 },
                 "get_book": [
                     {
