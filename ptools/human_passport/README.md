@@ -34,7 +34,7 @@ Metadata 2: AllLivesMatter.World
 ```
 
 ###  Note
-Since I have limited blockchain knowledge and no experience developing Web3 apps yet, my interpretation or understanding may contain errors or issues. I'd appreciate if you could point them out.
+Since I have limited blockchain knowledge and limited experience developing Web3 apps at the time of writing, my interpretation or understanding may contain errors or issues. I'd appreciate if you could point them out.
 
 Blow is just my naive imagination for the web3 with DUKI that could exist, which behaves with Kindness, Fairness and DUKI.
 It relies on  freedom of criticism, ensuring that authorities truly fulfill their responsibilities.
@@ -59,7 +59,8 @@ Oracle Data is a digital representation of Human Unique Features used as input f
 
 ### Human Passport Usage: 
 It serves as a passport to the Web3 world . The Human Passport acts as proof that the one behind this is a real person, which anyone can verify without accessing any private information. The Human Passport acts as proof that the one behind it is a real person, which anyone can verify without accessing any private information. Any blockchain application can check the integrity of the passport and may request a simple proof of ownership and gain confidence that a human, rather than a bot, is behind it. This system treats all humans and all apps equally because there's no way to discriminate or show favoritism, even if one wanted to. It's a worldwide, anonymous system where all lives matter worldwide equally.
-If compare it with a MetaMask wallet, for example, the passport could also signify that a unique person is behind it. This person could use secret data and human-unique features together to prove ownership instead of private keys only.
+
+If we compare it with a normal wallet, instead of just making the public key available on-chain and hoping everyone keeps their private key or master key safe to prove ownership (I've lost a few wallets already), the human passport system puts zero-knowledge proved human passports on-chain. The owner can then prove ownership by using his/her own unforgeable zero-knowledge proof input data. The user experience is a bit similar to Trust Wallet's Swift I am currently using, which uses Passkey-like fingerprint and face ID. However, in this human passport system, significant efforts, together with true authority, are needed to bootstrap the issuance and ensure that the human passport is performing valid zero-knowledge proofs and also that no one can exploit the system and do harm to it, like creating multiple accounts for the same person. (Is this possible? I am not sure. I just blindly believe in Professor Avi Wigderson's wisdom that 'Everything provable can be proved in zero knowledge,' as he said in this video: https://www.youtube.com/watch?v=Eu_j5_tains)
 
 ### Human Passport Soundness:
 The zk-verify and simple proof process conducted by other blockchain applications alone is insufficient. The DUKI system must continuously check the credibility of the oracle data. 
