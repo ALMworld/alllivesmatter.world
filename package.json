@@ -7,7 +7,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "dev": "vite --host",
-    "generate-types": "quicktype public/i18n/en.json -o src/data/data_types.ts",
+    "generate-types": "quicktype src/assets/i18n/en.json -o src/data/data_types.ts",
     "generate-types_1": "quicktype src/assets/gallery.json -o src/data/gallery_types.ts"
   },
   "dependencies": {
@@ -20,7 +20,9 @@
     "react-i18next": "12.1.4",
     "react-resizable": "^3.0.5",
     "react-router-dom": "6.6.2",
-    "react-share": "^5.1.0"
+    "react-share": "^5.1.0",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "18.0.26",
