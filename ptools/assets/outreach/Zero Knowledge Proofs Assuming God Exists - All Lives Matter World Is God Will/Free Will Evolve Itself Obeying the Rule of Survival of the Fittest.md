@@ -30,7 +30,7 @@ On September 21, 2024, I had a series of experiences that influenced the poem: I
 
 During the journey, I tried to share my personal thoughts about God. Earlier, before we started our ascent, we had dinner together. At dinner, I introduced the concept of zero-knowledge proofs. The others listened skeptically, doubting whether such a thing could exist. I had just learned about this concept not many days ago and realized that perhaps I should explain like Avi Wigderson's do - using three-color mapping to explain it. I may know all NP-problems are equivalent and felt it by playing the toy human passport standing on the shoulders of a zkVM (Zero-Knowledge Virtual Machine). But they are not.
 
-On the mountain, I tried to initiate a conversation about God. You can imagine the scene: I started by saying, "We are the gods, the children of the highest." And, they rejected the conversation and switched to another topic. (Later, my wife told me that she thought I was too stressed and turning to God for comfort. What a ridiculous thinking - they didn't even listen long to learn that I'm actually agnostic).
+On the mountain, I tried to initiate a conversation about God. You can imagine the scene: I started by saying, "We are the gods, the children of the Highest." And, they rejected the conversation and switched to another topic. (Later, my wife told me that she thought I was too stressed and turning to God for comfort. What a ridiculous thinking - they didn't even listen long to learn that I'm actually agnostic).
 
 Reflecting on this experience, I realized that when I used the word "we," they probably first thought of "we" as referring only to me, not including themselves. This might be how the brain or free will works when encountering something foreign.
 
