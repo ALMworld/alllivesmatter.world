@@ -214,12 +214,12 @@ nav select {
 
 .slick-prev:before {
   border-radius: "50%";
-  color: yellow;
+  color: #d20033;
 }
 
 .slick-next:before {
   border-radius: "50%";
-  color: yellow;
+  color: #d20033;
 }
 
 

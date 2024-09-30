@@ -23,9 +23,9 @@ Dukiness:/ˈduːkiːnəs/: Spirit behind "All Lives Matter Worldwide," which is 
 
 
 ### License
-'DUKI LICENSE', which is essentially the same as the MIT license, except there is a clause 'Share your success: 1% profit to DUKI when earned.'
+'DUKI LICENSE', which is essentially the same as the MIT license, except there is a clause 'Share your Success: 2.5% profit to DUKI when earned.' 
 
-The DUKI license requires companies using open-source projects to contribute n% (where n is typically 1-5) of their total business profit towards fostering universal kindness. This model addresses the imbalance where large corporations, for example cloud providers, benefit significantly from open-source without proportionate contribution. It exempts project creators and maintainers and aims for broader societal impact rather than direct developer compensation. While potentially discouraging adoption due to financial implications, DUKI represents a shift towards using open-source as a catalyst for corporate social responsibility and global well-being.
+The DUKI license requires companies using open-source projects to contribute n% (where n is typically 1-5, default to 2.5) of their total business profit towards fostering universal kindness. This model addresses the imbalance where large corporations, for example cloud providers, benefit significantly from open-source without proportionate contribution. It exempts project creators and maintainers and aims for broader societal impact rather than direct developer compensation. While potentially discouraging adoption due to financial implications, DUKI represents a shift towards using open-source as a catalyst for corporate social responsibility and global well-being.
 
 While technology itself is inherently neutral, the DUKI license incorporates an ethical attitude towards its usage. It expresses a strong wish for the software to be used for good. By tying usage to universal kindness, DUKI encourages companies to consider the broader impact of their technological implementations. 
 

@@ -7,73 +7,75 @@ import crypto from 'crypto';
 
 import sharp from 'sharp';
 
-async function compressPngImages() {
-  // get command line arguments
-  const inputDir = './assets/outreach/x';
-  const outputDir = './../public/images/en';
-
-  // Define format configurations
-  const formatConfigs = [
-    { format: 'avif', quality: 60 },
-    { format: 'webp', quality: 60 },
-    // { format: 'jpeg', quality: 60 },
-  ];
+async function compressPngImages(inputDir = "./assets/outreach/x",
+                                 outputDir="'./../../public/images/en",
+                                 formatConfigs) {
   try {
-    await fs.mkdir(outputDir, { recursive: true });
-    const files = await fs.readdir(inputDir);
-    const pngFiles = files.filter(file => path.extname(file).toLowerCase() === '.png');
+    // get command line arguments
+    // const outputDir = './../public/images/en/';
 
-    if (pngFiles.length === 0) {
-      console.log('No PNG files found in the input directory.');
-      return;
-    }
+    // Define format configurations
+    const formatConfigs = [
+      // { format: 'avif', quality: 60 },
+      { format: 'webp', quality: 60 },
+      // { format: 'jpeg', quality: 98 },
+    ];
 
-    for (const file of pngFiles) {
-      const inputPath = path.join(inputDir, file);
-      const fileName = path.parse(file).name;
+    await fsPromises.mkdir(outputDir, { recursive: true });
+    const entries = await fsPromises.readdir(inputDir, { withFileTypes: true });
 
-      for (const config of formatConfigs) {
-        const { format, quality } = config;
-        const outputPath = path.join(outputDir, `${fileName}.${format}`);
+    for (const entry of entries) {
+      const inputPath = path.join(inputDir, entry.name);
+      const relativePath = path.relative(inputDir, inputPath);
+      const outputPath = path.join(outputDir, relativePath);
 
-        // Check if the target file already exists
-        try {
-          await fs.access(outputPath);
-          console.log(`Skipping ${file} to ${format}, file already exists.`);
-          continue; // Skip to the next format if file exists
-        } catch (error) {
-          // File doesn't exist, proceed with conversion
-        }
+      if (entry.isDirectory()) {
+        // Recursively process subdirectories
+        await compressPngImages(inputPath, outputPath, formatConfigs);
+      } else if (entry.isFile() && path.extname(entry.name).toLowerCase() === '.png') {
+        const fileName = path.parse(entry.name).name;
 
-        try {
-          let sharpInstance = sharp(inputPath);
+        for (const config of formatConfigs) {
+          const { format, quality } = config;
+          const outputFilePath = path.join(outputPath, `..`, `${fileName}.${format}`);
 
-          switch (format) {
-            case 'avif':
-              sharpInstance = sharpInstance.avif({ quality, effort: 9 });
-              break;
-            case 'webp':
-              sharpInstance = sharpInstance.webp({ quality, lossless: false });
-              break;
-            case 'jpeg':
-            case 'jpg':
-              sharpInstance = sharpInstance.jpeg({ quality });
-              break;
-            // Add more cases here for other formats if needed
-            default:
-              console.warn(`Unsupported format: ${format}. Skipping.`);
-              continue;
+          // Check if the target file already exists
+          try {
+            await fsPromises.access(outputFilePath);
+            console.log(`Skipping ${entry.name} to ${format}, file already exists.`);
+            continue; // Skip to the next format if file exists
+          } catch (error) {
+            // File doesn't exist, proceed with conversion
           }
 
-          await sharpInstance.toFile(outputPath);
-          console.log(`Converted ${file} to ${format}`);
-        } catch (error) {
-          console.error(`Error converting ${file} to ${format}:`, error);
+          try {
+            let sharpInstance = sharp(inputPath);
+
+            switch (format) {
+              case 'avif':
+                sharpInstance = sharpInstance.avif({ quality, effort: 9 });
+                break;
+              case 'webp':
+                sharpInstance = sharpInstance.webp({ quality, lossless: false });
+                break;
+              case 'jpeg':
+              case 'jpg':
+                sharpInstance = sharpInstance.jpeg({ quality });
+                break;
+              default:
+                console.warn(`Unsupported format: ${format}. Skipping.`);
+                continue;
+            }
+
+            await fsPromises.mkdir(path.dirname(outputFilePath), { recursive: true });
+            await sharpInstance.toFile(outputFilePath);
+            console.log(`Converted ${entry.name} to ${format}`);
+          } catch (error) {
+            console.error(`Error converting ${entry.name} to ${format}:`, error);
+          }
         }
       }
     }
-
-    console.log('Conversion completed successfully.');
   } catch (error) {
     console.error('An error occurred:', error);
   }
@@ -99,7 +101,7 @@ async function processFiles() {
       "./../public/images/en/0_1_kindness_first.webp",
       "./../public/images/en/0_2_fairness_always.webp",
       "./../public/images/en/0_3_duki_in_action.webp",
-      "./../public/images/en/0_ordinary_kindkang_invitation.webp",
+      "./../public/images/en/0_kindkang_invitation_to_good_will_world.webp",
       "./../public/images/en/1_thoughts_on_media_responsibility.webp",
       "./../public/images/en/2_thoughts_on_war_and_peace.webp",
       "./../public/images/en/3_evolutionary_perspective_why_kindness_fairness_and_duki_worldwide.webp",
@@ -111,7 +113,17 @@ async function processFiles() {
       "./../public/images/en/9_thoughts_on_duki_governments_and_immigration_policy.webp",
       "./../public/images/en/10_thoughts_on_duki_and_open_source.webp",
       "./../public/images/en/11_thoughts_on_duki_blockchain_and_authority.webp",
-      "./../public/images/en/12_O_Come_O_Come_Emmanuel.webp"
+      "./../public/images/en/12_O_Come_O_Come_Emmanuel.webp",
+      "./../public/images/en/open_thanks_letters/1_Thanks_Letter_for_Tommee_Profitt.webp",
+      "./../public/images/en/open_thanks_letters/2_Thanks_Letter_for_BLM_Movement.webp",
+      "./../public/images/en/open_thanks_letters/3_Thanks_Letter_for_Donald_Trump.webp",
+      "./../public/images/en/open_thanks_letters/4_Thanks_Letter_for_Richard_Dawkins.webp",
+      "./../public/images/en/open_thanks_letters/5_Thanks_Letter_for_Robert_Axelrod.webp",
+      "./../public/images/en/open_thanks_letters/6_Thanks_Letter_for_Elon_Musk.webp",
+      "./../public/images/en/open_thanks_letters/7_Thanks_Letter_for_Karl_Widerquist.webp",
+      "./../public/images/en/open_thanks_letters/8_Thanks_Letter_for_WorldID.webp",
+      "./../public/images/en/open_thanks_letters/9_Thanks_Letter_for_Avi_Wigderson.webp",
+      "./../public/images/en/open_thanks_letters/10_Thanks_Letter_for_The_Unknown.webp"
     ]
   }];
 
@@ -184,7 +196,5 @@ async function processFiles() {
 
 // Run the function
 await processFiles().catch(console.error);
-
-// await extractFilesFromBlob();
 
 // compressPngImages();

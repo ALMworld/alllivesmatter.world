@@ -10,13 +10,15 @@
     "common_data": {
         "share_text": "Advocate Worldwide",
         "share_url": "Www.AllLivesMatter.World",
-        "advocate_with_peace": "Advocate With Peace",
-        "advocate_with_anger": "Advocate With Anger",
+        "advocate_with_peace": "Share Peace",
+        "advocate_with_anger": "Share Anger",
         "all_lives_matter_world_belief": "All lives matter world needs all lives worldwide to believe their words and deeds do matter",
         "peaceful_mind": "Don't worry about anything; instead, pray about everything. Tell God what you need, and thank Him for all He has done.",
         "angry_mind": "Speak up for those who cannot speak for themselves; ensure justice for those being crushed.",
-        "advocacy_in_peace": "All Lives Matter Worldwide: Global Calling for Peace, Advocating Kindness First, Fairness Always, and DUKI In Action For All Lives. #AllLivesMatterWorld",
-        "advocacy_in_anger": "THEY ARE DYING! AllLivesMatterWorld Should NOT Be AbandonedLikeSHIT Just Because Of A Few BadApples In It! DUKIInAction is NOT dookie EITHER! They are BOTH duty, kindness, AND superpower for ALL lives. It is our freeWill's DESTINY and HisWill. TAKE your DUTY as sons of the HIGHEST and judge RIGHTEOUSLY and REPOST and DO SOMETHING to make it SURVIVE! #AllLivesMatterWorld",
+        "advocacy_in_peace": "All Lives Matter Worldwide: Global Calling for Peace, Advocating Kindness First, Fairness Always, and DUKI In Action For All Lives. ",
+        "advocacy_in_anger": "THEY ARE DYING! AllLivesMatterWorld Should NOT Be AbandonedLikeSHIT Just Because Of A Few BadApples In It! DUKIInAction is NOT dookie EITHER! They are BOTH duty, kindness, AND superpower for ALL lives. It is our freeWill's DESTINY and HisWill. TAKE your DUTY as sons of the HIGHEST and judge RIGHTEOUSLY and REPOST and DO SOMETHING to make This will SURVIVE and PREVAIL!",
+        "possible_hash_tags": "#JesusIsComingSoon #JesusIsKing #AllLivesMatterWorld #Peace #WorldWar3 #PreventWW3 #PeaceNotWar #StopTheWar #GlobalUnity #WarIsNotTheAnswer #EndConflict #TogetherForPeace #NoMoreWars #HopeForHumanity #Ukraine #StopTheWar #United #StandTogether #ceasefire #peace #JesusSaves #JesusLovesYou #AmbassadorOfPeace #IsamIsPeace",
+        "common_hash_tags": "#AllLivesMatterWorld #ceasefire #Peace #StopTheWar #WarIsNotTheAnswer #EndConflict #CeaseFirelnGazaNOW #RussianUkrainianWar #NoMoreWars ",
         "poem_a_boy_in_the_universe": [
             "I am but a boy, brief spark wandering cosmos vast,",
             "Chancing upon a seed of free will, unsurpassed.",
@@ -84,7 +86,7 @@
                         "description": "'Love your neighbor as yourself.' There is no commandment greater than these."
                     },
                     {
-                        "title": "DUKI To World",
+                        "title": "Good For World",
                         "description": "The world is my country, all mankind are my brethren, and to do good is my religion."
                     }
                 ]
@@ -224,9 +226,15 @@
         "sub_title_evolved_out_4": "His Will has returned. The King will soon follow. When DUKI starts its action, it will serve as a reminder to all lives worldwide there is universal kindness and fairness, there is also a duty for all lives to uphold these beliefs, because all lives matter worldwide. When the recursive self-bootstrap finally elevates all lives up there, He will return and transform AllLivesMatter.World into a true representation of His Will.",
         "sub_title_evolved_out_5": "His Will has returned. The King will soon follow. When DUKI starts its action, it will serve as a reminder to all lives worldwide there is universal kindness and fairness, there is also a duty for all lives to uphold these beliefs, because all lives matter. When the recursive self-bootstrap finally elevates all lives up there, He will return and transform AllLivesMatter.World into a true representation of His Will.",
         "sub_title_evolved_out_6": "His Will has returned. The King will soon follow. When DUKI starts its action, it will serve as a reminder to all lives worldwide there is universal kindness and fairness, there is also a duty for all lives to uphold these beliefs, because all lives matter. When the recursive self-bootstrap finally elevates all lives up there, He will return and bring about the New Heaven and New Earth, where AllLivesMatter.World becomes the Representation of His Will",
-        "sub_title": "His Will has returned. The King will soon follow. When DUKI starts its action, it will serve as a reminder to all lives worldwide there is universal kindness and fairness, there is also duty for all lives to uphold these beliefs, because all lives matter. When AllLivesMatterWorld becomes the true representation of His Will, and this self-bootstrap loop finally elevates all lives up there, He will return and bring about the New Heaven and New Earth",
-        "invitation_letter_text": "The World as Will and Representation",
-        "invitation_letter": "0_ordinary_kindkang_invitation",
+        "sub_title_evolved_out_7": "His Will has returned. The King will soon follow. When DUKI starts its action, it will serve as a reminder to all lives worldwide there is universal kindness and fairness, there is also duty for all lives to uphold these beliefs, because all lives matter. When AllLivesMatterWorld becomes the true representation of His Will, and this self-bootstrap loop finally elevates all lives up there, He will return and bring about the New Heaven and New Earth",
+        "sub_title_evolved_out_8": "His Will has returned. The King will soon follow. When DUKI starts its action, it will serve as a reminder to all lives worldwide there is universal kindness and fairness, there is also duty for all lives to uphold these beliefs, because all lives matter. When AllLivesMatterWorld becomes the true representation of His Will, and this self-bootstrap loop finally elevates all lives up there, He will return and bring about the New Heaven and New Earth",
+        "sub_title_evolved_out_9": "His Will has returned, The King will soon follow. When DUKI is in action, it will remind all lives worldwide there is universal kindness and fairness, also there is duty to be the beliefs. As all lives begin to believe all lives matter, the bootstrap loop will initiate, and all lives will begin to evolve beyond mere survival, dissolving that primal sin. Ultimately, AllLivesMatterWorld becomes the true representation of His Will, and all lives are lifted up to There. There, He will execute the Final Judgment, bringing about the New Heaven and New Earth",
+        "sub_title_evolved_out_10": "His Will has returned, The King will soon follow. When DUKI is in action, it will remind all lives worldwide there is universal fairness and kindness, there is also duty to be the beliefs. As all lives begin to believe, the bootstrap loop will start. It will elevate humanity beyond mere survival, dissolving the primal sin. Ultimately, AllLivesMatterWorld becomes the true representation of His Will, and all lives are lifted up to There. There, He will execute the Final Judgment, bringing about the New Heaven and New Earth.",
+        "sub_title": "His Will has returned, The Kind King will soon follow. When DUKI is in action, it will remind all lives worldwide there is universal fairness and kindness, there is also duty to be the beliefs. As all lives begin to believe, the bootstrap loop will start. It will elevate humanity beyond mere survival, dissolving the primal sin. Ultimately, AllLivesMatterWorld becomes the true representation of His Will, and all lives are lifted up to There. There, He will execute the Final Judgment, bringing about the New Heaven and New Earth.",
+        "invitation_letter_text": "KindKang Invitation to The Good Will World",
+        "invitation_letter": [
+            "0_kindkang_invitation_to_good_will_world"
+        ],
         "video_spirit_disclaimer": "Disclaimer: I selected this video interview here in AllLivesMatter.World not for the name, wealth, or any outward attributes, but for the inner spirit it conveys and the strength that could spread. This choice reflects my personal values in decision-making and neither promotes nor enhances or diminishes any qualifications.",
         "His_will_and_our_good_free_will_text": [
             {
@@ -278,8 +286,14 @@
                 "will_summary": ""
             },
             {
-                "free_will": "9_Thanks_Letter_for_Avi_Wigerson",
+                "free_will": "9_Thanks_Letter_for_Avi_Wigderson",
                 "from": "Avi Wigerson",
+                "thanks_delivery_state": "unknown",
+                "will_summary": ""
+            },
+            {
+                "free_will": "10_Thanks_Letter_for_The_Unknown",
+                "from": "The Unknown",
                 "thanks_delivery_state": "unknown",
                 "will_summary": ""
             }
@@ -345,9 +359,10 @@
                 ],
                 "media": {
                     "type": "video",
-                    "url": "",
-                    "sunflower_petal": "FIGHT! FIGHT TO STOP WARS AND FIGHT FOR PEACE",
-                    "watch_tips": "You shall judge the people with righteous judgment. You shall not pervert justice. Please watch the entire 5-minute video and check the media report"
+                    "url": "https://www.youtube-nocookie.com/embed/L07fMoafVh4?si=6AhpvFdH3h84Zx-6",
+                    "sunflower_petal": "FIGHT! FIGHT TO STOP WARS AND FIGHT FOR PEACE!",
+                    "watch_tips": "You shall judge the people with righteous judgment. You shall not pervert justice. You shall not show partiality, and you shall not accept a bribe, for a bribe blinds the eyes of the wise and subverts the cause of the righteous.",
+                    "unsafe_media_html": "Please watch the entire 5-minute video and check the media report <a target='new' className='inline_ref' href='https://web.archive.org/web/20240817021327/https://www.google.com/search?q=Trump+war&sca_esv=e02c8f39a8b85279&sca_upv=1&sxsrf=ADLYWIJaEuHA9_5gVAAAGxhr2iB3aS0kog%3A1723860058037&source=lnt&tbs=cdr%3A1%2Ccd_min%3A5%2F9%2F2023%2Ccd_max%3A5%2F16%2F2023&tbm='>&nbsp;<span className='text-color:yellow'>»<span></a>"
                 },
                 "answers": [
                     "(My comment on some media narraibtive about the above video) Instead of highlighting Trump's focus on stopping the war and saving lives for humanity, reports headlined 'Trump won't say whether he wants Russia or Ukraine to win war'. Rather than acknowledging Trump's urging of Europe to increase support for fairness and to strengthen Ukraine, narratives suggested he refused to back Ukraine in its war with Russia. The media fixated on calling Putin a 'war criminal' and on winning, and <a class='inline_ref' target='new' href=\"https://web.archive.org/web/20240818232941/https://www.politico.com/news/2023/05/11/christie-trump-cnn-putin-00096393\">some</a> resorted to labeling Trump a 'coward' and a 'puppet of Putin' for his approach of trying to end the conflict without losing more lives. These narratives treat war like a video game, focusing on winning and losing, implying that some innocent lives are more valuable than others, while ignoring that humanity as a whole loses in the wars.",
@@ -484,9 +499,9 @@
                 ],
                 "media": {
                     "type": "music",
-                    "url": "",
+                    "url": "https://www.youtube-nocookie.com/embed/PQuq4umpb3Q?si=40n9KCvSxftu6i-M",
                     "sunflower_petal": "O Come, O Come, Emmanuel",
-                    "watch_tips": "Close you eyes and Breathe deeply. Let the ancient melody transport you through time"
+                    "watch_tips": "O come, O come, Emmanuel, And ransom captive Israel #StopTheWar"
                 },
                 "answers": [
                     "I am not a Christian, nor do I claim to be one. I'm unfamiliar with what religious texts say about God or Christ, as I grew up and was educated in an environment without any religious teachings, including Christianity. I have very limited exposure to Christian activities and other religious activities. At the time of writing, I have not attended any church services for worship, though I've visited a few churches as a tourist.",
@@ -530,14 +545,34 @@
                 "answers": [
                     "Who am I? I'm KindKang, a person with a <a class='inline_ref' target='new' href='https://github.com/KindKang/alllivesmatter.world/tree/main/ptools/human_passport'>Human Passport</a> generated using zero-knowledge proofs - a fascinating technique that ensures trustworthiness while protecting privacy. Is all the information on the passport trustworthy now? Well, some is believable now, while some requires more work to make it trustworthy. For the trustworthy parts: my contact email is true, and the following claim is true - the secret I used (which I won't disclose, of course) contains my nickname, and before it, there's 'ordinary'. Regarding the 'ordinary' part, even without official authority, you can judge from my HireMeAsAmbassador ad below, but remember, even if I am ordinary, my words and actions still matter; all lives matter, don't they?. The other parts of info in my passport, such as whether I used my real name and real iris data, aren't fully trustworthy without authorities to back them up. However, I believe that through advocacy, hard work, and drawing more attention to legitimate authorities and developing more reliable ones, we can make it fully trustworthy. By 'authority' I mean entities that respond to criticism with transparency and additional proof, rather than censorship or inaction. Combining trustworthy authorities with currently available or emerging technologies, I believe we can establish a solid Web3 foundation for humanity in the coming years. In that world, All lives will have equal opportunities to grow towards their own unique potential, flourishing in all their diversity, and enabling all to achieve their own unique excellence.",
                     "Shameless HireMeAsAnAmbassador Ad:I'm seeking companies that value the 'AllLivesMatter.World' advocacy - even better if you're willing to make it a reality by becoming a DUKIGE (I'm thinking great companies like ...) or developing technology (I'm thinking ...) to power it. I invite you to consider me as a remote, independent ambassador. I ask you to evaluate me solely on my merits and potential contributions, regardless of nationality, color, background, beliefs, or any other factors. I'm committed to promoting your hard work and kindness to the world. Note: By 'independent,' I mean I maintain the freedom to occasionally promote other DUKI-friendly companies if more appear, but I wouldn't promote your direct competitors unless I quit. Here are a few ordinary facts about me: My primary work experience is Java-based and business-oriented, and I have no work experience in blockchain technology as yet. I learn most things driven by curiosity. While English isn't my first language, and I hardly speak it in daily life, I can understand it quite well and often catch myself thinking in English. I believe language won't be a barrier to effective communication.",
-                    "I don't know what the future holds for this advocacy. I sensed my dukiness and initiated it, and I will give it an initial boost and keep advocating for it until the end of my life or until I'm forcibly stopped by circumstances beyond my control. As I believe, 'All Lives Matter World' is unstoppable. The source code is released under 'DUKI LICENSE', which is essentially the same as the MIT license with an additional condition: if you're using the code as a profit-making entity and your entity turns a profit, you should donate 1% to DUKI. Currently, there's no DUKI system in place for donations or to verify this behavior, but you can still fulfill this spirit by showing kindness to those who need help. In the future, if possible, I'll try to bootstrap one or more tiny DUKIGEs, though currently I have no idea what they would be like. I won't accept donations or intend to commercialize this advocacy for personal gain, now or in the future. Moreover, please don't expect too much from me – I'm just an ordinary person with a challenging life to maintain. I can only pursue this advocacy in my spare time or, better yet, through a job that enables me to continue this work while simultaneously earning a living."
+                    "I don't know what the future holds for this advocacy. I sensed my dukiness and initiated it, and I will give it an initial boost and keep advocating for it until the end of my life or until I'm forcibly stopped by circumstances beyond my control. As I believe, 'All Lives Matter World' is unstoppable. The source code is released under 'DUKI LICENSE', which is essentially the same as the MIT license with an additional condition: if you're using the code as a profit-making entity and your entity turns a profit, you should donate 2.5% to DUKI. Currently, there's no DUKI system in place for donations or to verify this behavior, but you can still fulfill this spirit by showing kindness to those who need help. In the future, if possible, I'll try to bootstrap one or more tiny DUKIGEs, though currently I have no idea what they would be like. I won't accept donations or intend to commercialize this advocacy for personal gain, now or in the future. Moreover, please don't expect too much from me – I'm just an ordinary person with a challenging life to maintain. I can only pursue this advocacy in my spare time or, better yet, through a job that enables me to continue this work while simultaneously earning a living."
                 ]
             },
             {
-                "question": "How 'A boy in the universe' was written",
-                "answer_image_list": [
-                    "12_O_Come_O_Come_Emmanuel"
-                ],
+                "question": "DUKI can dissolve original sin. Son of the Highest duty: cleanse self and help others",
+                "answers": [
+                    "DUKI LICENSE, which is essentially the same as the MIT license, except there is a clause 'Share your Success: 2.5% profit to DUKI when earned.",
+                    "When I first started working on this project, before writing the letter to The Unknown, I set the default contribution percentage for the DUKI license at 1%. I chose this because I thought of 1 as the starting point, like how we count from zero. But then I found out that 2.5% is a commonly used figure in similar contexts. So, I decided to update the DUKI default to 2.5% to align with this practice. I also made a decision to follow the rules I was expecting DUKI to be. As the initial contributor of this project, I've am exempted  from the contribution requirements according to the DUKI Licence. ",
+                    "When I started this project, I promised myself I wouldn't make any money from it. But as I worked on refining my ideas, I realized this thinking was unwise and sinful. I was trying to act like some perfect, selfless angel, which wasn't genuine and didn't respect the value of entrepreneurship - something that's actually crucial for putting DUKI into action.",
+                    "More importantly, I realized I might have been enlightened by the Unknown about what the \"original sin\" is - that basic instinct will to do whatever it needs to survive, whether good or bad. I also came to the realization that all lives matter, which means I should cherish myself just as much as all the other lives out there. I won't expect anyone out there to be that naively selfless, caring nothing about dissolving their own original sin. So I've come to terms with the idea that it's okay to profit from the work here if I truly believe in what I'm doing.",
+                    "It's about being fair first, then being kind - not pretending to be kind while ignoring fairness. This approach echoes the advocacy here: Kindness First, Fairness Always. Kindness is not a must, but fairness is.",
+                    "So, I want to apologize for my earlier stance. To make up for it, I plan to contribute 97.5% of any profits to DUKI once I feel I've made enough progress in dealing with my \"original sin\". Under the DUKI license, I'm technically exempt from the full contribution, but I'll still contribute the base 2.5% like everyone else. It's my way of staying accountable and giving back.",
+                    "I know, I know, I use a lot of words that might seem like nonsense. Maybe I will never profit from the advocacy here, but that's not the point. Here's my point: I'll never accept donations, and never do evil with it. I don't wish for money-making things from it, I'm more focused on the job. But I don't want to kill that possibility, because DUKI needs money. For now, I'm just presenting this Will as a representation of dual free will. I've put some money and a lot of kindness and care into it, I don't expect much from it. I'll always use it for good.",
+                    "Looking ahead, believe it or not, I plan to advocate for creating AllLivesMatter.World in the Web3 world. That's how I envisioned DUKI in action. I hope to work in a forward-thinking, DUKI-friendly company in the Web3 space to make this happen or at least advocate for it. It's ambitious, I know, but I think it's a goal worth pursuing.",
+                    "Then again, maybe I need to start by finding a great company to work for and make a living first. Sometimes you need to take care of the basics before you can change the world. That's our original sin, isn't it? The need to survive and thrive before we can focus on bigger dreams.",
+                    "But here's the exciting part: When DUKI is in action and becomes successful, it could change this dynamic. Even as it begins to take action, it will remind us that all lives indeed matter. Maybe at some point in the future, everyone will have the freedom to focus on bigger dreams. It's like we're setting up a system that could eventually free us all from that original sin, allowing us to think beyond mere survival and truly work towards making the world better."
+                ]
+            },
+
+            {
+                "question": "How \"A boy in the universe\" was written",
+                "answer_image_list": [],
+                "media": {
+                    "type": "music",
+                    "url": "https://www.youtube-nocookie.com/embed/Osmzr1EFfms?si=T97U2-UickHJOME5",
+                    "sunflower_petal": "Lonely Warrior -- by Shaun Gibson",
+                    "watch_tips": "All lives are born ordinary gods. Extraordinary comes from ordinary, as God's glory lies in duty exercised well."
+                },
                 "answers": [
                     "After the poem written jointly by me, the LLM, and perhaps God, I decided to share my personal story about why I initiated the \"All Lives Matter World\" advocacy.",
                     "I consider myself agnostic, recognizing the limitations of my understanding, and standing fully aware and in awe of the Unknown. As an ordinary person, I believe that the 'All Lives Matter World' is a good free will. Assuming God exists, I believe that is God's will also. GOOD FREE WILL LIVES FOREVER and GOD WILL LIVES FOREVER.",
@@ -572,6 +607,38 @@
                     "To all lives in the world: Just by exercising your duty with a loving heart, you are being divine to the world, whether you are ordinary or extraordinary.",
                     "And if there is a God, all lives are gods; all lives are children of the Most High. All lives have the power and duty of God.",
                     "Whether you believe in God or not, let us use this power and exercise this duty, and fight together for a world where all lives truly matter—this is His will and our free will's destiny."
+                ],
+                "note": "todo, maybe a picture for the image"
+            },
+            {
+                "question": "Free Will is Always Free. Nothing can stop it",
+                "answer_image_list": [
+                    "10_Thanks_Letter_for_The_Unknown"
+                ],
+                "media": {
+                    "type": "music",
+                    "url": "https://www.youtube-nocookie.com/embed/0N1_0SUGlDQ?si=EO01r4996o4mEbeV",
+                    "sunflower_petal": "Plants vs Zombies Theme Song -- by supershigi",
+                    "watch_tips": " Good Will generates solar power, while Evil Will bites all the petals off of Good Will. Perhaps the Unknown has already warned us about the Undead Virus 15 years ago. Could this be a zero-knowledge proof? "
+                },
+                "answers": [
+                    "Free will can be anything; nothing can stop it, as The Unknown unbinds it. It can become the undead that shape the zombies army; it can become the sunflower that powers all plants. It can also become the pure existence there.",
+                    "May all become the ones that bring no harm."
+                ]
+            },
+            {
+                "question": "Can the \"Survival of the Fittest\" Game be played with Love and dissolve all lives' original sin?",
+                "answer_image_list": [
+                    "0_3_duki_in_action"
+                ],
+                "media": {
+                    "type": "music",
+                    "url": "https://www.youtube-nocookie.com/embed/gdx7gN1UyX0?si=W3Bxfp7n45wQ9GLT",
+                    "sunflower_petal": "Company.  --  by Justin Bieber",
+                    "watch_tips": "Can we, can we keep each other company? Maybe we, can be, Be each other's company. Oh companion, elevate us all together."
+                },
+                "answers": [
+                    "Todo Notice: Be Patient. Wait for the will to evolve, it takes time to form presentation."
                 ]
             }
         ]

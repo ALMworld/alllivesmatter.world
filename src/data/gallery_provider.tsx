@@ -1,9 +1,22 @@
-import React, { createContext, useContext, useCallback, useEffect } from 'react';
+import React, { createContext, useContext, useCallback, useEffect, useState } from 'react';
 import { MegaFilesPack, UnitFile } from './gallery_types';
 import metadata from '../assets/metadata.json';
+import { useTranslation } from 'react-i18next';
+
+type LoadingState = 'idle' | 'loading' | 'loaded' | 'error';
+
+
+
+// interface GalleryContextType {
+//     prefill: (lang: string) => Promise<MegaFilesPack>;
+
+// }
+// const GalleryContext = createContext<GalleryContextType | undefined>(undefined);
 
 interface GalleryContextType {
-    prefill: (lang: string) => Promise<MegaFilesPack>;
+    loadingState: LoadingState;
+    error: string | null;
+    getImageFiles: (keys: string[]) => (UnitFile | null)[];
 
 }
 
@@ -49,36 +62,69 @@ export async function prefillMegaFilesPack(pack: MegaFilesPack): Promise<MegaFil
 
 
 export const GalleryProvider: React.FC<GalleryProviderProps> = ({ children }) => {
-    const prefill = useCallback(async (lang: string): Promise<MegaFilesPack> => {
-        // Check if we already have prefilled data for this language
-        if (prefilledDataCache.has(lang)) {
-            return prefilledDataCache.get(lang)!;
-        }
+    const [loadingState, setLoadingState] = useState<LoadingState>('idle');
+    const [error, setError] = useState<string | null>(null);
+    const [currentPack, setCurrentPack] = useState<MegaFilesPack | null>(null);
+    const { i18n } = useTranslation();
 
-        let data: MegaFilesPack = metadata[lang];
-        if (!data) {
-            throw new Error(`No data found for language: ${lang}`);
-        }
+    const loadGalleryData = useCallback(async (lang: string): Promise<MegaFilesPack> => {
+        setLoadingState('loading');
+        setError(null);
 
-        // Fetch the blob if it doesn't exist
-        if (!data.blob) {
-            const response = await fetch(data.blob_uri, {
-                method: 'GET',
-                headers: {
-                    'Accept': 'application/alllivematter.world.blob,application/octet-stream',
-                }
-            });
-            if (!response.ok) {
-                throw new Error('Failed to fetch blob data');
+        try {
+            // Check if we already have prefilled data for this language
+            if (prefilledDataCache.has(lang)) {
+                setLoadingState('loaded');
+                return prefilledDataCache.get(lang)!;
             }
-            data.blob = await response.blob();
-        }
 
-        const solidatedPack = await prefillMegaFilesPack(data);
-        // Cache the prefilled data
-        prefilledDataCache.set(lang, solidatedPack);
-        return solidatedPack;
+            let data: MegaFilesPack = metadata[lang];
+            if (!data) {
+                throw new Error(`No data found for language: ${lang}`);
+            }
+
+            // Fetch the blob if it doesn't exist
+            if (!data.blob) {
+                const response = await fetch(data.blob_uri, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/alllivematter.world.blob,application/octet-stream',
+                    }
+                });
+                if (!response.ok) {
+                    throw new Error('Failed to fetch blob data');
+                }
+                data.blob = await response.blob();
+            }
+
+            const solidatedPack = await prefillMegaFilesPack(data);
+            // Cache the prefilled data
+            prefilledDataCache.set(lang, solidatedPack);
+            setCurrentPack(solidatedPack);
+            setLoadingState('loaded');
+
+            return solidatedPack;
+        } catch (err) {
+            const errorMessage = err instanceof Error ? err.message : 'An unknown error occurred';
+            setError(errorMessage);
+            setLoadingState('error');
+        }
     }, [metadata]);
+
+    useEffect(() => {
+        loadGalleryData(i18n.language);
+    }, [i18n.language, loadGalleryData]);
+
+
+    const getImageFiles = useCallback((keys: string[]): UnitFile[] => {
+        if (!currentPack) return [];
+        return keys.reduce((acc: UnitFile[], key) => {
+            const file = currentPack.files[key];
+            if (file) acc.push(file);
+            return acc;
+        }, []);
+    }, [currentPack]);
+
 
 
     const cleanup = useCallback(() => {
@@ -105,7 +151,8 @@ export const GalleryProvider: React.FC<GalleryProviderProps> = ({ children }) =>
     }, [cleanup]);
 
     return (
-        <GalleryContext.Provider value={{ prefill }}>
+        <GalleryContext.Provider value={{ loadingState, error, getImageFiles }}>
+        {/* <GalleryContext.Provider value={{ prefill }}> */}
             {children}
         </GalleryContext.Provider>
     );

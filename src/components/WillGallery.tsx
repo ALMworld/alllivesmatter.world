@@ -27,6 +27,7 @@ interface WillGalleryProps {
 const WillGallery: React.FC<WillGalleryProps> = ({ text_wills_list, media_wills_list }) => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const { loadingState, error, getImageFiles } = useGallery();
+  console.log('text_wills_list', text_wills_list);
 
   const thanksLettersWithState: WillWithState[] = useMemo(() => {
     const imageKeys = text_wills_list.map(will => will.free_will);

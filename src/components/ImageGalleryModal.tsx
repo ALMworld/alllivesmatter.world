@@ -20,13 +20,17 @@ const ImageGalleryModal = ({ images, isOpen, onClose, initialIndex = 0 }) => {
     const nextImage = useCallback((e) => {
         e.stopPropagation();
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        setIsLoading(true);
+        if (!isLoading) {
+            setIsLoading(true);
+        }
     }, [images.length]);
 
     const prevImage = useCallback((e) => {
         e.stopPropagation();
         setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-        setIsLoading(true);
+        if (!isLoading) {
+            setIsLoading(true);
+        }
     }, [images.length]);
 
     if (!isOpen) return null;
@@ -49,11 +53,12 @@ const ImageGalleryModal = ({ images, isOpen, onClose, initialIndex = 0 }) => {
                             alt={images[currentImageIndex].base_name}
                             className="max-w-full max-h-full object-contain"
                             style={{
-                                opacity: isLoading ? 0 : 1,
+                                // opacity: isLoading ? 0 : 1,
+                                opacity: 1,
                                 borderRadius: '1rem',
-                                transition: 'opacity 0.3s ease-in-out'
+                                // transition: 'opacity 0.3s ease-in-out'
                             }}
-                            onLoad={() => setIsLoading(false)}
+                        onLoad={() => setIsLoading(false)}
                         />
                     </div>
                 )}
@@ -61,8 +66,8 @@ const ImageGalleryModal = ({ images, isOpen, onClose, initialIndex = 0 }) => {
                     <>
                         <button onClick={prevImage}
                             // className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#d20033] bg-opacity-50 rounded-full p-2 hover:bg-opacity-75"
-                            className={`absolute left-4 top-1/2 transform -translate-y-1/2 rounded-full p-2 transition-colors ${currentImageIndex === 0
-                                ? 'bg-gray-500 cursor-not-allowed'
+                            className={`absolute left-1 top-1/2 transform -translate-y-1/2 rounded-full p-2 transition-colors ${currentImageIndex === 0
+                                ? 'bg-gray-500 bg-opacity-50 cursor-not-allowed'
                                 : 'bg-[#d20033] bg-opacity-50 hover:bg-opacity-75'
                                 }`}
                             disabled={currentImageIndex === 0}
@@ -72,7 +77,7 @@ const ImageGalleryModal = ({ images, isOpen, onClose, initialIndex = 0 }) => {
                         </button>
                         <button onClick={nextImage}
                             // className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#d20033] bg-opacity-50 rounded-full p-2 hover:bg-opacity-75">
-                            className={`absolute right-4 top-1/2 transform -translate-y-1/2 rounded-full p-2 transition-colors ${currentImageIndex === images.length - 1
+                            className={`absolute right-1 top-1/2 transform -translate-y-1/2 rounded-full p-2 transition-colors ${currentImageIndex === images.length - 1
                                 ? 'bg-gray-500 cursor-not-allowed'
                                 : 'bg-[#d20033] bg-opacity-50 hover:bg-opacity-75'
                                 }`}

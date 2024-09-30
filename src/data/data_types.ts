@@ -18,23 +18,52 @@ export interface DataTypes {
 }
 
 export interface AboutData {
-    title:                   string;
-    watch_interview_text:    string;
-    watch_news_text:         string;
-    invitation_letter_text:  string;
-    invitation_letter:       string;
-    video_spirit_disclaimer: string;
-    sections:                string[];
-    links:                   Links;
-    faq_list:                FAQList[];
+    title_x:                               string;
+    title:                                 string;
+    sub_title_evolved_out_1:               string;
+    sub_title_evolved_out_2:               string;
+    sub_title_evolved_out_3:               string;
+    sub_title_evolved_out_4:               string;
+    sub_title_evolved_out_5:               string;
+    sub_title_evolved_out_6:               string;
+    sub_title_evolved_out_7:               string;
+    sub_title:                             string;
+    invitation_letter_text:                string;
+    invitation_letter:                     string[];
+    video_spirit_disclaimer:               string;
+    His_will_and_our_good_free_will_text:  HisWillAndOurGoodFreeWill[];
+    His_will_and_our_good_free_will_media: HisWillAndOurGoodFreeWill[];
+    sections:                              string[];
+    links:                                 Links;
+    faq_list:                              FAQList[];
+}
+
+export interface HisWillAndOurGoodFreeWill {
+    free_will:              string;
+    from:                   string;
+    thanks_delivery_state?: DeliveryState;
+    will_summary:           string;
+    delivery_state?:        DeliveryState;
+}
+
+export enum DeliveryState {
+    Unknown = "unknown",
 }
 
 export interface FAQList {
     question:           string;
     answer_image_list?: string[];
+    media?:             Media;
     answers:            string[];
     _answers?:          string[];
     hide_answers?:      string[];
+}
+
+export interface Media {
+    type:            string;
+    url:             string;
+    sunflower_petal: string;
+    watch_tips:      string;
 }
 
 export interface Links {
@@ -74,11 +103,19 @@ export interface KeyPoint {
 }
 
 export interface CommonData {
-    share_text:        string;
-    share_url:         string;
-    share_advocacy:    string;
-    duki_terms_header: string;
-    duki_terms:        DukiTerm[];
+    share_text:                    string;
+    share_url:                     string;
+    advocate_with_peace:           string;
+    advocate_with_anger:           string;
+    all_lives_matter_world_belief: string;
+    peaceful_mind:                 string;
+    angry_mind:                    string;
+    advocacy_in_peace:             string;
+    advocacy_in_anger:             string;
+    advocacy_hash_tags:            string;
+    poem_a_boy_in_the_universe:    string[];
+    duki_terms_header:             string;
+    duki_terms:                    DukiTerm[];
 }
 
 export interface DukiTerm {
@@ -309,22 +346,45 @@ const typeMap: any = {
         { json: "about_data", js: "about_data", typ: r("AboutData") },
     ], false),
     "AboutData": o([
+        { json: "title_x", js: "title_x", typ: "" },
         { json: "title", js: "title", typ: "" },
-        { json: "watch_interview_text", js: "watch_interview_text", typ: "" },
-        { json: "watch_news_text", js: "watch_news_text", typ: "" },
+        { json: "sub_title_evolved_out_1", js: "sub_title_evolved_out_1", typ: "" },
+        { json: "sub_title_evolved_out_2", js: "sub_title_evolved_out_2", typ: "" },
+        { json: "sub_title_evolved_out_3", js: "sub_title_evolved_out_3", typ: "" },
+        { json: "sub_title_evolved_out_4", js: "sub_title_evolved_out_4", typ: "" },
+        { json: "sub_title_evolved_out_5", js: "sub_title_evolved_out_5", typ: "" },
+        { json: "sub_title_evolved_out_6", js: "sub_title_evolved_out_6", typ: "" },
+        { json: "sub_title_evolved_out_7", js: "sub_title_evolved_out_7", typ: "" },
+        { json: "sub_title", js: "sub_title", typ: "" },
         { json: "invitation_letter_text", js: "invitation_letter_text", typ: "" },
-        { json: "invitation_letter", js: "invitation_letter", typ: "" },
+        { json: "invitation_letter", js: "invitation_letter", typ: a("") },
         { json: "video_spirit_disclaimer", js: "video_spirit_disclaimer", typ: "" },
+        { json: "His_will_and_our_good_free_will_text", js: "His_will_and_our_good_free_will_text", typ: a(r("HisWillAndOurGoodFreeWill")) },
+        { json: "His_will_and_our_good_free_will_media", js: "His_will_and_our_good_free_will_media", typ: a(r("HisWillAndOurGoodFreeWill")) },
         { json: "sections", js: "sections", typ: a("") },
         { json: "links", js: "links", typ: r("Links") },
         { json: "faq_list", js: "faq_list", typ: a(r("FAQList")) },
     ], false),
+    "HisWillAndOurGoodFreeWill": o([
+        { json: "free_will", js: "free_will", typ: "" },
+        { json: "from", js: "from", typ: "" },
+        { json: "thanks_delivery_state", js: "thanks_delivery_state", typ: u(undefined, r("DeliveryState")) },
+        { json: "will_summary", js: "will_summary", typ: "" },
+        { json: "delivery_state", js: "delivery_state", typ: u(undefined, r("DeliveryState")) },
+    ], false),
     "FAQList": o([
         { json: "question", js: "question", typ: "" },
         { json: "answer_image_list", js: "answer_image_list", typ: u(undefined, a("")) },
+        { json: "media", js: "media", typ: u(undefined, r("Media")) },
         { json: "answers", js: "answers", typ: a("") },
         { json: "_answers", js: "_answers", typ: u(undefined, a("")) },
         { json: "hide_answers", js: "hide_answers", typ: u(undefined, a("")) },
+    ], false),
+    "Media": o([
+        { json: "type", js: "type", typ: "" },
+        { json: "url", js: "url", typ: "" },
+        { json: "sunflower_petal", js: "sunflower_petal", typ: "" },
+        { json: "watch_tips", js: "watch_tips", typ: "" },
     ], false),
     "Links": o([
         { json: "warning", js: "warning", typ: r("Puppet") },
@@ -360,7 +420,15 @@ const typeMap: any = {
     "CommonData": o([
         { json: "share_text", js: "share_text", typ: "" },
         { json: "share_url", js: "share_url", typ: "" },
-        { json: "share_advocacy", js: "share_advocacy", typ: "" },
+        { json: "advocate_with_peace", js: "advocate_with_peace", typ: "" },
+        { json: "advocate_with_anger", js: "advocate_with_anger", typ: "" },
+        { json: "all_lives_matter_world_belief", js: "all_lives_matter_world_belief", typ: "" },
+        { json: "peaceful_mind", js: "peaceful_mind", typ: "" },
+        { json: "angry_mind", js: "angry_mind", typ: "" },
+        { json: "advocacy_in_peace", js: "advocacy_in_peace", typ: "" },
+        { json: "advocacy_in_anger", js: "advocacy_in_anger", typ: "" },
+        { json: "advocacy_hash_tags", js: "advocacy_hash_tags", typ: "" },
+        { json: "poem_a_boy_in_the_universe", js: "poem_a_boy_in_the_universe", typ: a("") },
         { json: "duki_terms_header", js: "duki_terms_header", typ: "" },
         { json: "duki_terms", js: "duki_terms", typ: a(r("DukiTerm")) },
     ], false),
@@ -409,4 +477,7 @@ const typeMap: any = {
         { json: "question", js: "question", typ: "" },
         { json: "question_emphasis", js: "question_emphasis", typ: "" },
     ], false),
+    "DeliveryState": [
+        "unknown",
+    ],
 };
