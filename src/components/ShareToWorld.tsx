@@ -34,10 +34,10 @@ export default function ShareToWorld({ data }) {
     const shareUrl = data.share_url;
 
     return (
-        <div className="relative w-full space-y-4">
-            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4" ref={buttonRef}>
+        <div className="relative w-full sm:w-4/5 md:w-full space-y-4">
+            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 ml:px-6 sm:px-6" ref={buttonRef}>
                 <button
-                    className={`px-6 py-3 rounded-full text-lg font-semibold flex items-center justify-center space-x-2 transition-colors duration-300 ${
+                    className={`px-6 py-3 rounded-full sm:w-auto text-lg font-semibold flex items-center justify-center space-x-2 transition-colors duration-300 ${
                         mindMode === ShareMode.PEACE 
                         ? 'bg-[#d20033] text-yellow-400' 
                         : 'bg-yellow-400 text-[#d20033]'

@@ -21,8 +21,7 @@ const About = () => {
                 </h2>
 
                 <WillGallery
-                    text_wills_list={aboutData.His_will_and_our_good_free_will_text}
-                    media_wills_list={aboutData.His_will_and_our_good_free_will_media}
+                    aboutData={aboutData}
                 />
 
                 <div className="flex items-center mt-4 relative z-10 ">
@@ -67,6 +66,17 @@ const About = () => {
 const FAQItem = ({ number, item }) => {
     const [isOpen, setIsOpen] = useState(false);
 
+    const getMediaIcon = (type) => {
+        switch (type) {
+            case 'music':
+                return <Music className="inline-block align-text-bottom text-[#d20033]" size={20} />;
+            case 'video':
+                return <Youtube className="inline-block align-text-bottom text-[#d20033]" size={20} />;
+            default:
+                return null;
+        }
+    };
+
     return (
         <div className="mb-4">
             <button
@@ -84,30 +94,23 @@ const FAQItem = ({ number, item }) => {
                         </div>
 
                         &nbsp;
-
-                        <div className='flex items-center'>
-                            {/* <span className="text-sm font-bold">{number}</span> */}
-                            {item.media && (
-                                <div className="flex items-center">
-                                    {/* <Music className="text-[#d20033]" size={20} /> */}
-                                    {/* <Video className="text-white mr-2" size={20} /> */}
-                                    {/* <Youtube className="text-[#d20033] mr-2" size={20} /> */}
-                                    {item.media.type === 'music' && (
-                                        <Music className="text-[#d20033] mr-2 top-1/2 " size={20} />
-                                    )}
-                                    {item.media.type === 'video' && (
-                                        // <Video className="text-[#d20033] mr-2" size={20} />
-                                        <Youtube className="text-[#d20033] mr-2 bottom-1/2 " size={20} />
-                                    )}
-                                </div>
-                            )}
-                        </div>
                     </div>
 
+                    {/* <span className="text-white font-semibold text-start flex items-center">
+                        {item.media && getMediaIcon(item.media.type)}
+                        <span>{item.question}</span>
+                    </span> */}
 
 
-                    <span className="flex-grow text-white font-semibold text-start">{item.question}</span>
+
+                    <div className="flex-grow text-start">
+                        <span className="text-white font-semibold">
+                            {item.media && getMediaIcon(item.media.type)}{' '}
+                            {item.question}
+                        </span>
+                    </div>
                 </div>
+
 
                 <div className="flex items-center ml-3">
                     {item.answer_image_list && item.answer_image_list.length > 0 && (

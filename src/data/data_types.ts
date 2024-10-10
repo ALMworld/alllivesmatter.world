@@ -27,10 +27,15 @@ export interface AboutData {
     sub_title_evolved_out_5:               string;
     sub_title_evolved_out_6:               string;
     sub_title_evolved_out_7:               string;
+    sub_title_evolved_out_8:               string;
+    sub_title_evolved_out_9:               string;
+    sub_title_evolved_out_10:              string;
     sub_title:                             string;
     invitation_letter_text:                string;
     invitation_letter:                     string[];
     video_spirit_disclaimer:               string;
+    will_success_representation_hint:      string;
+    will_fail_representation_hint:         string;
     His_will_and_our_good_free_will_text:  HisWillAndOurGoodFreeWill[];
     His_will_and_our_good_free_will_media: HisWillAndOurGoodFreeWill[];
     sections:                              string[];
@@ -57,13 +62,15 @@ export interface FAQList {
     answers:            string[];
     _answers?:          string[];
     hide_answers?:      string[];
+    note?:              string;
 }
 
 export interface Media {
-    type:            string;
-    url:             string;
-    sunflower_petal: string;
-    watch_tips:      string;
+    type:               string;
+    url:                string;
+    sunflower_petal:    string;
+    watch_tips:         string;
+    unsafe_media_html?: string;
 }
 
 export interface Links {
@@ -112,7 +119,8 @@ export interface CommonData {
     angry_mind:                    string;
     advocacy_in_peace:             string;
     advocacy_in_anger:             string;
-    advocacy_hash_tags:            string;
+    possible_hash_tags:            string;
+    common_hash_tags:              string;
     poem_a_boy_in_the_universe:    string[];
     duki_terms_header:             string;
     duki_terms:                    DukiTerm[];
@@ -355,10 +363,15 @@ const typeMap: any = {
         { json: "sub_title_evolved_out_5", js: "sub_title_evolved_out_5", typ: "" },
         { json: "sub_title_evolved_out_6", js: "sub_title_evolved_out_6", typ: "" },
         { json: "sub_title_evolved_out_7", js: "sub_title_evolved_out_7", typ: "" },
+        { json: "sub_title_evolved_out_8", js: "sub_title_evolved_out_8", typ: "" },
+        { json: "sub_title_evolved_out_9", js: "sub_title_evolved_out_9", typ: "" },
+        { json: "sub_title_evolved_out_10", js: "sub_title_evolved_out_10", typ: "" },
         { json: "sub_title", js: "sub_title", typ: "" },
         { json: "invitation_letter_text", js: "invitation_letter_text", typ: "" },
         { json: "invitation_letter", js: "invitation_letter", typ: a("") },
         { json: "video_spirit_disclaimer", js: "video_spirit_disclaimer", typ: "" },
+        { json: "will_success_representation_hint", js: "will_success_representation_hint", typ: "" },
+        { json: "will_fail_representation_hint", js: "will_fail_representation_hint", typ: "" },
         { json: "His_will_and_our_good_free_will_text", js: "His_will_and_our_good_free_will_text", typ: a(r("HisWillAndOurGoodFreeWill")) },
         { json: "His_will_and_our_good_free_will_media", js: "His_will_and_our_good_free_will_media", typ: a(r("HisWillAndOurGoodFreeWill")) },
         { json: "sections", js: "sections", typ: a("") },
@@ -379,12 +392,14 @@ const typeMap: any = {
         { json: "answers", js: "answers", typ: a("") },
         { json: "_answers", js: "_answers", typ: u(undefined, a("")) },
         { json: "hide_answers", js: "hide_answers", typ: u(undefined, a("")) },
+        { json: "note", js: "note", typ: u(undefined, "") },
     ], false),
     "Media": o([
         { json: "type", js: "type", typ: "" },
         { json: "url", js: "url", typ: "" },
         { json: "sunflower_petal", js: "sunflower_petal", typ: "" },
         { json: "watch_tips", js: "watch_tips", typ: "" },
+        { json: "unsafe_media_html", js: "unsafe_media_html", typ: u(undefined, "") },
     ], false),
     "Links": o([
         { json: "warning", js: "warning", typ: r("Puppet") },
@@ -427,7 +442,8 @@ const typeMap: any = {
         { json: "angry_mind", js: "angry_mind", typ: "" },
         { json: "advocacy_in_peace", js: "advocacy_in_peace", typ: "" },
         { json: "advocacy_in_anger", js: "advocacy_in_anger", typ: "" },
-        { json: "advocacy_hash_tags", js: "advocacy_hash_tags", typ: "" },
+        { json: "possible_hash_tags", js: "possible_hash_tags", typ: "" },
+        { json: "common_hash_tags", js: "common_hash_tags", typ: "" },
         { json: "poem_a_boy_in_the_universe", js: "poem_a_boy_in_the_universe", typ: a("") },
         { json: "duki_terms_header", js: "duki_terms_header", typ: "" },
         { json: "duki_terms", js: "duki_terms", typ: a(r("DukiTerm")) },

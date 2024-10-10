@@ -8,9 +8,9 @@
 * **Fairness Always** You shall judge the people with righteous judgment. You shall not pervert justice. You shall not show partiality, and you shall not accept a bribe, for a bribe blinds the eyes of the wise and subverts the cause of the righteous
 * **DUKI In Action** He causes his sun to rise on the evil and the good, and sends rain on the righteous and the unrighteous.
 
-DUKI (pronounced 'duːki', reminiscent of 'duty','kindness' and 'cookie') stands for Decentralized Universal Kindness Income. It refers to money distributed to everyone as an act of kindness, generated through the hard works of kind people around the world. DUKI aim to empower people to gain freedom, reject evil, do good, and spread kindness.
+DUKI (pronounced 'djuːki', reminiscent of 'duty','kindness' and 'cookie') stands for Decentralized Universal Kindness Income. It refers to money distributed to everyone as an act of kindness, generated through the hard works of kind people around the world. DUKI aim to empower people to gain freedom, reject evil, do good, and spread kindness.
 
-Dukiness:/ˈduːkiːnəs/: Spirit behind "All Lives Matter Worldwide," which is not just a truth to uphold but also a unifying superpower that all lives can hold. Dukiness embodies the mindset and actions aligned with principles of universal kindness, fairness, and decentralized empowerment. It inspires individuals to pursue freedom, reject negativity, cultivate goodness, and spread kindness, ultimately striving to elevate the value and dignity of all lives globally.
+Dukiness:/ˈdjuːkiːnəs/: Spirit behind "All Lives Matter Worldwide," which is not just a truth to uphold but also a unifying superpower that all lives can hold. Dukiness embodies the mindset and actions aligned with principles of universal kindness, fairness, and decentralized empowerment. It inspires individuals to pursue freedom, reject negativity, cultivate goodness, and spread kindness, ultimately striving to elevate the value and dignity of all lives globally.
 
 ### What is DUKI?
 ![DUKI Concept](ptools/assets/outreach/x/4_what_is_duki.png)
