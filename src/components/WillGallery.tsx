@@ -1,9 +1,9 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { AlertTriangle, ChevronLeft, ChevronRight, Heart, Loader2, X } from 'lucide-react';
+import React, {useMemo, useState} from 'react';
+import {AlertTriangle, Heart} from 'lucide-react';
 import Slider from 'react-slick';
-import { AboutData, HisWillAndOurGoodFreeWill } from '../data/data_types';
-import { useGallery } from '../data/gallery_provider';
-import { UnitFile } from '../data/gallery_types';
+import {AboutData, HisWillAndOurGoodFreeWill} from '../data/data_types';
+import {useGallery} from '../data/gallery_provider';
+import {UnitFile} from '../data/gallery_types';
 
 // Note: You need to import the CSS for react-slick and its default theme
 import "slick-carousel/slick/slick.css";
@@ -41,18 +41,13 @@ const WillGallery: React.FC<WillGalleryProps> = ({ aboutData }) => {
   }, [aboutData, loadingState, getImageFiles]);
 
   const thanksLettersImages: UnitFile[] = useMemo(() => {
-    const imageKeys = aboutData.His_will_and_our_good_free_will_media.map(will => will.free_will);
+    const imageKeys = aboutData.His_will_and_our_good_free_will_text.map(will => will.free_will);
     const unitFiles = loadingState === 'loaded' ? getImageFiles(imageKeys) : [];
-    return aboutData.His_will_and_our_good_free_will_media.map((will, index) =>
-      unitFiles[index]
+    return aboutData.His_will_and_our_good_free_will_text.map((will, index) =>
+        unitFiles[index]
     );
   }, [aboutData, loadingState, getImageFiles]);
 
-
-  const images = useMemo(() => {
-    // If selectedImage is just a single image object, we wrap it in an array
-    return selectedImage ? [selectedImage] : [];
-  }, [selectedImage]);
 
   const openImage = (index: number) => {
     setSelectedImage(index);

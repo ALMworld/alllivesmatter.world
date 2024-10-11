@@ -14,8 +14,6 @@ const PrincipleIconDefaultImages = {
 };
 
 const AlmIcon = ({ value,expand_image_list = [], ...props }) => {
-    console.log(   value )
-
     const { loadingState, error, getImageFiles } = useGallery();
 
     const [isExpanded, setIsExpanded] = useState(false);
