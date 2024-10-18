@@ -74,9 +74,10 @@
         "slogan_headline_suffix": "world",
         "slogan_target_part": "ALL LIVES",
         "slogan_highlight_part": "MATTER",
-        "advocacy_details": [
+        "mantra": "LOVE BE THE ONLY WAY",
+        "mantra_details": [
             {
-                "content": "Kindness First",
+                "mantra": "Kindness First",
                 "description": "A single act of kindness throws out roots in all directions, and the roots spring up and make new trees.",
                 "buttonText": "Understand More",
                 "icon": "love",
@@ -92,7 +93,7 @@
                 ]
             },
             {
-                "content": " Fairness Always",
+                "mantra": " Fairness Always",
                 "description": "You shall judge the people with righteous judgment. You shall not pervert justice. You shall not show partiality, and you shall not accept a bribe, for a bribe blinds the eyes of the wise and subverts the cause of the righteous",
                 "buttonText": "Learn More",
                 "icon": "law",
@@ -112,7 +113,7 @@
                 ]
             },
             {
-                "content": "DUKI In Action",
+                "mantra": "DUKI In Action",
                 "icon": "money",
                 "buttonText": "Explore More",
                 "description": "He causes his sun to rise on the evil and the good, and sends rain on the righteous and the unrighteous.",
@@ -605,7 +606,7 @@
                 "note": "todo, maybe a picture for the image"
             },
             {
-                "question": "Free Will is Always Free. Love Guides it Evolve from Original Sin Up To His Will",
+                "question": "Free Will is Always Free. Be Patient; Love And Wisdom will Evolve its Original Sin and Evil To His Good Will As The Fittest",
                 "answer_image_list": [
                     "10_Thanks_Letter_for_The_Unknown"
                 ],
@@ -617,7 +618,7 @@
                 },
                 "answers": [
                     "Free will can be anything; nothing can stop it, as The Unknown unbinds it. It can twist into something dark, like hatred fueling zombie army, or bloom into something bright, like love, a sunflower powering the whole garden.",
-                    "Free will can manifest as the purest expression of existence, causing no harm but perhaps concentrating too much love inward rather than sharing it with the world. Whether one chooses to be child-free, consumes pornography, engages in intimacy with somebody or something without love, be gay, lesbian, or transgender, or opts for abortion before new life or free will becomes conscious — these decisions carry neither shame nor glory for humanity, provided they harm no one. Such choices simply reflect living authentically and being true to oneself. They deserve respect or tolerance, as they are personal expressions of individual autonomy.",
+                    "Free will can manifest as the purest expression of existence, causing no harm but perhaps concentrating too much love inward rather than sharing it with the world. Whether one chooses to be child-free, consumes pornography, engages in intimacy with somebody or something without love, be gay, lesbian, or transgender, or opts for abortion before new life or free will becomes conscious — these decisions carry neither shame nor glory for humanity, provided they harm no one. Such choices simply reflect living authentically and being true to oneself. They deserve respect or tolerance, as they are personal expressions of individual autonomy. We all should be proud to the the harmless true self.",
                     "But when free will takes a darker turn, like the undead spreading harm and trying to snuff out the good, such as disloyalty to intimate commitments, violence, bullying, and manipulating other free will that causes no harm, or performing late abortions on purpose after new free will become fully conscious, it's our duty to stand firm and fight back. Fairness should always be used to resolve conflicts and help guide those lost in hate toward something better. FairnessAlways and KindnessFirst are the compass that lets free will de evil and evolve. In conflicts, they should be the light that sheds the darkness and guides us.",
                     "Ultimately, the real beauty for humanity lies in this: Stand in awe of the vast Unknown, knowing there's so much beyond our understanding, embrace and be the beliefs that He wills an AllLivesMatterWorld and always wants all to live a life full of love because we are all born of love, first by His pure love and then by us making love. Cherish love, allowing it to inspire new life and dissolving the original sin inside the free will. Live a life full of love, with various works as representation of its existence. Seek our own path to the Unknown, whether through Christianity, Islam, Hinduism, Buddhism, Science, or any other way that fosters respect and causes no harm. This is the sunflower way—nurturing humanity to survive and thrive, and honoring this shared journey together.",
                     "May all be the beliefs that All Lives Matter and Love for All Lives is the Way to the Unknown."
@@ -640,6 +641,15 @@
             },
             {
                 "question": "Neti Neti! He is the Highest, He is the Unknown, He is the Love of all lives. Be the belief that all lives indeed matter and find Him.",
+                "answer_image_list": [
+                    "0_3_duki_in_action"
+                ],
+                "answers": [
+                    "Todo Notice: Be Patient. Wait for the will to evolve, it takes time to form presentation."
+                ]
+            },
+            {
+                "question": "Love is the only way to lead us out, because we are, after all, free spirits",
                 "answer_image_list": [
                     "0_3_duki_in_action"
                 ],

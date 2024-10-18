@@ -20,16 +20,6 @@ export interface DataTypes {
 export interface AboutData {
     title_x:                               string;
     title:                                 string;
-    sub_title_evolved_out_1:               string;
-    sub_title_evolved_out_2:               string;
-    sub_title_evolved_out_3:               string;
-    sub_title_evolved_out_4:               string;
-    sub_title_evolved_out_5:               string;
-    sub_title_evolved_out_6:               string;
-    sub_title_evolved_out_7:               string;
-    sub_title_evolved_out_8:               string;
-    sub_title_evolved_out_9:               string;
-    sub_title_evolved_out_10:              string;
     sub_title:                             string;
     invitation_letter_text:                string;
     invitation_letter:                     string[];
@@ -93,11 +83,12 @@ export interface AdvocacyData {
     slogan_headline_suffix: string;
     slogan_target_part:     string;
     slogan_highlight_part:  string;
-    advocacy_details:       AdvocacyDetail[];
+    mantra:                 string;
+    mantra_details:         MantraDetail[];
 }
 
-export interface AdvocacyDetail {
-    content:     string;
+export interface MantraDetail {
+    mantra:      string;
     description: string;
     buttonText:  string;
     icon:        string;
@@ -356,16 +347,6 @@ const typeMap: any = {
     "AboutData": o([
         { json: "title_x", js: "title_x", typ: "" },
         { json: "title", js: "title", typ: "" },
-        { json: "sub_title_evolved_out_1", js: "sub_title_evolved_out_1", typ: "" },
-        { json: "sub_title_evolved_out_2", js: "sub_title_evolved_out_2", typ: "" },
-        { json: "sub_title_evolved_out_3", js: "sub_title_evolved_out_3", typ: "" },
-        { json: "sub_title_evolved_out_4", js: "sub_title_evolved_out_4", typ: "" },
-        { json: "sub_title_evolved_out_5", js: "sub_title_evolved_out_5", typ: "" },
-        { json: "sub_title_evolved_out_6", js: "sub_title_evolved_out_6", typ: "" },
-        { json: "sub_title_evolved_out_7", js: "sub_title_evolved_out_7", typ: "" },
-        { json: "sub_title_evolved_out_8", js: "sub_title_evolved_out_8", typ: "" },
-        { json: "sub_title_evolved_out_9", js: "sub_title_evolved_out_9", typ: "" },
-        { json: "sub_title_evolved_out_10", js: "sub_title_evolved_out_10", typ: "" },
         { json: "sub_title", js: "sub_title", typ: "" },
         { json: "invitation_letter_text", js: "invitation_letter_text", typ: "" },
         { json: "invitation_letter", js: "invitation_letter", typ: a("") },
@@ -419,10 +400,11 @@ const typeMap: any = {
         { json: "slogan_headline_suffix", js: "slogan_headline_suffix", typ: "" },
         { json: "slogan_target_part", js: "slogan_target_part", typ: "" },
         { json: "slogan_highlight_part", js: "slogan_highlight_part", typ: "" },
-        { json: "advocacy_details", js: "advocacy_details", typ: a(r("AdvocacyDetail")) },
+        { json: "mantra", js: "mantra", typ: "" },
+        { json: "mantra_details", js: "mantra_details", typ: a(r("MantraDetail")) },
     ], false),
-    "AdvocacyDetail": o([
-        { json: "content", js: "content", typ: "" },
+    "MantraDetail": o([
+        { json: "mantra", js: "mantra", typ: "" },
         { json: "description", js: "description", typ: "" },
         { json: "buttonText", js: "buttonText", typ: "" },
         { json: "icon", js: "icon", typ: "" },

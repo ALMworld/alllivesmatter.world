@@ -30,23 +30,26 @@ const Advocacy = () => {
                         <span className='text-[#d20033] text-xl2 selectable-text'>.</span>
                         <span className='text-sm selectable-text'>&nbsp;{data.slogan_headline_suffix}</span>
                     </span>
-                    <p className="text-xl py-6 selectable-text">
+                    <p className="text-sm py-6 selectable-text">
                         {data.slogan}
+                    </p>
+                    <p className="text-4xl font-bold selectable-text His-color">
+                        {data.mantra}
                     </p>
                 </h1>
 
                 <ShareToWorld data={commonData} />
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-                    {data.advocacy_details.map((advocate, index) => (
+                    {data.mantra_details.map((mantra, index) => (
                         <AdvocateCard
                             key={index}
-                            advocate={advocate}
+                            mantra={mantra}
                             isOpen={activePrincipleIndex === index}
                             openModal={() => openPrincipleModal(index)}
                             closeModal={closeAdvocateModal}
                         >
-                            <AdvocateModalCard key={index} advocate={advocate} onClose={closeAdvocateModal} />
+                            <AdvocateModalCard key={index} mantra={mantra} onClose={closeAdvocateModal} />
                         </AdvocateCard>
                     ))}
                 </div>

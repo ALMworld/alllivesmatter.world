@@ -3,7 +3,7 @@ import { Settings, Lock, Bot, CircleCheckBig, Flower2 } from 'lucide-react';
 import AlmIcon from './AlmIcon';
 import AlmIconUnit from './AlmIconUnit';
 
-const AdvocateModalCard = ({ advocate, onClose }) => {
+const AdvocateModalCard = ({ mantra, onClose }) => {
     const handleOutsideClick = (e) => {
         if (e.target === e.currentTarget) {
             onClose();
@@ -15,13 +15,13 @@ const AdvocateModalCard = ({ advocate, onClose }) => {
         >
             <div className="bg-slate-800 text-white p-6 rounded-lg shadow-lg max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl w-full max-h-[80vh] overflow-y-auto relative">
                 <div className="flex justify-between items-center mb-6 w-full">
-                    <h2 className="text-xl font-bold text-yellow-500" dangerouslySetInnerHTML={{__html: advocate.content}}  />
+                    <h2 className="text-xl font-bold text-yellow-500" dangerouslySetInnerHTML={{__html: mantra.content}}  />
                     <div className="text-yellow-500">
-                        <AlmIconUnit value={advocate.icon} size={24} />
+                        <AlmIconUnit value={mantra.icon} size={24} />
                     </div>
                 </div>
                 <div className="space-y-6">
-                    {advocate.keyPoints.map((item, index) => (
+                    {mantra.keyPoints.map((item, index) => (
                         <div key={index} className="space-y-2">
                             <div className="flex items-center space-x-2">
                                 <CircleCheckBig size={20} className="text-yellow-500" />
