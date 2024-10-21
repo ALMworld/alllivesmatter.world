@@ -124,9 +124,8 @@ export interface DukiTerm {
 }
 
 export interface HowData {
-    contribute_text:           string;
-    contribute_by_share_text:  string;
-    contribute_by_action_text: string;
+    contribute_text:          string;
+    contribute_by_share_text: string;
 }
 
 export interface MenuData {
@@ -438,7 +437,6 @@ const typeMap: any = {
     "HowData": o([
         { json: "contribute_text", js: "contribute_text", typ: "" },
         { json: "contribute_by_share_text", js: "contribute_by_share_text", typ: "" },
-        { json: "contribute_by_action_text", js: "contribute_by_action_text", typ: "" },
     ], false),
     "MenuData": o([
         { json: "label", js: "label", typ: "" },
