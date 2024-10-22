@@ -226,3 +226,19 @@ nav select {
 .His-color {
   color: #d20033;
 }
+
+.speaker0 {
+  color: #f32755;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
+.speaker1 {
+  color: #def34c;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
