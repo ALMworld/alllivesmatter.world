@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useCallback, useEffect, useState } from 'react';
-import { MegaFilesPack, UnitFile } from './gallery_types';
+import {getBlobUri, MegaFilesPack, UnitFile} from './gallery_types';
 import metadata from '../assets/metadata.json';
 import { useTranslation } from 'react-i18next';
 
@@ -41,7 +41,7 @@ export async function prefillMegaFilesPack(pack: MegaFilesPack): Promise<MegaFil
     if (!pack.blob) {
         // If blob is not set, fetch it from blob_uri
         // https://assets.alllivesmatter.world/blobs/en_3ed5d1c7b02edcc99f326e444a4d6332.blob
-        const response = await fetch(pack.blob_uri);
+        const response = await fetch(getBlobUri(pack));
         pack.blob = await response.blob();
     }
 
@@ -85,7 +85,7 @@ export const GalleryProvider: React.FC<GalleryProviderProps> = ({ children }) =>
 
             // Fetch the blob if it doesn't exist
             if (!data.blob) {
-                const response = await fetch(data.blob_uri, {
+                const response = await fetch(getBlobUri(data), {
                     method: 'GET',
                     headers: {
                         'Accept': 'application/alllivematter.world.blob,application/octet-stream',
@@ -130,7 +130,8 @@ export const GalleryProvider: React.FC<GalleryProviderProps> = ({ children }) =>
     const cleanup = useCallback(() => {
         // console.log('Cleaning up prefilled data cache');
         prefilledDataCache.forEach((data) => {
-            data.blob_uri && URL.revokeObjectURL(data.blob_uri);
+            let blob_uri = getBlobUri(data);
+            blob_uri && URL.revokeObjectURL(blob_uri);
             Object.values(data.files).forEach((file) => {
                 if (file.file_uri) {
                     URL.revokeObjectURL(file.file_uri);

@@ -7,8 +7,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "dev": "vite --host",
-    "generate-types": "quicktype src/assets/i18n/en.json -o src/data/data_types.ts",
-    "generate-types_1": "quicktype src/assets/gallery.json -o src/data/gallery_types.ts"
+    "generate-types": "quicktype src/assets/i18n/en.json -o src/data/data_types.ts"
   },
   "dependencies": {
     "globe.gl": "^2.32.5",

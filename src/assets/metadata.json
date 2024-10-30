@@ -173,75 +173,74 @@
         "base_name": "1_Thanks_Letter_for_Tommee_Profitt.webp",
         "range": [
           5004640,
-          5538778
+          5539050
         ]
       },
       "2_Thanks_Letter_for_BLM_Movement": {
         "base_name": "2_Thanks_Letter_for_BLM_Movement.webp",
         "range": [
-          5538778,
-          6096990
+          5539050,
+          6096958
         ]
       },
       "3_Thanks_Letter_for_Donald_Trump": {
         "base_name": "3_Thanks_Letter_for_Donald_Trump.webp",
         "range": [
-          6096990,
-          6644472
+          6096958,
+          6638544
         ]
       },
       "4_Thanks_Letter_for_Richard_Dawkins": {
         "base_name": "4_Thanks_Letter_for_Richard_Dawkins.webp",
         "range": [
-          6644472,
-          7200660
+          6638544,
+          7194630
         ]
       },
       "5_Thanks_Letter_for_Robert_Axelrod": {
         "base_name": "5_Thanks_Letter_for_Robert_Axelrod.webp",
         "range": [
-          7200660,
-          7751388
+          7194630,
+          7738618
         ]
       },
       "6_Thanks_Letter_for_Elon_Musk": {
         "base_name": "6_Thanks_Letter_for_Elon_Musk.webp",
         "range": [
-          7751388,
-          8303908
+          7738618,
+          8291458
         ]
       },
       "7_Thanks_Letter_for_Karl_Widerquist": {
         "base_name": "7_Thanks_Letter_for_Karl_Widerquist.webp",
         "range": [
-          8303908,
-          8860266
+          8291458,
+          8848356
         ]
       },
       "8_Thanks_Letter_for_WorldID": {
         "base_name": "8_Thanks_Letter_for_WorldID.webp",
         "range": [
-          8860266,
-          9413984
+          8848356,
+          9402972
         ]
       },
       "9_Thanks_Letter_for_Avi_Wigderson": {
         "base_name": "9_Thanks_Letter_for_Avi_Wigderson.webp",
         "range": [
-          9413984,
-          9965512
+          9402972,
+          9955126
         ]
       },
       "10_Thanks_Letter_for_The_Unknown": {
         "base_name": "10_Thanks_Letter_for_The_Unknown.webp",
         "range": [
-          9965512,
-          10457050
+          9955126,
+          10448266
         ]
       }
     },
-    "hash": "c6c2da36fb5125eda094887f8a6ee19c",
-    "blob_uri": "https://assets.alllivesmatter.world/blobs/en_c6c2da36fb5125eda094887f8a6ee19c.blob",
-    "blob_uri_local": "./../public/en_c6c2da36fb5125eda094887f8a6ee19c.blob"
+    "hash": "en_92027407df239c0a5f2126f0d1e756b4",
+    "env_prod": true
   }
 }

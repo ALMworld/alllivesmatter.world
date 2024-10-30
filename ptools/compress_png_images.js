@@ -189,8 +189,8 @@ async function processFiles() {
 
     await fsPromises.rename(langOutputBlobPath, newBlobPath);
 
-    meta_data[lang]["hash"] = md5Hash;
-    meta_data[lang]["blob_uri"] = newBlobPath
+    meta_data[lang]["hash"] =`${obj.lang}_${md5Hash}`;
+    meta_data[lang]["env_prod"] = true
 
   }
 
