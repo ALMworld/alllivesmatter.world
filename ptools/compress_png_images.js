@@ -24,6 +24,8 @@ async function compressPngImages(inputDir = "./assets/outreach/x",
     await fsPromises.mkdir(outputDir, { recursive: true });
     const entries = await fsPromises.readdir(inputDir, { withFileTypes: true });
 
+    const inputImageExtensions = ['.png', '.jpeg', '.jpg', '.svg'];
+
     for (const entry of entries) {
       const inputPath = path.join(inputDir, entry.name);
       const relativePath = path.relative(inputDir, inputPath);
@@ -32,7 +34,7 @@ async function compressPngImages(inputDir = "./assets/outreach/x",
       if (entry.isDirectory()) {
         // Recursively process subdirectories
         await compressPngImages(inputPath, outputPath, formatConfigs);
-      } else if (entry.isFile() && path.extname(entry.name).toLowerCase() === '.png') {
+      } else if (entry.isFile() && inputImageExtensions.includes(path.extname(entry.name).toLowerCase())) {
         const fileName = path.parse(entry.name).name;
 
         for (const config of formatConfigs) {
@@ -114,6 +116,14 @@ async function processFiles() {
       "./../public/images/en/10_thoughts_on_duki_and_open_source.webp",
       "./../public/images/en/11_thoughts_on_duki_blockchain_and_authority.webp",
       "./../public/images/en/12_O_Come_O_Come_Emmanuel.webp",
+      "./../public/images/en/symbols/Duality_Bugua.webp",
+      "./../public/images/en/symbols/Duality_happy_dussehra.webp",
+      "./../public/images/en/symbols/Duality_DivineCouple_NuwaFuxi.webp",
+      "./../public/images/en/symbols/Masonic_SquareCompassesG.webp",
+      "./../public/images/en/symbols/PlantsVsZombies.webp",
+      "./../public/images/en/symbols/HumanAsLove.webp",
+      "./../public/images/en/symbols/Ultraman.webp",
+      "./../public/images/en/symbols/UltramanZero.webp",
       "./../public/images/en/open_thanks_letters/1_Thanks_Letter_for_Tommee_Profitt.webp",
       "./../public/images/en/open_thanks_letters/2_Thanks_Letter_for_BLM_Movement.webp",
       "./../public/images/en/open_thanks_letters/3_Thanks_Letter_for_Donald_Trump.webp",

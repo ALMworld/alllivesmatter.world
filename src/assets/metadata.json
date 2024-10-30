@@ -113,79 +113,135 @@
           3724982
         ]
       },
+      "Duality_Bugua": {
+        "base_name": "Duality_Bugua.webp",
+        "range": [
+          3724982,
+          3748552
+        ]
+      },
+      "Duality_happy_dussehra": {
+        "base_name": "Duality_happy_dussehra.webp",
+        "range": [
+          3748552,
+          3761346
+        ]
+      },
+      "Duality_DivineCouple_NuwaFuxi": {
+        "base_name": "Duality_DivineCouple_NuwaFuxi.webp",
+        "range": [
+          3761346,
+          4718232
+        ]
+      },
+      "Masonic_SquareCompassesG": {
+        "base_name": "Masonic_SquareCompassesG.webp",
+        "range": [
+          4718232,
+          4736816
+        ]
+      },
+      "PlantsVsZombies": {
+        "base_name": "PlantsVsZombies.webp",
+        "range": [
+          4736816,
+          4843462
+        ]
+      },
+      "HumanAsLove": {
+        "base_name": "HumanAsLove.webp",
+        "range": [
+          4843462,
+          4875916
+        ]
+      },
+      "Ultraman": {
+        "base_name": "Ultraman.webp",
+        "range": [
+          4875916,
+          4947720
+        ]
+      },
+      "UltramanZero": {
+        "base_name": "UltramanZero.webp",
+        "range": [
+          4947720,
+          5004640
+        ]
+      },
       "1_Thanks_Letter_for_Tommee_Profitt": {
         "base_name": "1_Thanks_Letter_for_Tommee_Profitt.webp",
         "range": [
-          3724982,
-          4259120
+          5004640,
+          5538778
         ]
       },
       "2_Thanks_Letter_for_BLM_Movement": {
         "base_name": "2_Thanks_Letter_for_BLM_Movement.webp",
         "range": [
-          4259120,
-          4817332
+          5538778,
+          6096990
         ]
       },
       "3_Thanks_Letter_for_Donald_Trump": {
         "base_name": "3_Thanks_Letter_for_Donald_Trump.webp",
         "range": [
-          4817332,
-          5364814
+          6096990,
+          6644472
         ]
       },
       "4_Thanks_Letter_for_Richard_Dawkins": {
         "base_name": "4_Thanks_Letter_for_Richard_Dawkins.webp",
         "range": [
-          5364814,
-          5921002
+          6644472,
+          7200660
         ]
       },
       "5_Thanks_Letter_for_Robert_Axelrod": {
         "base_name": "5_Thanks_Letter_for_Robert_Axelrod.webp",
         "range": [
-          5921002,
-          6471730
+          7200660,
+          7751388
         ]
       },
       "6_Thanks_Letter_for_Elon_Musk": {
         "base_name": "6_Thanks_Letter_for_Elon_Musk.webp",
         "range": [
-          6471730,
-          7024250
+          7751388,
+          8303908
         ]
       },
       "7_Thanks_Letter_for_Karl_Widerquist": {
         "base_name": "7_Thanks_Letter_for_Karl_Widerquist.webp",
         "range": [
-          7024250,
-          7580608
+          8303908,
+          8860266
         ]
       },
       "8_Thanks_Letter_for_WorldID": {
         "base_name": "8_Thanks_Letter_for_WorldID.webp",
         "range": [
-          7580608,
-          8134326
+          8860266,
+          9413984
         ]
       },
       "9_Thanks_Letter_for_Avi_Wigderson": {
         "base_name": "9_Thanks_Letter_for_Avi_Wigderson.webp",
         "range": [
-          8134326,
-          8685854
+          9413984,
+          9965512
         ]
       },
       "10_Thanks_Letter_for_The_Unknown": {
         "base_name": "10_Thanks_Letter_for_The_Unknown.webp",
         "range": [
-          8685854,
-          9177392
+          9965512,
+          10457050
         ]
       }
     },
-    "hash": "9551383bed91d210604b2cacc5cf21be",
-    "blob_uri_": "./../public/en_9551383bed91d210604b2cacc5cf21be.blob",
-    "blob_uri": "https://assets.alllivesmatter.world/blobs/en_9551383bed91d210604b2cacc5cf21be.blob"
+    "hash": "c6c2da36fb5125eda094887f8a6ee19c",
+    "blob_uri": "https://assets.alllivesmatter.world/blobs/en_c6c2da36fb5125eda094887f8a6ee19c.blob",
+    "blob_uri_local": "./../public/en_c6c2da36fb5125eda094887f8a6ee19c.blob"
   }
 }
