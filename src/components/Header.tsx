@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 import { LANGUAGES } from '../constants/index';
 import { Globe, Menu as MenuIcon, Share2 } from 'lucide-react';
 import { useMenuData } from '../data/data_provider';
+import almLogo from '/alm.svg';  // assuming the SVG is in the public folder
+
 
 export const Header = () => {
     const { i18n, t } = useTranslation();
@@ -46,7 +48,7 @@ export const Header = () => {
                         >
                             {/* ALM */}
                             <img
-                                src="/alm.svg"
+                                src={almLogo}
                                 alt="ALM"
                                 width="48"
                                 height="48"

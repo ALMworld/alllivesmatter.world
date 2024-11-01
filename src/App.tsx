@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Suspense } from 'react';
 import Advocacy from './pages/Advocacy';
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <Suspense fallback={<AnimatedLoading />}>
-      <BrowserRouter>
+      <HashRouter>
         <DataProvider>
           <GalleryProvider>
             <Header />
@@ -33,7 +33,7 @@ const App = () => {
             <PeaceMusicPlayer />
           </GalleryProvider>
         </DataProvider>
-      </BrowserRouter>
+      </HashRouter>
     </Suspense>
   )
 }
