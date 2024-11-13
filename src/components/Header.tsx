@@ -5,6 +5,8 @@ import { LANGUAGES } from '../constants/index';
 import { Globe, Menu as MenuIcon, Share2 } from 'lucide-react';
 import { useMenuData } from '../data/data_provider';
 import almLogo from '/alm.svg';  // assuming the SVG is in the public folder
+// love_be_ye_way-will_duality_evolve_through_conflict_duality like rightousness vs unrightousness or known vs unknown
+import dualityLogo from '/duality.svg';  // assuming the SVG is in the public folder
 
 
 export const Header = () => {
@@ -133,6 +135,21 @@ export const Header = () => {
                         </div>
                     </div>
 
+                        {/* un-comment to add other link here  */}
+                    {/* <div className="flex">
+                        <NavLink
+                            to="/"
+                            className={({ isActive }) => isActive ? "text-2xl font-bold text-yellow-400 whitespace-nowrap" : "text-2xl font-bold hover:text-yellow-400 whitespace-nowrap"}
+                        >
+                            <img
+                                src={dualityLogo}
+                                alt="ALM"
+                                width="32"
+                                height="32"
+                                className="transition-colors"
+                            />
+                        </NavLink>
+                    </div> */}
                 </div>
             </nav>
         </header>
