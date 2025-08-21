@@ -87,6 +87,6 @@
       }
     },
     "hash": "en_fbcfa335480f67a855c23abec00477ce",
-    "env_prod": false
+    "env_prod": true
   }
 }
