@@ -8,164 +8,245 @@
 // match the expected interface, even if the JSON is valid.
 
 export interface DataTypes {
-    title:         string;
-    menu_data:     MenuData;
-    common_data:   CommonData;
+    title: string;
+    menu_data: MenuData;
+    common_data: CommonData;
     advocacy_data: AdvocacyData;
-    how_data:      HowData;
-    why_data:      WhyData;
-    about_data:    AboutData;
+    how_data: HowData;
+    why_data: WhyData;
+    about_data: AboutData;
 }
 
 export interface AboutData {
-    title_x:                               string;
-    title:                                 string;
-    sub_title:                             string;
-    invitation_letter_text:                string;
-    invitation_letter:                     string[];
-    video_spirit_disclaimer:               string;
-    will_success_representation_hint:      string;
-    will_fail_representation_hint:         string;
-    His_will_and_our_good_free_will_text:  HisWillAndOurGoodFreeWill[];
-    His_will_and_our_good_free_will_media: HisWillAndOurGoodFreeWill[];
-    sections:                              string[];
-    links:                                 Links;
-    faq_list:                              FAQList[];
+    title_x: string;
+    title: string;
+    sub_title: string;
+    invitation_letter_text: string;
+    posterFooter: PosterFooter;
+    thanks_letter_signature: string[];
+    thanks_letter_almworld_intro: string[];
+    thanks_letter_data: ThanksLetterDatum[];
+    video_spirit_disclaimer: string;
+    will_success_representation_hint: string;
+    will_fail_representation_hint: string;
+    His_will_and_our_good_free_will_media: HisWillAndOurGoodFreeWillMedia[];
+    sections: string[];
+    links: Links;
+    faq_list: FAQList[];
+    thoughtPosters: ThoughtPoster[];
 }
 
-export interface HisWillAndOurGoodFreeWill {
-    free_will:              string;
-    from:                   string;
-    thanks_delivery_state?: DeliveryState;
-    will_summary:           string;
-    delivery_state?:        DeliveryState;
-}
-
-export enum DeliveryState {
-    Unknown = "unknown",
+export interface HisWillAndOurGoodFreeWillMedia {
+    free_will: string;
+    from: string;
+    thanks_delivery_state: string;
+    will_summary: string;
 }
 
 export interface FAQList {
-    question:           string;
+    question: string;
     answer_image_list?: string[];
-    media?:             Media;
-    answers:            string[];
-    _answers?:          string[];
-    hide_answers?:      string[];
-    note?:              string;
+    posterNumber?: number;
+    media?: Media;
+    answers: string[];
+    _answers?: string[];
+    hide_answers?: string[];
 }
 
 export interface Media {
-    type:               string;
-    url:                string;
-    sunflower_petal:    string;
-    watch_tips:         string;
+    type: string;
+    url: string;
+    sunflower_petal: string;
+    watch_tips: string;
     unsafe_media_html?: string;
 }
 
 export interface Links {
     warning: Puppet;
-    puppet:  Puppet;
+    puppet: Puppet;
 }
 
 export interface Puppet {
     title: string;
-    url:   string;
+    url: string;
+}
+
+export interface PosterFooter {
+    mainTitle: string;
+    subtitle: string;
+}
+
+export interface ThanksLetterDatum {
+    letterToUser: string;
+    letterTo: string;
+    content_paragraphs: Array<string[]>;
+    special?: boolean;
+}
+
+export interface ThoughtPoster {
+    title: string;
+    titleSegments?: string[];
+    paragraphs: string[];
 }
 
 export interface AdvocacyData {
-    attitude:               string;
-    bestwishes:             string;
-    dukige_definition:      string;
-    duki_definition:        string;
-    slogan:                 string;
-    slogan_headline:        string;
+    attitude: string;
+    bestwishes: string;
+    dukige_definition: string;
+    duki_definition: string;
+    slogan: string;
+    slogan_headline: string;
     slogan_headline_suffix: string;
-    slogan_target_part:     string;
-    slogan_highlight_part:  string;
-    mantra:                 string;
-    mantra_details:         MantraDetail[];
+    slogan_target_part: string;
+    slogan_highlight_part: string;
+    mantraDao: string;
+    mantra: string;
+    mantra_details: MantraDetail[];
 }
 
 export interface MantraDetail {
-    mantra:      string;
+    mantra: string;
     description: string;
-    buttonText:  string;
-    icon:        string;
-    keyPoints:   KeyPoint[];
+    buttonText: string;
+    icon: string;
+    keyPoints: KeyPoint[];
 }
 
 export interface KeyPoint {
-    title:       string;
+    title: string;
     description: string;
 }
 
 export interface CommonData {
-    share_text:                    string;
-    share_url:                     string;
-    advocate_with_peace:           string;
-    advocate_with_anger:           string;
+    share_text: string;
+    share_url: string;
+    advocate_with_peace: string;
+    advocate_with_anger: string;
     all_lives_matter_world_belief: string;
-    peaceful_mind:                 string;
-    angry_mind:                    string;
-    advocacy_in_peace:             string;
-    advocacy_in_anger:             string;
-    possible_hash_tags:            string;
-    common_hash_tags:              string;
-    poem_a_boy_in_the_universe:    string[];
-    duki_terms_header:             string;
-    duki_terms:                    DukiTerm[];
+    peaceful_mind: string;
+    angry_mind: string;
+    advocacy_in_peace: string;
+    advocacy_in_anger: string;
+    possible_hash_tags: string;
+    common_hash_tags: string;
+    poem_a_boy_in_the_universe: string[];
+    duki_terms_header: string;
+    duki_terms: DukiTerm[];
 }
 
 export interface DukiTerm {
-    term:       string;
+    term: string;
     definition: string;
-    icon:       string;
+    icon: string;
 }
 
 export interface HowData {
-    contribute_text:          string;
+    contribute_text: string;
     contribute_by_share_text: string;
+    header: Header;
+    sections: Sections;
+    metadata: Metadata;
+}
+
+export interface Header {
+    title: string;
+    subtitle: string;
+}
+
+export interface Metadata {
+    page_type: string;
+    theme: string;
+    target_audience: string;
+    key_concepts: string[];
+    technologies: string[];
+}
+
+export interface Sections {
+    why_duki_captures_attention: WhyDukiCapturesAttention;
+    implementation_guide: ImplementationGuide;
+    proof_of_concept: ProofOfConcept;
+    call_to_action: CallToAction;
+}
+
+export interface CallToAction {
+    title: string;
+    description: string;
+    tagline: string;
+}
+
+export interface ImplementationGuide {
+    title: string;
+    subtitle: string;
+    steps: Step[];
+}
+
+export interface Step {
+    step_number: number;
+    title: string;
+    subtitle: string;
+    description: string;
+    tags: string[];
+}
+
+export interface ProofOfConcept {
+    title: string;
+    subtitle: string;
+    disclaimer: string;
+    projects: Project[];
+}
+
+export interface Project {
+    name: string;
+    emoji: string;
+    description: string;
+    status: string;
+    link?: string;
+    tags: string[];
+}
+
+export interface WhyDukiCapturesAttention {
+    title: string;
+    benefits: KeyPoint[];
 }
 
 export interface MenuData {
-    label:    string;
-    about:    string;
-    why:      string;
-    how:      string;
+    label: string;
+    about: string;
+    why: string;
+    how: string;
     advocacy: string;
 }
 
 export interface WhyData {
     highlight: Highlight;
-    books:     Book[];
+    books: Book[];
 }
 
 export interface Book {
-    author:      string;
-    title:       string;
+    author: string;
+    title: string;
     author_link: string;
-    link:        string;
-    intro:       string;
-    get_book:    GetBook[];
-    topic1:      Topic;
-    topic2:      Topic;
+    link: string;
+    intro: string;
+    get_book: GetBook[];
+    topic1: Topic;
+    topic2: Topic;
 }
 
 export interface GetBook {
-    buy_url:    string;
-    buy_text:   string;
+    buy_url: string;
+    buy_text: string;
     store_icon: string;
 }
 
 export interface Topic {
     headline: string;
-    content:  string;
+    content: string;
 }
 
 export interface Highlight {
-    situation:         string;
-    question:          string;
+    situation: string;
+    question: string;
     question_emphasis: string;
 }
 
@@ -233,7 +314,7 @@ function transform(val: any, typ: any, getProps: any, key: any = '', parent: any
             const typ = typs[i];
             try {
                 return transform(val, typ, getProps);
-            } catch (_) {}
+            } catch (_) { }
         }
         return invalidValue(typs, val, key, parent);
     }
@@ -292,9 +373,9 @@ function transform(val: any, typ: any, getProps: any, key: any = '', parent: any
     if (Array.isArray(typ)) return transformEnum(typ, val);
     if (typeof typ === "object") {
         return typ.hasOwnProperty("unionMembers") ? transformUnion(typ.unionMembers, val)
-            : typ.hasOwnProperty("arrayItems")    ? transformArray(typ.arrayItems, val)
-            : typ.hasOwnProperty("props")         ? transformObject(getProps(typ), typ.additional, val)
-            : invalidValue(typ, val, key, parent);
+            : typ.hasOwnProperty("arrayItems") ? transformArray(typ.arrayItems, val)
+                : typ.hasOwnProperty("props") ? transformObject(getProps(typ), typ.additional, val)
+                    : invalidValue(typ, val, key, parent);
     }
     // Numbers can be parsed by Date but shouldn't be.
     if (typ === Date && typeof val !== "number") return transformDate(val);
@@ -348,31 +429,33 @@ const typeMap: any = {
         { json: "title", js: "title", typ: "" },
         { json: "sub_title", js: "sub_title", typ: "" },
         { json: "invitation_letter_text", js: "invitation_letter_text", typ: "" },
-        { json: "invitation_letter", js: "invitation_letter", typ: a("") },
+        { json: "posterFooter", js: "posterFooter", typ: r("PosterFooter") },
+        { json: "thanks_letter_signature", js: "thanks_letter_signature", typ: a("") },
+        { json: "thanks_letter_almworld_intro", js: "thanks_letter_almworld_intro", typ: a("") },
+        { json: "thanks_letter_data", js: "thanks_letter_data", typ: a(r("ThanksLetterDatum")) },
         { json: "video_spirit_disclaimer", js: "video_spirit_disclaimer", typ: "" },
         { json: "will_success_representation_hint", js: "will_success_representation_hint", typ: "" },
         { json: "will_fail_representation_hint", js: "will_fail_representation_hint", typ: "" },
-        { json: "His_will_and_our_good_free_will_text", js: "His_will_and_our_good_free_will_text", typ: a(r("HisWillAndOurGoodFreeWill")) },
-        { json: "His_will_and_our_good_free_will_media", js: "His_will_and_our_good_free_will_media", typ: a(r("HisWillAndOurGoodFreeWill")) },
+        { json: "His_will_and_our_good_free_will_media", js: "His_will_and_our_good_free_will_media", typ: a(r("HisWillAndOurGoodFreeWillMedia")) },
         { json: "sections", js: "sections", typ: a("") },
         { json: "links", js: "links", typ: r("Links") },
         { json: "faq_list", js: "faq_list", typ: a(r("FAQList")) },
+        { json: "thoughtPosters", js: "thoughtPosters", typ: a(r("ThoughtPoster")) },
     ], false),
-    "HisWillAndOurGoodFreeWill": o([
+    "HisWillAndOurGoodFreeWillMedia": o([
         { json: "free_will", js: "free_will", typ: "" },
         { json: "from", js: "from", typ: "" },
-        { json: "thanks_delivery_state", js: "thanks_delivery_state", typ: u(undefined, r("DeliveryState")) },
+        { json: "thanks_delivery_state", js: "thanks_delivery_state", typ: "" },
         { json: "will_summary", js: "will_summary", typ: "" },
-        { json: "delivery_state", js: "delivery_state", typ: u(undefined, r("DeliveryState")) },
     ], false),
     "FAQList": o([
         { json: "question", js: "question", typ: "" },
         { json: "answer_image_list", js: "answer_image_list", typ: u(undefined, a("")) },
+        { json: "posterNumber", js: "posterNumber", typ: u(undefined, 0) },
         { json: "media", js: "media", typ: u(undefined, r("Media")) },
         { json: "answers", js: "answers", typ: a("") },
         { json: "_answers", js: "_answers", typ: u(undefined, a("")) },
         { json: "hide_answers", js: "hide_answers", typ: u(undefined, a("")) },
-        { json: "note", js: "note", typ: u(undefined, "") },
     ], false),
     "Media": o([
         { json: "type", js: "type", typ: "" },
@@ -389,6 +472,21 @@ const typeMap: any = {
         { json: "title", js: "title", typ: "" },
         { json: "url", js: "url", typ: "" },
     ], false),
+    "PosterFooter": o([
+        { json: "mainTitle", js: "mainTitle", typ: "" },
+        { json: "subtitle", js: "subtitle", typ: "" },
+    ], false),
+    "ThanksLetterDatum": o([
+        { json: "letterToUser", js: "letterToUser", typ: "" },
+        { json: "letterTo", js: "letterTo", typ: "" },
+        { json: "content_paragraphs", js: "content_paragraphs", typ: a(a("")) },
+        { json: "special", js: "special", typ: u(undefined, true) },
+    ], false),
+    "ThoughtPoster": o([
+        { json: "title", js: "title", typ: "" },
+        { json: "titleSegments", js: "titleSegments", typ: u(undefined, a("")) },
+        { json: "paragraphs", js: "paragraphs", typ: a("") },
+    ], false),
     "AdvocacyData": o([
         { json: "attitude", js: "attitude", typ: "" },
         { json: "bestwishes", js: "bestwishes", typ: "" },
@@ -399,6 +497,7 @@ const typeMap: any = {
         { json: "slogan_headline_suffix", js: "slogan_headline_suffix", typ: "" },
         { json: "slogan_target_part", js: "slogan_target_part", typ: "" },
         { json: "slogan_highlight_part", js: "slogan_highlight_part", typ: "" },
+        { json: "mantraDao", js: "mantraDao", typ: "" },
         { json: "mantra", js: "mantra", typ: "" },
         { json: "mantra_details", js: "mantra_details", typ: a(r("MantraDetail")) },
     ], false),
@@ -437,6 +536,61 @@ const typeMap: any = {
     "HowData": o([
         { json: "contribute_text", js: "contribute_text", typ: "" },
         { json: "contribute_by_share_text", js: "contribute_by_share_text", typ: "" },
+        { json: "header", js: "header", typ: r("Header") },
+        { json: "sections", js: "sections", typ: r("Sections") },
+        { json: "metadata", js: "metadata", typ: r("Metadata") },
+    ], false),
+    "Header": o([
+        { json: "title", js: "title", typ: "" },
+        { json: "subtitle", js: "subtitle", typ: "" },
+    ], false),
+    "Metadata": o([
+        { json: "page_type", js: "page_type", typ: "" },
+        { json: "theme", js: "theme", typ: "" },
+        { json: "target_audience", js: "target_audience", typ: "" },
+        { json: "key_concepts", js: "key_concepts", typ: a("") },
+        { json: "technologies", js: "technologies", typ: a("") },
+    ], false),
+    "Sections": o([
+        { json: "why_duki_captures_attention", js: "why_duki_captures_attention", typ: r("WhyDukiCapturesAttention") },
+        { json: "implementation_guide", js: "implementation_guide", typ: r("ImplementationGuide") },
+        { json: "proof_of_concept", js: "proof_of_concept", typ: r("ProofOfConcept") },
+        { json: "call_to_action", js: "call_to_action", typ: r("CallToAction") },
+    ], false),
+    "CallToAction": o([
+        { json: "title", js: "title", typ: "" },
+        { json: "description", js: "description", typ: "" },
+        { json: "tagline", js: "tagline", typ: "" },
+    ], false),
+    "ImplementationGuide": o([
+        { json: "title", js: "title", typ: "" },
+        { json: "subtitle", js: "subtitle", typ: "" },
+        { json: "steps", js: "steps", typ: a(r("Step")) },
+    ], false),
+    "Step": o([
+        { json: "step_number", js: "step_number", typ: 0 },
+        { json: "title", js: "title", typ: "" },
+        { json: "subtitle", js: "subtitle", typ: "" },
+        { json: "description", js: "description", typ: "" },
+        { json: "tags", js: "tags", typ: a("") },
+    ], false),
+    "ProofOfConcept": o([
+        { json: "title", js: "title", typ: "" },
+        { json: "subtitle", js: "subtitle", typ: "" },
+        { json: "disclaimer", js: "disclaimer", typ: "" },
+        { json: "projects", js: "projects", typ: a(r("Project")) },
+    ], false),
+    "Project": o([
+        { json: "name", js: "name", typ: "" },
+        { json: "emoji", js: "emoji", typ: "" },
+        { json: "description", js: "description", typ: "" },
+        { json: "status", js: "status", typ: "" },
+        { json: "link", js: "link", typ: u(undefined, "") },
+        { json: "tags", js: "tags", typ: a("") },
+    ], false),
+    "WhyDukiCapturesAttention": o([
+        { json: "title", js: "title", typ: "" },
+        { json: "benefits", js: "benefits", typ: a(r("KeyPoint")) },
     ], false),
     "MenuData": o([
         { json: "label", js: "label", typ: "" },
@@ -473,7 +627,4 @@ const typeMap: any = {
         { json: "question", js: "question", typ: "" },
         { json: "question_emphasis", js: "question_emphasis", typ: "" },
     ], false),
-    "DeliveryState": [
-        "unknown",
-    ],
 };

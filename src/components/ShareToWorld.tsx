@@ -10,8 +10,8 @@ const ShareMode = {
 
 export default function ShareToWorld({ data }) {
     const [mindMode, setMindMode] = useState(null);
-    const popupRef = React.useRef(null);
-    const buttonRef = React.useRef(null);
+    const popupRef = React.useRef<HTMLDivElement>(null);
+    const buttonRef = React.useRef<HTMLDivElement>(null);
 
     const handleClickOutside = useCallback((event) => {
         if (popupRef.current && !popupRef.current.contains(event.target) &&

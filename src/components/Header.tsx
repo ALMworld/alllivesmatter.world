@@ -1,33 +1,43 @@
+'use client'
+
 import React, { useEffect, useRef, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { NavLink } from 'react-router-dom';
-import { LANGUAGES } from '../constants/index';
-import { Globe, Menu as MenuIcon, Share2 } from 'lucide-react';
+import { Globe, Menu as MenuIcon } from 'lucide-react';
 import { useMenuData } from '../data/data_provider';
-import almLogo from '/alm.svg';  // assuming the SVG is in the public folder
-// love_be_ye_way-will_duality_evolve_through_conflict_duality like rightousness vs unrightousness or known vs unknown
-import dualityLogo from '/duality.svg';  // assuming the SVG is in the public folder
+import Link from 'next/link';
+import { LANGUAGES, Locale } from '@/assets/i18config';
+import { usePathname, useRouter } from 'next/navigation';
+import { setPreferredLocale } from '@/utils/locale';
 
-
-export const Header = () => {
-    const { i18n, t } = useTranslation();
+export const Header = ({ lang }: { lang: Locale }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [langMenuOpen, setLangMenuOpen] = useState(false);
-    const menuData = useMenuData();
-    const langMenuRef = useRef(null);
+    const menuData = useMenuData(lang);
+    const langMenuRef = useRef<HTMLDivElement>(null);
+    const pathname = usePathname();
+    const router = useRouter(); // Import and use the useRouter hook
 
-
-    const onChangeLang = (code: string) => {
-        i18n.changeLanguage(code);
-        setLangMenuOpen(false);
+    const getLinkClassName = (isActive: boolean) => {
+        return `text-xl font-bold w-full md:w-auto ${isActive ? 'text-yellow-400' : 'hover:text-yellow-400'
+            }`;
     };
+
+    const onChangeLang = (newLang: string) => {
+        // Store user's preference in localStorage
+        setPreferredLocale(newLang as Locale);
+
+        // Construct the new path by replacing the current language segment
+        const newPath = pathname.replace(`/${lang}`, `/${newLang}`);
+        router.push(newPath);
+        setLangMenuOpen(false); // Close the language menu after selection
+    };
+
     const closeMenu = () => {
         setIsOpen(false);
     };
 
     useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (langMenuRef.current && !langMenuRef.current.contains(event.target)) {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (langMenuRef.current && !langMenuRef.current.contains(event.target as Node)) {
                 setLangMenuOpen(false);
             }
         };
@@ -44,19 +54,18 @@ export const Header = () => {
                 <div className="flex w-full items-center justify-between">
                     {/* Left side: ALM and Language settings */}
                     <div className="flex items-center" id="leftPart">
-                        <NavLink
-                            to="/"
-                            className={({ isActive }) => isActive ? "text-2xl font-bold text-yellow-400 whitespace-nowrap" : "text-2xl font-bold hover:text-yellow-400 whitespace-nowrap"}
+                        <Link
+                            href={`/${lang}`}
+                            className="text-2xl font-bold hover:text-yellow-400 whitespace-nowrap"
                         >
-                            {/* ALM */}
                             <img
-                                src={almLogo}
+                                src="/alm.svg"
                                 alt="ALM"
-                                width="48"
-                                height="48"
+                                width={48}
+                                height={48}
                                 className="transition-colors"
                             />
-                        </NavLink>
+                        </Link>
                     </div>
 
                     <div className="flex-grow"></div>
@@ -67,7 +76,7 @@ export const Header = () => {
                             onClick={() => setLangMenuOpen(!langMenuOpen)}
                         >
                             <Globe size={20} />
-                            <span>{i18n.language.toUpperCase()}</span>
+                            <span>{lang.toUpperCase()}</span>
                         </button>
                         {langMenuOpen && (
                             <div className="absolute top-full left-0 mt-1 bg-gray-700 rounded shadow-lg z-10 min-w-[150px]">
@@ -81,9 +90,7 @@ export const Header = () => {
                                     </button>
                                 ))}
                             </div>
-
                         )}
-
                     </div>
 
                     <div className="flex items-center relative" id="rightPart">
@@ -97,59 +104,39 @@ export const Header = () => {
 
                         {/* Menu Items */}
                         <div className={`md:flex ${isOpen ? 'flex' : 'hidden'} flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4 absolute md:relative right-0 top-full md:top-auto w-auto bg-gray-800 md:bg-transparent p-4 md:p-0 z-20`} style={{ right: '0' }}>
-                            <NavLink
-                                to="/"
-                                className={({ isActive }) => isActive ? "text-xl font-bold text-yellow-400 w-full md:w-auto" : "text-xl font-bold hover:text-yellow-400 w-full md:w-auto"}
+                            <Link
+                                href={`/${lang}/`}
+                                className={getLinkClassName(pathname === `/${lang}` || pathname === `/${lang}/`)}
                                 onClick={closeMenu}
                             >
-
                                 {menuData.advocacy}
+                            </Link>
 
-                            </NavLink>
-
-                            <NavLink
-                                to="/why"
-                                className={({ isActive }) => isActive ? "text-xl font-bold text-yellow-400 w-full md:w-auto" : "text-xl font-bold hover:text-yellow-400 w-full md:w-auto"}
+                            <Link
+                                href={`/${lang}/why`}
+                                className={getLinkClassName(pathname === `/${lang}/why`)}
                                 onClick={closeMenu}
                             >
-
                                 {menuData.why}
+                            </Link>
 
-                            </NavLink>
-
-                            <NavLink
-                                to="/how"
-                                className={({ isActive }) => isActive ? "text-xl font-bold text-yellow-400 w-full md:w-auto" : "text-xl font-bold hover:text-yellow-400 w-full md:w-auto"}
+                            <Link
+                                href={`/${lang}/how`}
+                                className={getLinkClassName(pathname === `/${lang}/how`)}
                                 onClick={closeMenu}
                             >
                                 {menuData.how}
-                            </NavLink>
+                            </Link>
 
-                            <NavLink
-                                to="/about"
-                                className={({ isActive }) => isActive ? "text-xl  font-bold  text-yellow-400 w-full md:w-auto" : "text-xl  font-bold  hover:text-yellow-400 w-full md:w-auto"}
+                            <Link
+                                href={`/${lang}/about`}
+                                className={getLinkClassName(pathname === `/${lang}/about`)}
                                 onClick={closeMenu}
                             >
                                 {menuData.about}
-                            </NavLink>
+                            </Link>
                         </div>
                     </div>
-
-                        {/* un-comment to add other link here  */}
-                    {/* <div className="flex">
-                        <NavLink
-                            to="/"
-                            className={({ isActive }) => isActive ? "text-2xl font-bold text-yellow-400 whitespace-nowrap" : "text-2xl font-bold hover:text-yellow-400 whitespace-nowrap"}
-                        >
-                            <img
-                                src={dualityLogo}
-                                alt="ALM"
-                                width="32"
-                                height="32"
-                                className="transition-colors"
-                            />
-                        </NavLink>
-                    </div> */}
                 </div>
             </nav>
         </header>

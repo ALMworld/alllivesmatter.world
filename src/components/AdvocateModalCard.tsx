@@ -1,6 +1,5 @@
 import React from 'react';
 import { Settings, Lock, Bot, CircleCheckBig, Flower2 } from 'lucide-react';
-import AlmIcon from './AlmIcon';
 import AlmIconUnit from './AlmIconUnit';
 
 const AdvocateModalCard = ({ mantra, onClose }) => {
@@ -15,7 +14,8 @@ const AdvocateModalCard = ({ mantra, onClose }) => {
         >
             <div className="bg-slate-800 text-white p-6 rounded-lg shadow-lg max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl w-full max-h-[80vh] overflow-y-auto relative">
                 <div className="flex justify-between items-center mb-6 w-full">
-                    <h2 className="text-xl font-bold text-yellow-500" dangerouslySetInnerHTML={{__html: mantra.content}}  />
+                    {/* <h2 className="text-xl font-bold text-yellow-500" dangerouslySetInnerHTML={{__html: mantra.content}}  /> */}
+                    <h2 className="text-xl font-bold text-yellow-500 pl-1">{mantra.mantra}</h2>
                     <div className="text-yellow-500">
                         <AlmIconUnit value={mantra.icon} size={24} />
                     </div>

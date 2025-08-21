@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useRef, useEffect } from 'react';
 import { Music, Minimize2, X, PictureInPicture } from 'lucide-react';
 import { ResizableBox } from 'react-resizable';

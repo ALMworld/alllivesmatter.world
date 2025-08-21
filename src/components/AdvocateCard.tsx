@@ -34,7 +34,7 @@ const AdvocateCard = ({ mantra, isOpen, openModal, closeModal, children }) => {
 
                 <div className="flex justify-center mb-4">
                     <div className="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center text-black">
-                        <AlmIcon value={mantra.icon} />
+                        <AlmIcon value={mantra.icon} expand_image_list={[]} />
                     </div>
                 </div>
                 <h2 className="text-2xl font-bold mb-2 selectable-text" dangerouslySetInnerHTML={{ __html: mantra.content }} />
@@ -42,7 +42,7 @@ const AdvocateCard = ({ mantra, isOpen, openModal, closeModal, children }) => {
                 <button
                     className="mt-4 border border-yellow-400 text-yellow-400 px-4 py-2 rounded hover:bg-yellow-400 hover:text-black transition duration-300"
                     onClick={openModal}>
-                    {mantra.buttonText}
+                    {mantra.mantra}
                 </button>
             </div>
 

@@ -1,6 +1,5 @@
 import { BarChart, Film, Loader2, Video } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
-import AlmIcon from './AlmIcon';
 
 function AllLivesMatterWorldSunflowPetal({ media }) {
     // watch_interview_text, watch_news_text, disclaimer
@@ -46,14 +45,13 @@ function AllLivesMatterWorldSunflowPetal({ media }) {
                 <span>
                     <span className='His-color'>  {media.watch_tips} </span>
                     {media.unsafe_media_html && (
-                                                            
-                                                            <>
-                                                            <span dangerouslySetInnerHTML={{ __html: media.unsafe_media_html }} />
-                                                            </>
-         
+
+                        <>
+                            <span dangerouslySetInnerHTML={{ __html: media.unsafe_media_html }} />
+                        </>
+
                     )}
                 </span>
-                {/* <p className='text-white-300 selectable-text text-sm leading-none'>{disclaimer}</p> */}
             </div>
         </div >
     );

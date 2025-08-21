@@ -4,11 +4,10 @@ import { promises as fsPromises } from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 
-
 import sharp from 'sharp';
 
 async function compressPngImages(inputDir = "./assets/outreach/x",
-                                 outputDir="'./../../public/images/en",
+                                 outputDir="'./../../public/images",
                                  formatConfigs) {
   try {
     // get command line arguments
@@ -103,20 +102,20 @@ async function processFiles() {
       "./../public/images/en/0_1_kindness_first.webp",
       "./../public/images/en/0_2_fairness_always.webp",
       "./../public/images/en/0_3_duki_in_action.webp",
-      "./../public/images/en/0_kindkang_invitation_to_good_will_world.webp",
-      "./../public/images/en/1_thoughts_on_media_responsibility.webp",
-      "./../public/images/en/2_thoughts_on_war_and_peace.webp",
-      "./../public/images/en/3_evolutionary_perspective_why_kindness_fairness_and_duki_worldwide.webp",
-      "./../public/images/en/4_what_is_duki.webp",
-      "./../public/images/en/5_why_duki_instead_of_ubi.webp",
-      "./../public/images/en/6_thoughts_on_us_selection.webp",
-      "./../public/images/en/7_thoughts_on_entrepreneurs_and_duki.webp",
-      "./../public/images/en/8_thoughts_on_mooc_and_duki.webp",
-      "./../public/images/en/9_thoughts_on_duki_governments_and_immigration_policy.webp",
-      "./../public/images/en/10_thoughts_on_duki_and_open_source.webp",
-      "./../public/images/en/11_thoughts_on_duki_blockchain_and_authority.webp",
-      "./../public/images/en/12_O_Come_O_Come_Emmanuel.webp",
-      "./../public/images/en/symbols/Duality_Bugua.webp",
+      // "./../public/images/en/0_kindkang_invitation_to_good_will_world.webp",
+      // "./../public/images/en/1_thoughts_on_media_responsibility.webp",
+      // "./../public/images/en/2_thoughts_on_war_and_peace.webp",
+      // "./../public/images/en/3_evolutionary_perspective_why_kindness_fairness_and_duki_worldwide.webp",
+      // "./../public/images/en/4_what_is_duki.webp",
+      // "./../public/images/en/5_why_duki_instead_of_ubi.webp",
+      // "./../public/images/en/6_thoughts_on_us_selection.webp",
+      // "./../public/images/en/7_thoughts_on_entrepreneurs_and_duki.webp",
+      // "./../public/images/en/8_thoughts_on_mooc_and_duki.webp",
+      // "./../public/images/en/9_thoughts_on_duki_governments_and_immigration_policy.webp",
+      // "./../public/images/en/10_thoughts_on_duki_and_open_source.webp",
+      // "./../public/images/en/11_thoughts_on_duki_blockchain_and_authority.webp",
+      // "./../public/images/en/12_O_Come_O_Come_Emmanuel.webp",
+      "./../public/images/en/symbols/Duality_love_is_the_dao.webp",
       "./../public/images/en/symbols/Duality_happy_dussehra.webp",
       "./../public/images/en/symbols/Duality_DivineCouple_NuwaFuxi.webp",
       "./../public/images/en/symbols/Masonic_SquareCompassesG.webp",
@@ -124,16 +123,16 @@ async function processFiles() {
       "./../public/images/en/symbols/HumanAsLove.webp",
       "./../public/images/en/symbols/Ultraman.webp",
       "./../public/images/en/symbols/UltramanZero.webp",
-      "./../public/images/en/open_thanks_letters/1_Thanks_Letter_for_Tommee_Profitt.webp",
-      "./../public/images/en/open_thanks_letters/2_Thanks_Letter_for_BLM_Movement.webp",
-      "./../public/images/en/open_thanks_letters/3_Thanks_Letter_for_Donald_Trump.webp",
-      "./../public/images/en/open_thanks_letters/4_Thanks_Letter_for_Richard_Dawkins.webp",
-      "./../public/images/en/open_thanks_letters/5_Thanks_Letter_for_Robert_Axelrod.webp",
-      "./../public/images/en/open_thanks_letters/6_Thanks_Letter_for_Elon_Musk.webp",
-      "./../public/images/en/open_thanks_letters/7_Thanks_Letter_for_Karl_Widerquist.webp",
-      "./../public/images/en/open_thanks_letters/8_Thanks_Letter_for_WorldID.webp",
-      "./../public/images/en/open_thanks_letters/9_Thanks_Letter_for_Avi_Wigderson.webp",
-      "./../public/images/en/open_thanks_letters/10_Thanks_Letter_for_The_Unknown.webp"
+      // "./../public/images/en/open_thanks_letters/1_Thanks_Letter_for_Tommee_Profitt.webp",
+      // "./../public/images/en/open_thanks_letters/2_Thanks_Letter_for_BLM_Movement.webp",
+      // "./../public/images/en/open_thanks_letters/3_Thanks_Letter_for_Donald_Trump.webp",
+      // "./../public/images/en/open_thanks_letters/4_Thanks_Letter_for_Richard_Dawkins.webp",
+      // "./../public/images/en/open_thanks_letters/5_Thanks_Letter_for_Robert_Axelrod.webp",
+      // "./../public/images/en/open_thanks_letters/6_Thanks_Letter_for_Elon_Musk.webp",
+      // "./../public/images/en/open_thanks_letters/7_Thanks_Letter_for_Karl_Widerquist.webp",
+      // "./../public/images/en/open_thanks_letters/8_Thanks_Letter_for_WorldID.webp",
+      // "./../public/images/en/open_thanks_letters/9_Thanks_Letter_for_Avi_Wigderson.webp",
+      "./../public/images/en/open_thanks_letters/10_Thanks_Letter_for_The_Unknownable.webp"
     ]
   }];
 
@@ -204,7 +203,7 @@ async function processFiles() {
 // extractFilesFromBlob().catch(console.error);
 
 
+compressPngImages();
+
 // Run the function
 await processFiles().catch(console.error);
-
-// compressPngImages();

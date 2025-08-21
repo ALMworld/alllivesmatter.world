@@ -5,242 +5,88 @@
         "base_name": "0_1_kindness_first.webp",
         "range": [
           0,
-          108700
+          104450
         ]
       },
       "0_2_fairness_always": {
         "base_name": "0_2_fairness_always.webp",
         "range": [
-          108700,
-          319068
+          104450,
+          314818
         ]
       },
       "0_3_duki_in_action": {
         "base_name": "0_3_duki_in_action.webp",
         "range": [
-          319068,
-          577092
+          314818,
+          572842
         ]
       },
-      "0_kindkang_invitation_to_good_will_world": {
-        "base_name": "0_kindkang_invitation_to_good_will_world.webp",
+      "Duality_love_is_the_dao": {
+        "base_name": "Duality_love_is_the_dao.webp",
         "range": [
-          577092,
-          806138
-        ]
-      },
-      "1_thoughts_on_media_responsibility": {
-        "base_name": "1_thoughts_on_media_responsibility.webp",
-        "range": [
-          806138,
-          1088354
-        ]
-      },
-      "2_thoughts_on_war_and_peace": {
-        "base_name": "2_thoughts_on_war_and_peace.webp",
-        "range": [
-          1088354,
-          1330512
-        ]
-      },
-      "3_evolutionary_perspective_why_kindness_fairness_and_duki_worldwide": {
-        "base_name": "3_evolutionary_perspective_why_kindness_fairness_and_duki_worldwide.webp",
-        "range": [
-          1330512,
-          1562908
-        ]
-      },
-      "4_what_is_duki": {
-        "base_name": "4_what_is_duki.webp",
-        "range": [
-          1562908,
-          1812594
-        ]
-      },
-      "5_why_duki_instead_of_ubi": {
-        "base_name": "5_why_duki_instead_of_ubi.webp",
-        "range": [
-          1812594,
-          2092154
-        ]
-      },
-      "6_thoughts_on_us_selection": {
-        "base_name": "6_thoughts_on_us_selection.webp",
-        "range": [
-          2092154,
-          2238958
-        ]
-      },
-      "7_thoughts_on_entrepreneurs_and_duki": {
-        "base_name": "7_thoughts_on_entrepreneurs_and_duki.webp",
-        "range": [
-          2238958,
-          2508068
-        ]
-      },
-      "8_thoughts_on_mooc_and_duki": {
-        "base_name": "8_thoughts_on_mooc_and_duki.webp",
-        "range": [
-          2508068,
-          2668922
-        ]
-      },
-      "9_thoughts_on_duki_governments_and_immigration_policy": {
-        "base_name": "9_thoughts_on_duki_governments_and_immigration_policy.webp",
-        "range": [
-          2668922,
-          2934210
-        ]
-      },
-      "10_thoughts_on_duki_and_open_source": {
-        "base_name": "10_thoughts_on_duki_and_open_source.webp",
-        "range": [
-          2934210,
-          3207188
-        ]
-      },
-      "11_thoughts_on_duki_blockchain_and_authority": {
-        "base_name": "11_thoughts_on_duki_blockchain_and_authority.webp",
-        "range": [
-          3207188,
-          3466064
-        ]
-      },
-      "12_O_Come_O_Come_Emmanuel": {
-        "base_name": "12_O_Come_O_Come_Emmanuel.webp",
-        "range": [
-          3466064,
-          3724982
-        ]
-      },
-      "Duality_Bugua": {
-        "base_name": "Duality_Bugua.webp",
-        "range": [
-          3724982,
-          3748552
+          572842,
+          627088
         ]
       },
       "Duality_happy_dussehra": {
         "base_name": "Duality_happy_dussehra.webp",
         "range": [
-          3748552,
-          3761346
+          627088,
+          639882
         ]
       },
       "Duality_DivineCouple_NuwaFuxi": {
         "base_name": "Duality_DivineCouple_NuwaFuxi.webp",
         "range": [
-          3761346,
-          4718232
+          639882,
+          1596768
         ]
       },
       "Masonic_SquareCompassesG": {
         "base_name": "Masonic_SquareCompassesG.webp",
         "range": [
-          4718232,
-          4736816
+          1596768,
+          1615352
         ]
       },
       "PlantsVsZombies": {
         "base_name": "PlantsVsZombies.webp",
         "range": [
-          4736816,
-          4843462
+          1615352,
+          1721998
         ]
       },
       "HumanAsLove": {
         "base_name": "HumanAsLove.webp",
         "range": [
-          4843462,
-          4875916
+          1721998,
+          1754452
         ]
       },
       "Ultraman": {
         "base_name": "Ultraman.webp",
         "range": [
-          4875916,
-          4947720
+          1754452,
+          1826256
         ]
       },
       "UltramanZero": {
         "base_name": "UltramanZero.webp",
         "range": [
-          4947720,
-          5004640
+          1826256,
+          1883176
         ]
       },
-      "1_Thanks_Letter_for_Tommee_Profitt": {
-        "base_name": "1_Thanks_Letter_for_Tommee_Profitt.webp",
+      "10_Thanks_Letter_for_The_Unknownable": {
+        "base_name": "10_Thanks_Letter_for_The_Unknownable.webp",
         "range": [
-          5004640,
-          5539050
-        ]
-      },
-      "2_Thanks_Letter_for_BLM_Movement": {
-        "base_name": "2_Thanks_Letter_for_BLM_Movement.webp",
-        "range": [
-          5539050,
-          6096958
-        ]
-      },
-      "3_Thanks_Letter_for_Donald_Trump": {
-        "base_name": "3_Thanks_Letter_for_Donald_Trump.webp",
-        "range": [
-          6096958,
-          6638544
-        ]
-      },
-      "4_Thanks_Letter_for_Richard_Dawkins": {
-        "base_name": "4_Thanks_Letter_for_Richard_Dawkins.webp",
-        "range": [
-          6638544,
-          7194630
-        ]
-      },
-      "5_Thanks_Letter_for_Robert_Axelrod": {
-        "base_name": "5_Thanks_Letter_for_Robert_Axelrod.webp",
-        "range": [
-          7194630,
-          7738618
-        ]
-      },
-      "6_Thanks_Letter_for_Elon_Musk": {
-        "base_name": "6_Thanks_Letter_for_Elon_Musk.webp",
-        "range": [
-          7738618,
-          8291458
-        ]
-      },
-      "7_Thanks_Letter_for_Karl_Widerquist": {
-        "base_name": "7_Thanks_Letter_for_Karl_Widerquist.webp",
-        "range": [
-          8291458,
-          8848356
-        ]
-      },
-      "8_Thanks_Letter_for_WorldID": {
-        "base_name": "8_Thanks_Letter_for_WorldID.webp",
-        "range": [
-          8848356,
-          9402972
-        ]
-      },
-      "9_Thanks_Letter_for_Avi_Wigderson": {
-        "base_name": "9_Thanks_Letter_for_Avi_Wigderson.webp",
-        "range": [
-          9402972,
-          9955126
-        ]
-      },
-      "10_Thanks_Letter_for_The_Unknown": {
-        "base_name": "10_Thanks_Letter_for_The_Unknown.webp",
-        "range": [
-          9955126,
-          10448266
+          1883176,
+          2376316
         ]
       }
     },
-    "hash": "en_92027407df239c0a5f2126f0d1e756b4",
-    "env_prod": true
+    "hash": "en_fbcfa335480f67a855c23abec00477ce",
+    "env_prod": false
   }
 }

@@ -10,7 +10,7 @@ export function getBlobUri(pack: MegaFilesPack): string {
     if (!pack.hash) return '';
     return pack.env_prod
         ? `https://assets.alllivesmatter.world/blobs/${pack.hash}.blob`
-        : `./../public/${pack.hash}.blob`;
+        : `/${pack.hash}.blob`;
 }
 
 

@@ -1,10 +1,22 @@
 import React, { useEffect, useRef, useState, useCallback, useMemo } from "react";
-import Globe from "globe.gl";
+import Globe, { GlobeInstance } from "globe.gl";
 import countries from "../assets/countries.json";
+
+interface ArcData {
+  startLat: number;
+  startLng: number;
+  endLat: number;
+  endLng: number;
+}
+
+interface RingData {
+  lat: number;
+  lng: number;
+}
 
 const rendererConfig = {
   animateIn: true,
-  antialias: false, 
+  antialias: false,
   alpha: false,
   precision: "lowp",
   powerPreference: "low-power"
@@ -126,12 +138,13 @@ function randomSelectSrcIdx() {
 // }
 
 export default function World() {
-  const globeContainerRef = useRef(null);
-  const globeRef = useRef(null);
+  const globeContainerRef = useRef<HTMLDivElement | null>(null);
+  const globeRef = useRef<GlobeInstance | null>(null);
   const [isGlobeLoaded, setIsGlobeLoaded] = useState(false);
-  // const [hexPolygonColor] = useState("#FF0000"); 
-  const [arcsData, setArcsData] = useState([]);
-  const [ringsData, setRingsData] = useState([]);
+
+  // Use the defined types
+  const [arcsData, setArcsData] = useState<ArcData[]>([]);
+  const [ringsData, setRingsData] = useState<RingData[]>([]);
 
   // Config
   const maxNumArcs = 10;
@@ -181,7 +194,7 @@ export default function World() {
   const initGlobe = useCallback(() => {
     if (!globeContainerRef.current || globeRef.current) return;
 
-    const globe = Globe({ rendererConfig })(globeContainerRef.current);
+    const globe = new Globe(globeContainerRef.current, { rendererConfig });
     // const defaultGlobeMaterial = new MeshPhongMaterial({ color: 0x009000, });
 
 
@@ -240,12 +253,13 @@ export default function World() {
 
     return () => {
       if (globeRef.current) {
-        globeRef.current.pauseAnimation();
-        if (globeContainerRef.current) {
-          while (globeContainerRef.current.firstChild) {
-            globeContainerRef.current.removeChild(globeContainerRef.current.firstChild);
-          }
-        }
+        // (globeRef.current as any).pauseAnimation();
+        // if (globeContainerRef.current) {
+        //   while (globeContainerRef.current.firstChild) {
+        //     globeContainerRef.current.removeChild(globeContainerRef.current.firstChild);
+        //   }
+        // }
+        (globeRef.current as any)._destructor();
         globeRef.current = null;
       }
       setIsGlobeLoaded(false);
