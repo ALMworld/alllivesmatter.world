@@ -10,7 +10,11 @@ import { Loader } from 'lucide-react';
 // Dynamically import World component to prevent SSR issues
 const World = dynamic(() => import('@/components/World'), {
     ssr: false,
-    loading: () => <Loader className="w-16 h-16 text-red-300" />
+    loading: () => (
+        <div className="flex items-center justify-center" style={{ width: '300px', height: '300px' }}>
+            <Loader className="w-12 h-12 text-red-300 animate-spin" />
+        </div>
+    )
 });
 
 

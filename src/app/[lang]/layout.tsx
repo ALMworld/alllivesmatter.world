@@ -17,12 +17,12 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
 
     return {
         title: "ALL LIVES MATTER · WORLD",
-        description: "ALL LIVES MATTER · WORLD: Cultivate Peace And Make All Great Again. Love is the way - Kindness First, Fairness Always, and DUKI in action. Join our movement for a world where all lives truly matter.",
+        description: "ALL LIVES MATTER · WORLD: Cultivate LOVE And Make All Great Again. Love is the way - Kindness First, Fairness Always, and DUKI in action. Join our movement for a world where all lives truly matter.",
         keywords: "ALL LIVES MATTER WORLDWIDE,ALL LIVES MATTER WORLD, ALL LIVES MATTER, world peace, humanity, compassion, kindness, fairness, DUKI,UBI, freedom, global outreach, authority, power, global movement, free will",
         authors: [{ name: "ALL LIVES MATTER WORLD" }],
         openGraph: {
             title: "ALL LIVES MATTER WORLD: BOTH TRUTH AND SUPERPOWER",
-            description: "Cultivate Peace And Make All Great Again. LOVE IS THE WAY - Kindness First, Fairness Always, and DUKI In Action.",
+            description: "Cultivate LOVE And Make All Great Again. LOVE IS THE WAY - Kindness First, Fairness Always, and DUKI In Action.",
             url: currentUrl,
             siteName: "All Lives Matter World",
             images: [
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Loc
             card: "summary",
             site: "@alm_world",
             title: "ALL LIVES MATTER WORLD: BOTH TRUTH AND SUPERPOWER",
-            description: "Cultivate Peace And Make All Great Again. LOVE IS THE WAY - Kindness First, Fairness Always, and DUKI In Action.",
+            description: "Cultivate LOVE And Make All Great Again. LOVE IS THE WAY - Kindness First, Fairness Always, and DUKI In Action.",
             images: [`${baseUrl}/alm.jpg`],
         },
         alternates: {
@@ -72,7 +72,7 @@ export default async function Root({ params, children }: { params: Promise<{ lan
             <Header lang={lang} />
             {children}
             <Footer lang={lang} />
-            <PeaceMusicPlayer />
+            <PeaceMusicPlayer lang={lang} />
             {/* </GalleryProvider>
         </DataProvider> */}
         </GalleryProvider>

@@ -1,0 +1,52 @@
+{
+    "title": "ALM",
+    "menu_data": {
+        "label": "Select another language!",
+        "about": "About",
+        "why": "Why",
+        "how": "How",
+        "advocacy": "Advocacy"
+    },
+    "common_data": {
+        "peace_music_url": "https://www.youtube.com/embed/PQuq4umpb3Q?si=5WbRVwYgKW2xU_Lq&loop=1&playlist=PQuq4umpb3Q",
+        "share_text": "Advocate Worldwide",
+        "share_url": "Www.AllLivesMatter.World",
+        "advocate_with_peace": "Be Love Peace",
+        "advocate_with_anger": "Be Love Anger",
+        "all_lives_matter_world_belief": "The Dao can be told, yet the told is not the true Dao — The Dao lived is.",
+        "peaceful_mind": "Don't worry about anything; instead, pray about everything.",
+        "angry_mind": "Speak up for those who cannot speak for themselves; ensure justice for those being crushed.",
+        "advocacy_in_peace": "All Lives Matter Worldwide: Cultivate LOVE And Make All Great Again. LOVE IS THE WAY - Kindness First, Fairness Always, and DUKI In Action. ",
+        "advocacy_in_anger": "THEY ARE DYING! AllLivesMatterWorld Should NOT Be AbandonedLikeSHIT Just Because Of A Few BadApples In It! DUKIInAction is NOT dookie EITHER! They are BOTH duty, kindness, AND superpower for ALL lives. It is our freeWill's DESTINY and HisWill. TAKE your DUTY as sons of the HIGHEST and judge RIGHTEOUSLY and REPOST and DO SOMETHING to make This will SURVIVE and TRIUMPH!",
+        "possible_hash_tags": "#JesusIsComingSoon #JesusIsKing #AllLivesMatterWorld #Peace #WorldWar3 #PreventWW3 #PeaceNotWar #StopTheWar #GlobalUnity #WarIsNotTheAnswer #EndConflict #TogetherForPeace #NoMoreWars #HopeForHumanity #Ukraine #StopTheWar #United #StandTogether #ceasefire #peace #JesusSaves #JesusLovesYou #AmbassadorOfPeace #IsamIsPeace",
+        "common_hash_tags": "#AllLivesMatterWorld #AllLivesMatter #Peace #StopTheWar #WarIsNotTheAnswer #CeaseFirelnGazaNOW #RussianUkrainianWar #NoMoreWars ",
+        "duki_terms_header": "DUKI TERMS",
+        "duki_terms": [
+            {
+                "term": "DUKI: /djuːki/  reminiscent of 'duty','kindness' and 'cookie'",
+                "definition": "DUKI stands for Decentralized Universal Kindness Income. It's a universal kindness-based income system funded by voluntary contributions from kind individuals and organizations worldwide. DUKI aims to empower people to gain freedom, reject evil, do good, and spread kindness. Currently, DUKI does not exist; it's merely a bold vision. This concept draws inspiration from Universal Basic Income (UBI) ideas, the wisdom of great thinkers past and present, and also the harsh realities faced by people worldwide. These realities include stories of individuals joining wars for the sole purpose of providing for their families, situations where someone's vote can be bought for just a few dollars, instances where people feel powerless against overwhelming evil, and cases where standing up for what's right leads to severe personal consequences. Life is hard, and humans are not angels. Sometimes, when given two choices, people choose the beneficial one without considering whether it's right. To be frank, I doubt if I would choose the right option if the benefits were huge and choosing otherwise incurred a big threat. I hope DUKI, if realized, raises awareness and serves as a reminder of duty and kindness among people, whether powerful or powerless. I envision it as kindness cookies that can bring hope and rejoice to all lives in the world and also help people have faith that there is kindness in humans, and there is 'God' in it. (To clarify, 'God' here is not bound to any religion. If I have to explain, I mean the Goodness of Humanity.)",
+                "icon": "money"
+            },
+            {
+                "term": "DUKIGEN: /djuːki-dʒ/  an organization that contributes to DUKI",
+                "definition": "DUKIGEN means Decentralized Universal Kindness Income Generating Entity. A DUKIGEN is an organization of any form and any size, that contributes to DUKI by sharing a portion of its profits globally. Contributions can take myriad forms, ranging from percentages of sales or profits to fixed amounts, micro-contributions, in-kind donations, and beyond. The DUKI system embraces all levels of participation: 'And if anyone gives even a cup of cold water to one of these little ones who is my disciple, truly I tell you, that person will certainly not lose their reward.",
+                "icon": "landmark"
+            },
+            {
+                "term": "DUKER: /djuːkɚ/ an individual who is behind DUKIGEN",
+                "definition": "DUKER means Decentralized Universal Kindness Income Generating Entity Representative. DUKERs are people who are behind DUKIGEs. They demonstrate their love for humanity through a combination of strong beliefs and tangible actions. They embody the principle that faith without works is insufficient, actively contributing to and promoting DUKI through their efforts.",
+                "icon": "users"
+            },
+            {
+                "term": "Dukiness (/ˈdjuːkiːnəs/): spirit behind \"all lives matter worldwide,\" potentially first manifested by the DUKI system. Requires effort to manifest.",
+                "definition": "\"all lives matter worldwide\" is not just a truth to uphold but also a unifying superpower that all lives can hold. Dukiness embodies the mindset and actions aligned with principles of universal kindness, fairness, and decentralized empowerment. It inspires individuals to pursue freedom, reject negativity, cultivate goodness, and spread kindness, ultimately striving to elevate the value and dignity of all lives globally.Note: In the advocacy page, the phrase 'DUKI in action' will be changed to 'Dukiness in action' once the DUKI-system is on its way to manifesting this spirit.",
+                "icon": "network"
+            },
+            {
+                "term": "Why DUKI Thrives on Freedom And Decentralization",
+                "definition": "DUKI emphasizes decentralization as its core principle, placing it at the forefront of its name. The blockchain technology that could underpin DUKI is well-suited for this kind of infrastructure, making it a viable option for implementation. Freedom is another crucial aspect of DUKI. In the blockchain world, establishing better connections often requires oracle data authorities to bridge the gap between the virtual and real worlds. The virtual world alone is insufficient, as it lacks the necessary ties to reality. There's a concern that if  authorities were to become tyrannical, they might not respond to issues or could even censor criticisms. This raises the question: can we truly trust what happens in virtual worlds under such circumstances?  DUKI system, along with any legitimate authority, empowered by  People and serving for  People, thrives on freedom. It must always respect freedom of speech. When faced with criticism, it must do whatever work is necessary to resolve mistrust, never resorting to censorship or inaction. It should also never yield to a strongman's desire for concentrated power, regardless of the stated purpose. As the timeless wisdom states: \"To compel a man to furnish contributions of money for the propagation of opinions which he disbelieves and abhors, is sinful and tyrannical.\"",
+                "icon": "network"
+            }
+        ]
+    }
+}

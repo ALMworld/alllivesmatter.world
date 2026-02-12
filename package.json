@@ -12,6 +12,9 @@
     "generate-types": "quicktype src/assets/i18n/en.json -o src/data/data_types.ts"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^16.1.6",
     "globe.gl": "^2.32.5",
     "i18next": "22.4.9",
     "i18next-resources-to-backend": "^1.2.1",

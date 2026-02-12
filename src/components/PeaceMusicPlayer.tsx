@@ -4,11 +4,14 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Music, Minimize2, X, PictureInPicture } from 'lucide-react';
 import { ResizableBox } from 'react-resizable';
 import 'react-resizable/css/styles.css';
+import { Locale } from '@/assets/i18config';
+import { useCommonData } from '@/data/data_provider';
 
-const PeaceMusicPlayer = () => {
+const PeaceMusicPlayer = ({ lang }: { lang: Locale }) => {
     const [playerState, setPlayerState] = useState('hidden'); // 'hidden', 'expanded', 'shrunk'
     const playerRef = useRef(null);
     const iframeRef = useRef(null);
+    const commonData = useCommonData(lang);
 
     const toggleExpand = () => {
         setPlayerState(playerState === 'expanded' ? 'hidden' : 'expanded');
@@ -75,7 +78,7 @@ const PeaceMusicPlayer = () => {
                             <iframe
                                 ref={iframeRef}
                                 className="w-full h-full"
-                                src="https://www.youtube.com/embed/PQuq4umpb3Q?si=5WbRVwYgKW2xU_Lq&loop=1&playlist=PQuq4umpb3Q"
+                                src={commonData.peace_music_url}
                                 title="YouTube video player"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;web-share"

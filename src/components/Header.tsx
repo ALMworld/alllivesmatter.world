@@ -55,7 +55,7 @@ export const Header = ({ lang }: { lang: Locale }) => {
                     {/* Left side: ALM and Language settings */}
                     <div className="flex items-center" id="leftPart">
                         <Link
-                            href={`/${lang}`}
+                            href="/"
                             className="text-2xl font-bold hover:text-yellow-400 whitespace-nowrap"
                         >
                             <img

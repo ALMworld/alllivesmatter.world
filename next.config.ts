@@ -7,6 +7,12 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+  experimental: {
+    mdxRs: true,
+  },
+  transpilePackages: ['@mdx-js/react'],
 };
 
 export default nextConfig;
+

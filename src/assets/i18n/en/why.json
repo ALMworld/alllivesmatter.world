@@ -1,0 +1,75 @@
+{
+    "highlight": {
+        "situation": " We all know that people are not angels, and that they tend to look after themselves and their own first. Yet we also know that cooperation does occur and that our civilization is based upon it. ",
+        "question": "UNDER WHAT CONDITIONS will cooperation emerge in a world of egoists without central authority?",
+        "question_emphasis": "UNDER WHAT CONDITIONS"
+    },
+    "books": [
+        {
+            "author": "Robert Axelrod",
+            "title": "The Evolution of Cooperation",
+            "author_link": "https://en.wikipedia.org/wiki/Robert_Axelrod_(political_scientist)",
+            "link": "https://en.wikipedia.org/wiki/The_Evolution_of_Cooperation",
+            "intro": "We assume that, in a world ruled by natural selection, selfishness pays. So why cooperate? In The Evolution of Cooperation, political scientist Robert Axelrod seeks to answer this question. In 1980, he organized the famed Computer Prisoners Dilemma Tournament, which sought to find the optimal strategy for survival in a particular game. Over and over, the simplest strategy, a cooperative program called Tit for Tat, shut out the competition. In other words, cooperation, not unfettered competition, turns out to be our best chance for survival.",
+            "get_book": [
+                {
+                    "buy_url": "https://amzn.to/3Z3uztI",
+                    "buy_text": "GET THE BOOK",
+                    "store_icon": "amazon.svg"
+                }
+            ],
+            "topic1": {
+                "headline": "Prisoner's Dilemma Game ",
+                "content": "Each has two choices, namely 'cooperate' or 'defect.' The game is called the Prisoner's Dilemma because in its original form two prisoners face the choice of informing on each other (defecting) or remaining silent (cooperating). Each must make the choice without knowing what the other will do..."
+            },
+            "topic2": {
+                "headline": "The Cooperative Superorganism: Humanity's Evolutionary Triumph",
+                "content": "In the grand chess game of evolution, humanity stands not as individual pieces, but as a unified board. Our collective strength lies not in solitary moves, but in the intricate dance of mutual support. As Axelrod's tournaments revealed, the path to survival is paved with reciprocity. We are not merely cooperating individuals, but a cooperating species - our shared destiny intertwined like strands of DNA. In this cosmic arena, our greatest asset is not competition, but our capacity to act as one - a superorganism whose fitness is measured by its ability to harmonize millions of voices into a single, resounding chorus of progress."
+            }
+        },
+        {
+            "author": "Richard Dawkins",
+            "title": "The Selfish Gene",
+            "author_link": "https://en.wikipedia.org/wiki/Richard_Dawkins",
+            "intro": "Published in 1976, 'The Selfish Gene' revolutionized the way we understand evolutionary biology. The book popularizes the gene-centered view of evolution, explaining how genetic survival impacts the behavior of organisms. Dawkins introduces the concept of 'selfish' genes acting in a way that increases their own chance of replication, often at the expense of the organism's other interests.",
+            "link": "https://en.wikipedia.org/wiki/The_Selfish_Gene",
+            "topic1": {
+                "headline": "Gene-Centered View of Evolution",
+                "content": "Exploring how genes, not organisms, are the true survivors in the evolutionary process."
+            },
+            "topic2": {
+                "headline": "One Human Genome",
+                "content": "In the grand tapestry of cosmic evolution, humanity stands as a singular, precious thread - a collective genome yearning to persist. Our Earth is not just our cradle, but our springboard to the stars. As bearers of life's torch in a vast, indifferent universe, we have not just the right, but the duty to spread our essence across the cosmos. Our shared genetic heritage compels us not only to survive, but to flourish and diversify among the planets. In this noble quest for existence, we find our deepest purpose and our greatest joy."
+            },
+            "get_book": [
+                {
+                    "buy_url": "https://amzn.to/473GBp3",
+                    "buy_text": "GET THE BOOK",
+                    "store_icon": "amazon.svg"
+                }
+            ]
+        },
+        {
+            "author": "Charles Darwin",
+            "author_link": "https://en.wikipedia.org/wiki/Charles_Darwin",
+            "title": "On the Origin of Species",
+            "link": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species",
+            "intro": "First published in 1859, 'On the Origin of Species' is the foundational text of evolutionary biology. In it, Darwin introduces the scientific theory that populations evolve over the course of generations through a process of natural selection. The book presented a body of evidence that the diversity of life arose by common descent through a branching pattern of evolution.",
+            "topic1": {
+                "headline": "The Grandeur of Evolution",
+                "content": "There is grandeur in this view of life, with its several powers, having been originally breathed into a few forms or into one; and that, whilst this planet has gone cycling on according to the fixed law of gravity, from so simple a beginning endless forms most beautiful and most wonderful have been, and are being evolved."
+            },
+            "topic2": {
+                "headline": "Survival of the Fittest",
+                "content": "Natural selection is a process devoid of compassion, justice, or moral intent. It operates on the basis of adaptation and reproduction, not on the principles of right and wrong.The harsh reality of survival of the fittest reveals nature's indifference to human values, emphasizing that nature's primary concern is the perpetuation of life rather than the promotion of ethical or emotional ideals"
+            },
+            "get_book": [
+                {
+                    "buy_url": "https://amzn.to/479gIUE",
+                    "buy_text": "GET THE BOOK",
+                    "store_icon": "amazon.svg"
+                }
+            ]
+        }
+    ]
+}

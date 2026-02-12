@@ -241,3 +241,32 @@ nav select {
   -moz-user-select: text;
   -ms-user-select: text;
 }
+
+/* Heartbeat animation for loading icon */
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(1.2);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(250, 204, 21, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 24px rgba(250, 204, 21, 0.9));
+  }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 1.2s ease-in-out infinite, glow-pulse 2s ease-in-out infinite;
+}

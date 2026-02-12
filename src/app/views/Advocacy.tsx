@@ -21,7 +21,7 @@ const Advocacy = ({ lang, commonData, data }: AdvocacyProps) => {
 
     const [activePrincipleIndex, setActivePrincipleIndex] = useState<number | null>(null);
 
-    const openPrincipleModal = (modalId: number|null) => {
+    const openPrincipleModal = (modalId: number | null) => {
         setActivePrincipleIndex(modalId);
     };
 
@@ -33,7 +33,7 @@ const Advocacy = ({ lang, commonData, data }: AdvocacyProps) => {
         <div className="bg-gray-900 text-white min-h-screen">
             <main className="container mx-auto px-4 py-8">
                 <h1 className="text-6xl font-bold mb-4 selectable-text">
-                    <span className="text-yellow-400 selectable-text">{data.slogan_headline} 
+                    <span className="text-yellow-400 selectable-text">{data.slogan_headline}
                         <span className='text-[#d20033] text-xl2 selectable-text'>.</span>
                         <span className='text-sm selectable-text'>&nbsp;{data.slogan_headline_suffix}</span>
                     </span>
@@ -52,6 +52,10 @@ const Advocacy = ({ lang, commonData, data }: AdvocacyProps) => {
                         <AdvocateCard
                             key={index}
                             mantra={mantra}
+                            mantraIndex={index}
+                            allMantras={data.mantra_details.map(m => m.mantra)}
+                            headline={data.slogan_headline}
+                            commonData={commonData}
                             isOpen={activePrincipleIndex === index}
                             openModal={() => openPrincipleModal(index)}
                             closeModal={closeAdvocateModal}

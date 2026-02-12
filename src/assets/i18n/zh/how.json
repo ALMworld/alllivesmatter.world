@@ -1,0 +1,162 @@
+{
+    "contribute_text": "如何贡献",
+    "contribute_by_share_text": "您可以通过播撒爱来帮助",
+    "header": {
+        "title": "全注意力即是Web3营销所需",
+        "subtitle": "一种革命性的方法，通过将1%的利润分给地球上的每个人来捕获全球注意力。将消费者转变为利益相关者，建立世界上最具包容性的品牌社区。"
+    },
+    "sections": {
+        "why_duki_captures_attention": {
+            "title": "为什么选择DUKI营销",
+            "benefits": [
+                {
+                    "title": "普惠相关性",
+                    "description": "当每个人都能从您的利润中直接受益时，每一个人都会投入到您的成功中。这创造了80亿潜在倡导者，而非争夺市场细分。"
+                },
+                {
+                    "title": "天然病毒式传播",
+                    "description": "一种自我传播的营销策略，每个人都有经济动力来有机地推广您的品牌。无需广告预算——整个世界都在为您做营销。"
+                },
+                {
+                    "title": "情感连接",
+                    "description": "通过将您的品牌定位为全球公益和人类尊严的力量，超越产品功能。这培养了无与伦比的品牌忠诚度和溢价定价能力。"
+                },
+                {
+                    "title": "媒体磁力",
+                    "description": "记者无法忽视一个让地球上每个人都受益的商业模式。保证获得新闻报道和自然的社交媒体热度。"
+                }
+            ]
+        },
+        "implementation_guide": {
+            "title": "区块链基础设施如何使之成为可能",
+            "subtitle": "通过区块链和零知识证明系统实现透明的全球利润分配。",
+            "steps": [
+                {
+                    "step_number": 1,
+                    "title": "零知识人格证明",
+                    "subtitle": "世界公民认证",
+                    "description": "用于私密、可验证的世界公民身份的零知识证明系统。这使得在保护用户隐私和防止女巫攻击的同时实现普惠利润分配成为可能。",
+                    "tags": [
+                        "零知识人格",
+                        "隐私优先"
+                    ]
+                },
+                {
+                    "step_number": 2,
+                    "title": "智能合约空投",
+                    "subtitle": "自动化利润分配",
+                    "description": "构建透明的智能合约以实现自动1%利润共享。向经过验证的世界公民执行大规模空投活动。",
+                    "tags": [
+                        "多链",
+                        "透明",
+                        "自动化"
+                    ]
+                },
+                {
+                    "step_number": 3,
+                    "title": "DAO治理",
+                    "subtitle": "社区驱动增长",
+                    "description": "启动一个去中心化自治组织，代币持有者对营销活动进行投票。通过Web3推荐系统和NFT奖励激励病毒式增长。",
+                    "tags": [
+                        "DAO投票",
+                        "病毒式增长"
+                    ]
+                }
+            ]
+        },
+        "proof_of_concept": {
+            "title": "概念验证：玩具示例",
+            "subtitle": "等待大玩家的赋能",
+            "disclaimer": "这些是探索Web3和DUKI实现的个人开发项目。",
+            "projects": [
+                {
+                    "name": "knowunownable.love",
+                    "emoji": "🔮",
+                    "description": "作为Web3灵性服务第一个例子的占卜平台，将古老智慧与现代区块链技术相结合。",
+                    "status": "已上线",
+                    "link": "https://knowunownable.love",
+                    "tags": [
+                        "已上线",
+                        "占卜",
+                        "Web3"
+                    ]
+                },
+                {
+                    "name": "Unstoppable.limo",
+                    "emoji": "🚗",
+                    "description": "Unstoppable Domains的Web2网关（开发中）。类似于.limo服务，但专门用于Unstoppable域名。",
+                    "status": "开发中",
+                    "link": "https://unstoppable.limo",
+                    "tags": [
+                        "开发中",
+                        "网关",
+                        "域名"
+                    ]
+                },
+                {
+                    "name": "ichingdao.love",
+                    "emoji": "☯️",
+                    "description": "基于易经的DAO平台，将中国古代智慧与现代去中心化治理相结合（开发中）。",
+                    "status": "开发中",
+                    "link": "https://ichingdao.love",
+                    "tags": [
+                        "已上线",
+                        "易经",
+                        "DAO"
+                    ]
+                },
+                {
+                    "name": "WLFI提案",
+                    "emoji": "🚀",
+                    "description": "为World Liberty Financial提出的进化营销策略提案，展示DUKI原则在DeFi应用中的应用。",
+                    "status": "概念",
+                    "link": "https://almworld.medium.com/wlfi-proposal-a-revolutionary-marketing-strategy-that-commits-1-of-profits-to-regular-usd1-278ab992d3e3",
+                    "tags": [
+                        "概念",
+                        "营销",
+                        "DeFi"
+                    ]
+                },
+                {
+                    "name": "来自您的更强大项目",
+                    "emoji": "❤️",
+                    "description": "突破Web3技术和DUKI原则可能性边界的项目。",
+                    "status": "未来",
+                    "link": "",
+                    "tags": [
+                        "未来",
+                        "高级"
+                    ]
+                }
+            ]
+        },
+        "call_to_action": {
+            "title": "准备好转型您的营销了吗？",
+            "description": "DUKI不仅仅是利润共享——它是关于创造人类历史上最强大的价值主张。当每个人都赢时，每个人都会为您的成功倡导。",
+            "tagline": "给予全民1% → 获得全球支持 → 让一切再次伟大"
+        }
+    },
+    "metadata": {
+        "page_type": "marketing_strategy",
+        "theme": "DUKI营销",
+        "target_audience": "企业和创业者",
+        "key_concepts": [
+            "普惠利润共享",
+            "Web3营销",
+            "区块链分发",
+            "零知识证明",
+            "DAO治理",
+            "病毒式营销",
+            "全球倡导"
+        ],
+        "technologies": [
+            "零知识证明 (ZK-SNARKs)",
+            "智能合约",
+            "区块链",
+            "DAO",
+            "NFT",
+            "多链",
+            "Web3"
+        ]
+    }
+}

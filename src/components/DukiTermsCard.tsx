@@ -1,11 +1,10 @@
 import React from 'react';
 import { CircleCheckBig, X } from 'lucide-react';
-import { useCommonData } from '../data/data_provider';
+import { CommonData } from '../data/data_types';
 import AlmIcon from './AlmIcon';
 
 
-const DukiTermsCard = ({ onClose }) => {
-    const commonData = useCommonData();
+const DukiTermsCard = ({ commonData, onClose }) => {
     const terms = commonData.duki_terms;
 
     const handleOutsideClick = (e) => {
@@ -19,7 +18,7 @@ const DukiTermsCard = ({ onClose }) => {
         >
             <div className="bg-slate-800 text-white p-6 rounded-lg shadow-lg max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl w-full max-h-[80vh] overflow-y-auto relative">
                 <div className="flex justify-center items-center mb-6 w-full">
-                    <h2 className="text-xl font-bold text-yellow-500">{commonData.duki_terms_header}</h2>  
+                    <h2 className="text-xl font-bold text-yellow-500">{commonData.duki_terms_header}</h2>
                 </div>
                 <div className="space-y-6">
                     {terms.map((item, index) => (

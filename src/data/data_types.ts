@@ -48,7 +48,8 @@ export interface FAQList {
     answer_image_list?: string[];
     posterNumber?: number;
     media?: Media;
-    answers: string[];
+    answers?: string[];
+    answersFile?: string;
     _answers?: string[];
     hide_answers?: string[];
 }
@@ -118,6 +119,7 @@ export interface KeyPoint {
 }
 
 export interface CommonData {
+    peace_music_url: string;
     share_text: string;
     share_url: string;
     advocate_with_peace: string;
@@ -453,7 +455,8 @@ const typeMap: any = {
         { json: "answer_image_list", js: "answer_image_list", typ: u(undefined, a("")) },
         { json: "posterNumber", js: "posterNumber", typ: u(undefined, 0) },
         { json: "media", js: "media", typ: u(undefined, r("Media")) },
-        { json: "answers", js: "answers", typ: a("") },
+        { json: "answers", js: "answers", typ: u(undefined, a("")) },
+        { json: "answersFile", js: "answersFile", typ: u(undefined, "") },
         { json: "_answers", js: "_answers", typ: u(undefined, a("")) },
         { json: "hide_answers", js: "hide_answers", typ: u(undefined, a("")) },
     ], false),
@@ -513,6 +516,7 @@ const typeMap: any = {
         { json: "description", js: "description", typ: "" },
     ], false),
     "CommonData": o([
+        { json: "peace_music_url", js: "peace_music_url", typ: "" },
         { json: "share_text", js: "share_text", typ: "" },
         { json: "share_url", js: "share_url", typ: "" },
         { json: "advocate_with_peace", js: "advocate_with_peace", typ: "" },

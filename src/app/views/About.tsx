@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, ReactNode } from 'react';
 import { ChevronDown, ChevronUp, Music, Video, Youtube } from 'lucide-react';
 import AllLivesMatterWorldSunflowPetal from '../../components/AllLivesMatterWorldSunflowPetal';
 import AlmIcon from '../../components/AlmIcon';
@@ -12,10 +12,11 @@ import AlmIconPoster from '@/components/AlmIconPoster';
 type AboutProps = {
     lang: Locale,
     aboutData: AboutData,
-    faqData: FAQList[]
+    faqData: FAQList[],
+    faqMdxContent: Record<string, ReactNode>
 }
 
-const About = ({ lang, aboutData, faqData }: AboutProps) => {
+const About = ({ lang, aboutData, faqData, faqMdxContent }: AboutProps) => {
     // const aboutData = useAboutData(lang);
     // const faqData = aboutData.faq_list;
 
@@ -70,6 +71,7 @@ const About = ({ lang, aboutData, faqData }: AboutProps) => {
                         number={index + 1}
                         item={item}
                         aboutData={aboutData}
+                        mdxContent={item.answersFile ? faqMdxContent[item.answersFile] : undefined}
                     />
                 ))}
 
@@ -81,10 +83,11 @@ const About = ({ lang, aboutData, faqData }: AboutProps) => {
 type FAQItemProps = {
     number: number,
     item: FAQList,
-    aboutData: AboutData
+    aboutData: AboutData,
+    mdxContent?: ReactNode
 }
 
-const FAQItem = ({ number, item, aboutData }: FAQItemProps) => {
+const FAQItem = ({ number, item, aboutData, mdxContent }: FAQItemProps) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const getMediaIcon = (type: string) => {
@@ -159,31 +162,36 @@ const FAQItem = ({ number, item, aboutData }: FAQItemProps) => {
             </div>
             {isOpen && (
                 <div className="mt-2 p-4 bg-gray-700 rounded-lg">
-                    <ul className="list-none pl-0">
-                        {item.answers.map((answer, index) => (
-                            <React.Fragment key={index}>
+                    {/* Media embed at the top if present */}
+                    {item.media && (
+                        <div className="mb-4">
+                            {item.media.type === 'poem' && (
+                                <KindKang />
+                            )}
+                            {item.media?.type !== "poem" && item.media.url && (
+                                <AllLivesMatterWorldSunflowPetal
+                                    media={item.media}
+                                />
+                            )}
+                        </div>
+                    )}
 
-                                {index === 0 && item.media && (
-                                    <li className="selectable-text text-lg text-gray-300 relative pl-4 faq-list-item">
-                                        {item.media.type === 'poem' && (
-                                            <KindKang />
-                                        )}
-                                        {item.media?.type !== "poem" && item.media.url && (
-                                            <AllLivesMatterWorldSunflowPetal
-                                                // watch_interview_text={item.watch_tips}
-                                                // watch_news_text={item.watch_tips}
-                                                media={item.media}
-                                            />
-                                        )}
-                                    </li>
-                                )}
+                    {/* MDX content or fallback to inline answers */}
+                    {mdxContent ? (
+                        <div className="faq-mdx-content">
+                            {mdxContent}
+                        </div>
+                    ) : item.answers && item.answers.length > 0 ? (
+                        <ul className="list-none pl-0">
+                            {item.answers.map((answer, index) => (
                                 <li
+                                    key={index}
                                     className="selectable-text text-lg text-gray-300 relative pl-4 mb-2 faq-list-item"
                                     dangerouslySetInnerHTML={{ __html: answer }}
                                 />
-                            </React.Fragment>
-                        ))}
-                    </ul>
+                            ))}
+                        </ul>
+                    ) : null}
                 </div>
             )}
         </div>

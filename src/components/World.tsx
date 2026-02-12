@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useCallback, useMemo } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import Globe, { GlobeInstance } from "globe.gl";
 import countries from "../assets/countries.json";
 
@@ -17,12 +17,12 @@ interface RingData {
 const rendererConfig = {
   animateIn: true,
   antialias: false,
-  alpha: false,
+  alpha: true,  // Enable transparency to avoid black background
   precision: "lowp",
   powerPreference: "low-power"
 }
 
-const countriesData = countries.features; // data may have errors,  do not brother about it,
+const countriesData = countries.features;
 
 // https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita //2024 estimiate IMF
 const TOP_GPC_REGIONS = [
@@ -81,7 +81,7 @@ const TOP_GPC_REGIONS = [
   { country: "Turkey", gdpPerCapita: 43921 },
 ];
 
-const maxAdditionalWeight = 30; // Adjust this value to control the maximum weight
+const maxAdditionalWeight = 30;
 const maxGpc = Math.max(...TOP_GPC_REGIONS.map(c => c.gdpPerCapita));
 const minGpc = Math.min(...TOP_GPC_REGIONS.map(c => c.gdpPerCapita));
 
@@ -97,15 +97,12 @@ const TopGpcRegionsWithLocId = TOP_GPC_REGIONS.map(country => {
 
 const totalExtraWeight = TopGpcRegionsWithLocId.reduce((sum, country) => sum + country.extraWeight, 0);
 
-console.log("TopGpcRegionsWithLocId", TopGpcRegionsWithLocId);
-
-
 function randomSelectSrcIdx() {
   const totalLength = countriesData.length + totalExtraWeight;
   const preSrcIdx = Math.random() * totalLength;
 
   if (preSrcIdx < countriesData.length) {
-    return Math.floor(preSrcIdx); // Direct selection from original countries
+    return Math.floor(preSrcIdx);
   } else {
     let accumulatedWeight = countriesData.length;
     for (const country of TopGpcRegionsWithLocId) {
@@ -115,47 +112,34 @@ function randomSelectSrcIdx() {
       }
     }
   }
-
-  // Fallback (should not reach here under normal circumstances)
   return Math.floor(Math.random() * countriesData.length);
 }
 
-// // Function to select srcIdx with extra weight for certain countries
-// function randomSelectSrcIdx() {
-//   const extraWeight4TopPppRegion = 12 
-//   const srcRandomLength = countriesData.length + TopPppRegionsWithLocId.length * extraWeight4TopPppRegion
-
-//   const preSrcIdx = Math.floor(Math.random() * srcRandomLength);
-
-//   if (preSrcIdx < countriesData.length) {
-//     return preSrcIdx; // Direct selection from original countries
-//   } else {
-//     // console.log("preSrcIdx", preSrcIdx)
-//     // Selection from weighted countries
-//     const idx = Math.floor((preSrcIdx - countriesData.length) / extraWeight4TopPppRegion);
-//     return TopPppRegionsWithLocId[idx].loc_id;
-//   }
-// }
+// Singleton to persist globe across navigation
+let persistedGlobe: {
+  instance: GlobeInstance | null;
+  containerEl: HTMLDivElement | null;
+  intervalId: ReturnType<typeof setInterval> | null;
+} = {
+  instance: null,
+  containerEl: null,
+  intervalId: null,
+};
 
 export default function World() {
-  const globeContainerRef = useRef<HTMLDivElement | null>(null);
-  const globeRef = useRef<GlobeInstance | null>(null);
+  const mountRef = useRef<HTMLDivElement | null>(null);
   const [isGlobeLoaded, setIsGlobeLoaded] = useState(false);
-
-  // Use the defined types
   const [arcsData, setArcsData] = useState<ArcData[]>([]);
   const [ringsData, setRingsData] = useState<RingData[]>([]);
 
   // Config
   const maxNumArcs = 10;
-  const arcFlightTime = 12000; // ms
+  const arcFlightTime = 12000;
   const arcSpawnInterval = arcFlightTime / maxNumArcs;
-  const arcRelativeLength = 0.6; // relative to whole arc
-  const numRings = 3;
-  const ringMaxRadius = 6; // deg
-  const ringPropagationSpeed = 1; // deg/sec
-  const ringRepeatPeriod = (arcFlightTime * arcRelativeLength) / numRings;
-
+  const arcRelativeLength = 0.6;
+  const ringMaxRadius = 6;
+  const ringPropagationSpeed = 1;
+  const ringRepeatPeriod = (arcFlightTime * arcRelativeLength) / 3;
 
   const spawnArc = useCallback(() => {
     if (countriesData.length === 0) return;
@@ -191,19 +175,29 @@ export default function World() {
     }, arcFlightTime);
   }, [arcFlightTime, arcRelativeLength]);
 
-  const initGlobe = useCallback(() => {
-    if (!globeContainerRef.current || globeRef.current) return;
+  // Initialize or reattach globe
+  useEffect(() => {
+    if (!mountRef.current) return;
 
-    const globe = new Globe(globeContainerRef.current, { rendererConfig });
-    // const defaultGlobeMaterial = new MeshPhongMaterial({ color: 0x009000, });
+    // If we already have a globe, just reattach it
+    if (persistedGlobe.instance && persistedGlobe.containerEl) {
+      mountRef.current.appendChild(persistedGlobe.containerEl);
+      setIsGlobeLoaded(true);
+      return;
+    }
 
+    // Create new globe container
+    const containerEl = document.createElement('div');
+    containerEl.style.width = '300px';
+    containerEl.style.height = '300px';
+    mountRef.current.appendChild(containerEl);
+
+    const globe = new Globe(containerEl, { rendererConfig });
 
     globe
       .width(300)
       .height(300)
       .backgroundColor("rgba(0,0,0,0)")
-      // .globeImageUrl("/640px-land_ocean_ice_2048.jpg")
-      // .globeImageUrl("/land_ocean_ice_2048.jpg")
       .atmosphereAltitude(0.1)
       .hexPolygonsData(countriesData)
       .hexPolygonAltitude(0.02)
@@ -212,27 +206,23 @@ export default function World() {
       .hexPolygonMargin(0.3)
       .hexPolygonUseDots(true)
       .hexPolygonColor(() => "#FF0000")
-      .arcsData(arcsData)
-      // .arcDashLength(arcRelativeLength)
-      // .arcDashGap(2)
+      .arcsData([])
       .arcDashInitialGap(1)
       .arcDashAnimateTime(arcFlightTime)
       .arcDashLength(0.9)
       .arcDashGap(3)
-      .arcDashInitialGap(1)
-      .arcStroke(0.36) // Increased arc thickness
+      .arcStroke(0.36)
       .arcColor(() => "#ffba49")
       .arcAltitudeAutoScale(0.3)
       .arcsTransitionDuration(0.1)
-      .ringsData(ringsData)
+      .ringsData([])
       .ringMaxRadius(ringMaxRadius)
       .ringPropagationSpeed(ringPropagationSpeed)
       .ringRepeatPeriod(ringRepeatPeriod)
-      // .ringColor(() => t => `rgba(255, 186, 73, ${1 - t})`)
       .ringColor(() => (t: number) => `rgba(255, 186, 73, ${Math.sqrt(1 - t)})`)
       .ringAltitude(0.03)
-      .ringResolution(248) // Increased resolution for smoother rings
-      .ringMaxRadius(30) // 
+      .ringResolution(248)
+      .ringMaxRadius(30)
       .onGlobeReady(() => {
         globe.controls().autoRotate = true;
         globe.controls().enableZoom = false;
@@ -245,35 +235,27 @@ export default function World() {
         setIsGlobeLoaded(true);
       });
 
-    globeRef.current = globe;
-  }, [countriesData, arcFlightTime, arcRelativeLength, rendererConfig, ringMaxRadius, ringPropagationSpeed, ringRepeatPeriod]);
+    persistedGlobe.instance = globe;
+    persistedGlobe.containerEl = containerEl;
 
-  useEffect(() => {
-    initGlobe();
-
+    // Cleanup on unmount - just detach, don't destroy
     return () => {
-      if (globeRef.current) {
-        // (globeRef.current as any).pauseAnimation();
-        // if (globeContainerRef.current) {
-        //   while (globeContainerRef.current.firstChild) {
-        //     globeContainerRef.current.removeChild(globeContainerRef.current.firstChild);
-        //   }
-        // }
-        (globeRef.current as any)._destructor();
-        globeRef.current = null;
+      if (persistedGlobe.containerEl && persistedGlobe.containerEl.parentNode) {
+        persistedGlobe.containerEl.parentNode.removeChild(persistedGlobe.containerEl);
       }
-      setIsGlobeLoaded(false);
     };
-  }, [initGlobe]);
+  }, [arcFlightTime, ringMaxRadius, ringPropagationSpeed, ringRepeatPeriod]);
 
+  // Update globe data when arcs/rings change
   useEffect(() => {
-    if (globeRef.current) {
-      globeRef.current
+    if (persistedGlobe.instance) {
+      persistedGlobe.instance
         .arcsData(arcsData)
         .ringsData(ringsData);
     }
   }, [arcsData, ringsData]);
 
+  // Arc spawning interval
   useEffect(() => {
     const intervalId = setInterval(() => {
       if (arcsData.length < maxNumArcs) {
@@ -282,14 +264,18 @@ export default function World() {
     }, arcSpawnInterval);
 
     return () => clearInterval(intervalId);
-  }, [arcsData, maxNumArcs, arcSpawnInterval, spawnArc]);
+  }, [arcsData.length, maxNumArcs, arcSpawnInterval, spawnArc]);
 
   return (
-    <div className="App" style={{
-      opacity: isGlobeLoaded ? 1 : 0,
-      transition: 'opacity 0.5s ease-in-out'
-    }}>
-      <div ref={globeContainerRef} style={{ width: '300px', height: '300px' }} />
-    </div>
+    <div
+      ref={mountRef}
+      className="App"
+      style={{
+        width: '300px',
+        height: '300px',
+        opacity: isGlobeLoaded ? 1 : 0,
+        transition: 'opacity 0.5s ease-in-out'
+      }}
+    />
   );
 }

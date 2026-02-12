@@ -1,0 +1,162 @@
+{
+    "contribute_text": "How to Contribute",
+    "contribute_by_share_text": "You Can Always Help By Being Love",
+    "header": {
+        "title": "All Attention is All You Need For Web3 Marketing",
+        "subtitle": "A revolutionary approach to capture universal attention by giving 1% of profits to every human being on Earth. Transform consumers into stakeholders and build the world's most inclusive brand community."
+    },
+    "sections": {
+        "why_duki_captures_attention": {
+            "title": "Why DUKI Marketing",
+            "benefits": [
+                {
+                    "title": "Universal Relevance",
+                    "description": "Every human becomes personally invested in your success when they directly benefit from your profits. This creates 8 billion potential advocates instead of competing for market segments."
+                },
+                {
+                    "title": "Viral by Design",
+                    "description": "A self-propagating marketing strategy where everyone has a financial incentive to promote your brand organically. No advertising budget is needed - the entire world markets for you."
+                },
+                {
+                    "title": "Emotional Connection",
+                    "description": "Transcend product features by positioning your brand as a force for global good and human dignity. This fosters unbeatable brand loyalty and premium pricing power."
+                },
+                {
+                    "title": "Media Magnetism",
+                    "description": "Journalists can't ignore a business model that benefits everyone on the planet. Guaranteed press coverage and organic social media buzz."
+                }
+            ]
+        },
+        "implementation_guide": {
+            "title": "How Blockchain Infrastructure Could Make It Possible",
+            "subtitle": "Transparent, global profit distribution through blockchain and ZK-proof systems.",
+            "steps": [
+                {
+                    "step_number": 1,
+                    "title": "ZK Human Personalhood",
+                    "subtitle": "World Citizen Verification",
+                    "description": "Zero-Knowledge proof system for private, verifiable World Citizen identity. This enables universal profit distribution while protecting user privacy and preventing Sybil attacks.",
+                    "tags": [
+                        "ZK-Personhood",
+                        "Privacy First"
+                    ]
+                },
+                {
+                    "step_number": 2,
+                    "title": "Smart Contract Airdrop",
+                    "subtitle": "Automated Profit Distribution",
+                    "description": "Build transparent smart contracts for automatic 1% profit sharing. Execute a massive airdrop campaign to verified World Citizens.",
+                    "tags": [
+                        "Multi-Chain",
+                        "Transparent",
+                        "Automated"
+                    ]
+                },
+                {
+                    "step_number": 3,
+                    "title": "DAO Governance",
+                    "subtitle": "Community-Driven Growth",
+                    "description": "Launch a Decentralized Autonomous Organization where token holders vote on marketing campaigns. Incentivize viral growth through Web3 referral systems and NFT rewards.",
+                    "tags": [
+                        "DAO Voting",
+                        "Viral Growth"
+                    ]
+                }
+            ]
+        },
+        "proof_of_concept": {
+            "title": "Proof of Concept: Toy Examples",
+            "subtitle": "Awaiting Empowerment from Big Players",
+            "disclaimer": "These are personal development projects exploring Web3 and DUKI implementation.",
+            "projects": [
+                {
+                    "name": "knowunownable.love",
+                    "emoji": "🔮",
+                    "description": "A divination platform as the first example of Web3 spiritual services, combining ancient wisdom with modern blockchain technology.",
+                    "status": "Live",
+                    "link": "https://knowunownable.love",
+                    "tags": [
+                        "Live",
+                        "Divination",
+                        "Web3"
+                    ]
+                },
+                {
+                    "name": "Unstoppable.limo",
+                    "emoji": "🚗",
+                    "description": "A Web2 gateway for Unstoppable Domains (in progress). Similar to the .limo service, but specifically for Unstoppable domain names.",
+                    "status": "In Progress",
+                    "link": "https://unstoppable.limo",
+                    "tags": [
+                        "In Progress",
+                        "Gateway",
+                        "Domains"
+                    ]
+                },
+                {
+                    "name": "ichingdao.love",
+                    "emoji": "☯️",
+                    "description": "An I Ching-based DAO platform combining ancient Chinese wisdom with modern decentralized governance (work in progress).",
+                    "status": "In Progress",
+                    "link": "https://ichingdao.love",
+                    "tags": [
+                        "Live",
+                        "I Ching",
+                        "DAO"
+                    ]
+                },
+                {
+                    "name": "WLFI Proposal",
+                    "emoji": "🚀",
+                    "description": "An evolutionary marketing strategy proposal for World Liberty Financial, demonstrating DUKI principles in DeFi applications.",
+                    "status": "Concept",
+                    "link": "https://almworld.medium.com/wlfi-proposal-a-revolutionary-marketing-strategy-that-commits-1-of-profits-to-regular-usd1-278ab992d3e3",
+                    "tags": [
+                        "Concept",
+                        "Marketing",
+                        "DeFi"
+                    ]
+                },
+                {
+                    "name": "More Powerful Projects From You",
+                    "emoji": "❤️",
+                    "description": "Projects that push the boundaries of what's possible with Web3 technology and DUKI principles.",
+                    "status": "Future",
+                    "link": "",
+                    "tags": [
+                        "Future",
+                        "Advanced"
+                    ]
+                }
+            ]
+        },
+        "call_to_action": {
+            "title": "Ready to Transform Your Marketing?",
+            "description": "DUKI isn't just about profit-sharing—it's about creating the most powerful value proposition in human history. When everyone wins, everyone advocates for your success.",
+            "tagline": "Give 1% to All → Gain Universal Support → Make All Great Again"
+        }
+    },
+    "metadata": {
+        "page_type": "marketing_strategy",
+        "theme": "DUKI Marketing",
+        "target_audience": "businesses_and_entrepreneurs",
+        "key_concepts": [
+            "Universal Profit Sharing",
+            "Web3 Marketing",
+            "Blockchain Distribution",
+            "Zero-Knowledge Proofs",
+            "DAO Governance",
+            "Viral Marketing",
+            "Global Advocacy"
+        ],
+        "technologies": [
+            "Zero-Knowledge Proofs (ZK-SNARKs)",
+            "Smart Contracts",
+            "Blockchain",
+            "DAO",
+            "NFTs",
+            "Multi-Chain",
+            "Web3"
+        ]
+    }
+}
