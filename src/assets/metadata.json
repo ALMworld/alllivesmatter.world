@@ -71,22 +71,15 @@
           1826256
         ]
       },
-      "UltramanZero": {
-        "base_name": "UltramanZero.webp",
-        "range": [
-          1826256,
-          1883176
-        ]
-      },
       "10_Thanks_Letter_for_The_Unknownable": {
         "base_name": "10_Thanks_Letter_for_The_Unknownable.webp",
         "range": [
-          1883176,
-          2376316
+          1826256,
+          2316320
         ]
       }
     },
-    "hash": "en_fbcfa335480f67a855c23abec00477ce",
+    "hash": "en_c29386b60db519f8ed292382af0ebe84",
     "env_prod": true
   }
 }

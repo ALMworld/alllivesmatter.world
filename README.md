@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# [AllLivesMatter.World](https://www.alllivesmatter.world): All Lives Matter Worldwide
 
-## Getting Started
+![DUKI Concept](ptools/assets/outreach/x/0_ordinary_kindkang_invitation.png)
 
-First, run the development server:
+##  LOVE IS THE DAO
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **Kindness First**  A single act of kindness throws out roots in all directions, and the roots spring up and make new trees.
+* **Fairness Always** You shall judge the people with righteous judgment. You shall not pervert justice. You shall not show partiality, and you shall not accept a bribe, for a bribe blinds the eyes of the wise and subverts the cause of the righteous
+* **DUKI In Action** He causes his sun to rise on the evil and the good, and sends rain on the righteous and the unrighteous.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+DUKI (pronounced 'duːki', reminiscent of 'duty','kindness' and 'cookie') stands for Decentralized Universal Kindness Income. It refers to money distributed to everyone as an act of kindness, generated through the hard works of kind people around the world. DUKI aim to empower people to gain freedom, reject evil, do good, and spread kindness.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Dukiness:/ˈduːkiːnəs/: Spirit behind "All Lives Matter Worldwide," which is not just a truth to uphold but also a unifying superpower that all lives can hold. Dukiness embodies the mindset and actions aligned with principles of universal kindness, fairness, and decentralized empowerment. It inspires individuals to pursue freedom, reject negativity, cultivate goodness, and spread kindness, ultimately striving to elevate the value and dignity of all lives globally.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### What is DUKI?
+![DUKI Concept](ptools/assets/outreach/x/en/4_what_is_duki.png)
 
-## Learn More
+### Why DUKI instead of UBI 
+![DUKI Concept](ptools/assets/outreach/x/en/5_why_duki_instead_of_ubi.png)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Learn more about AllLivesMatter.World here](https://www.alllivesmatter.world).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### License
+'DUKI LICENSE', which is essentially the same as the MIT license, except there is a clause 'Share your success: 1% profit to DUKI when earned.'
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The DUKI license requires companies using open-source projects to contribute n% (where n is typically 1-5) of their total business profit towards fostering universal kindness. This model addresses the imbalance where large corporations, for example cloud providers, benefit significantly from open-source without proportionate contribution. It exempts project creators and maintainers and aims for broader societal impact rather than direct developer compensation. While potentially discouraging adoption due to financial implications, DUKI represents a shift towards using open-source as a catalyst for corporate social responsibility and global well-being.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+While technology itself is inherently neutral, the DUKI license incorporates an ethical attitude towards its usage. It expresses a strong wish for the software to be used for good. By tying usage to universal kindness, DUKI encourages companies to consider the broader impact of their technological implementations. 
+
+![DUKI LICENSE](ptools/assets/outreach/x/10_thoughts_on_duki_and_open_source.png)
+
+AllLivesMatter&middot;World is [DUKI licensed](./LICENSE).
+
+
+## Contributing
+Contributions to improve internationalization (i18n) and support for right-to-left (RTL) language locales are welcome.
+#### To Add a New Language 
+* Copy the i18n/en.json file and rename it to your target language (e.g., i18n/fr.json for French)
+* Translate the values in the new file, keeping the keys unchanged
+* change the constants/index.ts LANGUAGES array to include the new language
+* Test the application with the new language to verify correct rendering and functionality
+
+#### Right-to-Left (RTL) Language Support
+Currently, there are no specific implementations for RTL support. Contributions are welcome. 
+
+### Contributing Guide
+
+The primary focus of this repository is public advocacy, rather than technical development. The original efforts are largely dedicated to cultivating ideas, refining thoughts, and carefully selecting words to express them. While there might be occasional errors or misused terms, the real value lies in the ideas themselves.
+Apart from Right-To-Left (RTL) language support, the most significant contributions often come from thoughtful word choice. In this spirit, selecting the most fitting terms in the native language to accurately convey the intended messages is encouraged.

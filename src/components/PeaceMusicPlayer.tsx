@@ -71,7 +71,6 @@ const PeaceMusicPlayer = ({ lang }: { lang: Locale }) => {
                         minConstraints={[300, 169]}
                         maxConstraints={[800, 450]}
                         resizeHandles={['se']}
-                        disableDragging={playerState === 'shrunk'}
                         className={playerState === 'shrunk' ? 'w-full h-full' : ''}
                     >
                         <div className="relative w-full h-full">

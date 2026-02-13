@@ -1,7 +1,8 @@
 import React, { useMemo, useState } from 'react';
 import { AlertTriangle, Heart } from 'lucide-react';
 import Slider from 'react-slick';
-import { AboutData, ThanksLetterDatum } from '../data/data_types';
+import { AboutData } from '../data/data_types';
+import { ThanksLetterDatum } from './ThankYouLetter';
 import ThankYouLetter from './ThankYouLetter';
 
 // Note: You need to import the CSS for react-slick and its default theme
@@ -9,6 +10,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ThankYouLetterModal from './ThankYouLetterModal';
 import { useCommonData } from '../data/data_provider';
+import sharedData from '@/assets/i18n/shared_data.json';
+
+// Shared (non-locale) data — imported directly
+const { thanks_letter_data, thanks_letter_almworld_intro, thanks_letter_signature } = sharedData;
 
 interface WillGalleryProps {
   aboutData: AboutData
@@ -16,21 +21,21 @@ interface WillGalleryProps {
 
 const WillGallery: React.FC<WillGalleryProps> = ({ aboutData }) => {
 
-  const modifiedThanksLetterData: ThanksLetterDatum[] = aboutData.thanks_letter_data.map((letter) => {
+  const modifiedThanksLetterData: ThanksLetterDatum[] = thanks_letter_data.map((letter) => {
     if (letter.special) {
       return letter;
     }
     return {
       ...letter,
       content_paragraphs: [
-        ...letter.content_paragraphs.slice(0, 1),   // Gets the first paragraph
-        aboutData.thanks_letter_almworld_intro,       // CORRECT: Inserts the intro paragraph array as one element
-        ...letter.content_paragraphs.slice(1)     // Gets all remaining paragraphs
+        ...letter.content_paragraphs.slice(0, 1),
+        thanks_letter_almworld_intro,
+        ...letter.content_paragraphs.slice(1)
       ]
     };
   });
 
-  const signature = aboutData.thanks_letter_signature;
+  const signature = thanks_letter_signature;
   const [selectedLetter, setSelectedLetter] = useState<number | null>(null);
 
   const openLetter = (index: number) => {

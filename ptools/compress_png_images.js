@@ -3,27 +3,34 @@ import fs from 'fs';
 import { promises as fsPromises } from 'fs';
 import path from 'path';
 import crypto from 'crypto';
+import { fileURLToPath } from 'url';
 
 import sharp from 'sharp';
 
-async function compressPngImages(inputDir = "./assets/outreach/x",
-                                 outputDir="'./../../public/images",
-                                 formatConfigs) {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const projectRoot = path.resolve(__dirname, '..');
+
+async function compressPngImages(inputDir = path.join(projectRoot, 'ptools/assets/outreach/x'),
+  outputDir = path.join(projectRoot, '.temp_data/images'),
+  formatConfigs) {
   try {
     // get command line arguments
     // const outputDir = './../public/images/en/';
 
     // Define format configurations
-    const formatConfigs = [
-      // { format: 'avif', quality: 60 },
-      { format: 'webp', quality: 60 },
-      // { format: 'jpeg', quality: 98 },
-    ];
+    if (!formatConfigs) {
+      formatConfigs = [
+        // { format: 'avif', quality: 60 },
+        { format: 'webp', quality: 60 },
+        // { format: 'jpeg', quality: 98 },
+      ];
+    }
 
     await fsPromises.mkdir(outputDir, { recursive: true });
     const entries = await fsPromises.readdir(inputDir, { withFileTypes: true });
 
-    const inputImageExtensions = ['.png', '.jpeg', '.jpg', '.svg'];
+    const inputImageExtensions = ['.png', '.jpeg', '.jpg', '.svg', '.webp'];
 
     for (const entry of entries) {
       const inputPath = path.join(inputDir, entry.name);
@@ -35,6 +42,21 @@ async function compressPngImages(inputDir = "./assets/outreach/x",
         await compressPngImages(inputPath, outputPath, formatConfigs);
       } else if (entry.isFile() && inputImageExtensions.includes(path.extname(entry.name).toLowerCase())) {
         const fileName = path.parse(entry.name).name;
+        const ext = path.extname(entry.name).toLowerCase();
+
+        // If the source is already webp, copy it directly
+        if (ext === '.webp') {
+          const outputFilePath = path.join(outputPath, `..`, entry.name);
+          try {
+            await fsPromises.access(outputFilePath);
+            console.log(`Skipping ${entry.name}, file already exists.`);
+          } catch {
+            await fsPromises.mkdir(path.dirname(outputFilePath), { recursive: true });
+            await fsPromises.copyFile(inputPath, outputFilePath);
+            console.log(`Copied ${entry.name} (already webp)`);
+          }
+          continue;
+        }
 
         for (const config of formatConfigs) {
           const { format, quality } = config;
@@ -96,53 +118,53 @@ async function createMD5(filePath) {
 async function processFiles() {
   // Input JSON structure
   const hash = crypto.createHash('md5');
+  const compressDir = path.join(projectRoot, '.temp_data/images');
   const langImagesArray = [{
     "lang": "en",
     "filenames": [
-      "./../public/images/en/0_1_kindness_first.webp",
-      "./../public/images/en/0_2_fairness_always.webp",
-      "./../public/images/en/0_3_duki_in_action.webp",
-      // "./../public/images/en/0_kindkang_invitation_to_good_will_world.webp",
-      // "./../public/images/en/1_thoughts_on_media_responsibility.webp",
-      // "./../public/images/en/2_thoughts_on_war_and_peace.webp",
-      // "./../public/images/en/3_evolutionary_perspective_why_kindness_fairness_and_duki_worldwide.webp",
-      // "./../public/images/en/4_what_is_duki.webp",
-      // "./../public/images/en/5_why_duki_instead_of_ubi.webp",
-      // "./../public/images/en/6_thoughts_on_us_selection.webp",
-      // "./../public/images/en/7_thoughts_on_entrepreneurs_and_duki.webp",
-      // "./../public/images/en/8_thoughts_on_mooc_and_duki.webp",
-      // "./../public/images/en/9_thoughts_on_duki_governments_and_immigration_policy.webp",
-      // "./../public/images/en/10_thoughts_on_duki_and_open_source.webp",
-      // "./../public/images/en/11_thoughts_on_duki_blockchain_and_authority.webp",
-      // "./../public/images/en/12_O_Come_O_Come_Emmanuel.webp",
-      "./../public/images/en/symbols/Duality_love_is_the_dao.webp",
-      "./../public/images/en/symbols/Duality_happy_dussehra.webp",
-      "./../public/images/en/symbols/Duality_DivineCouple_NuwaFuxi.webp",
-      "./../public/images/en/symbols/Masonic_SquareCompassesG.webp",
-      "./../public/images/en/symbols/PlantsVsZombies.webp",
-      "./../public/images/en/symbols/HumanAsLove.webp",
-      "./../public/images/en/symbols/Ultraman.webp",
-      "./../public/images/en/symbols/UltramanZero.webp",
-      // "./../public/images/en/open_thanks_letters/1_Thanks_Letter_for_Tommee_Profitt.webp",
-      // "./../public/images/en/open_thanks_letters/2_Thanks_Letter_for_BLM_Movement.webp",
-      // "./../public/images/en/open_thanks_letters/3_Thanks_Letter_for_Donald_Trump.webp",
-      // "./../public/images/en/open_thanks_letters/4_Thanks_Letter_for_Richard_Dawkins.webp",
-      // "./../public/images/en/open_thanks_letters/5_Thanks_Letter_for_Robert_Axelrod.webp",
-      // "./../public/images/en/open_thanks_letters/6_Thanks_Letter_for_Elon_Musk.webp",
-      // "./../public/images/en/open_thanks_letters/7_Thanks_Letter_for_Karl_Widerquist.webp",
-      // "./../public/images/en/open_thanks_letters/8_Thanks_Letter_for_WorldID.webp",
-      // "./../public/images/en/open_thanks_letters/9_Thanks_Letter_for_Avi_Wigderson.webp",
-      "./../public/images/en/open_thanks_letters/10_Thanks_Letter_for_The_Unknownable.webp"
+      path.join(compressDir, 'en/0_1_kindness_first.webp'),
+      path.join(compressDir, 'en/0_2_fairness_always.webp'),
+      path.join(compressDir, 'en/0_3_duki_in_action.webp'),
+      // path.join(compressDir, 'en/0_kindkang_invitation_to_good_will_world.webp'),
+      // path.join(compressDir, 'en/1_thoughts_on_media_responsibility.webp'),
+      // path.join(compressDir, 'en/2_thoughts_on_war_and_peace.webp'),
+      // path.join(compressDir, 'en/3_evolutionary_perspective_why_kindness_fairness_and_duki_worldwide.webp'),
+      // path.join(compressDir, 'en/4_what_is_duki.webp'),
+      // path.join(compressDir, 'en/5_why_duki_instead_of_ubi.webp'),
+      // path.join(compressDir, 'en/6_thoughts_on_us_selection.webp'),
+      // path.join(compressDir, 'en/7_thoughts_on_entrepreneurs_and_duki.webp'),
+      // path.join(compressDir, 'en/8_thoughts_on_mooc_and_duki.webp'),
+      // path.join(compressDir, 'en/9_thoughts_on_duki_governments_and_immigration_policy.webp'),
+      // path.join(compressDir, 'en/10_thoughts_on_duki_and_open_source.webp'),
+      // path.join(compressDir, 'en/11_thoughts_on_duki_blockchain_and_authority.webp'),
+      // path.join(compressDir, 'en/12_O_Come_O_Come_Emmanuel.webp'),
+      path.join(compressDir, 'en/symbols/Duality_love_is_the_dao.webp'),
+      path.join(compressDir, 'en/symbols/Duality_happy_dussehra.webp'),
+      path.join(compressDir, 'en/symbols/Duality_DivineCouple_NuwaFuxi.webp'),
+      path.join(compressDir, 'en/symbols/Masonic_SquareCompassesG.webp'),
+      path.join(compressDir, 'en/symbols/PlantsVsZombies.webp'),
+      path.join(compressDir, 'en/symbols/HumanAsLove.webp'),
+      path.join(compressDir, 'en/symbols/Ultraman.webp'),
+      // path.join(compressDir, 'en/open_thanks_letters/1_Thanks_Letter_for_Tommee_Profitt.webp'),
+      // path.join(compressDir, 'en/open_thanks_letters/2_Thanks_Letter_for_BLM_Movement.webp'),
+      // path.join(compressDir, 'en/open_thanks_letters/3_Thanks_Letter_for_Donald_Trump.webp'),
+      // path.join(compressDir, 'en/open_thanks_letters/4_Thanks_Letter_for_Richard_Dawkins.webp'),
+      // path.join(compressDir, 'en/open_thanks_letters/5_Thanks_Letter_for_Robert_Axelrod.webp'),
+      // path.join(compressDir, 'en/open_thanks_letters/6_Thanks_Letter_for_Elon_Musk.webp'),
+      // path.join(compressDir, 'en/open_thanks_letters/7_Thanks_Letter_for_Karl_Widerquist.webp'),
+      // path.join(compressDir, 'en/open_thanks_letters/8_Thanks_Letter_for_WorldID.webp'),
+      // path.join(compressDir, 'en/open_thanks_letters/9_Thanks_Letter_for_Avi_Wigderson.webp'),
+      path.join(compressDir, 'en/open_thanks_letters/10_Thanks_Letter_for_The_Unknownable.webp')
     ]
   }];
 
-  const metadataOutputPath = "./../src/assets/metadata.json";
+  const metadataOutputPath = path.join(projectRoot, 'src/assets/metadata.json');
 
 
   const meta_data = {};
 
   for (const obj of langImagesArray) {
-    const langOutputBlobPath = `./../public/${obj.lang}.blob`;
+    const langOutputBlobPath = path.join(projectRoot, `public/${obj.lang}.blob`);
     const writeStream = fs.createWriteStream(langOutputBlobPath);
     let startOffset = 0;
 
@@ -184,11 +206,11 @@ async function processFiles() {
     // Calculate MD5 hash of the final output file
     const md5Hash = await createMD5(langOutputBlobPath);
     // rename the output file to md5 hash.blob
-    const newBlobPath = langOutputBlobPath.replace(`${obj.lang}.blob`, `${obj.lang}_${md5Hash}.blob`);
+    const newBlobPath = path.join(projectRoot, `public/${obj.lang}_${md5Hash}.blob`);
 
     await fsPromises.rename(langOutputBlobPath, newBlobPath);
 
-    meta_data[lang]["hash"] =`${obj.lang}_${md5Hash}`;
+    meta_data[lang]["hash"] = `${obj.lang}_${md5Hash}`;
     meta_data[lang]["env_prod"] = true
 
   }
@@ -203,7 +225,7 @@ async function processFiles() {
 // extractFilesFromBlob().catch(console.error);
 
 
-compressPngImages();
+await compressPngImages();
 
 // Run the function
 await processFiles().catch(console.error);

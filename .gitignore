@@ -33,6 +33,7 @@ dist-ssr
 
 data/*
 public/images
+.temp_data
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
@@ -75,3 +76,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated llms.txt files
+public/llms.txt
+public/llms-full.txt

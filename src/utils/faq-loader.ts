@@ -38,9 +38,3 @@ export function getFaqAnswersFile(faq: FAQList): string | null {
     return faq.answersFile ?? null;
 }
 
-/**
- * Gets inline answers from FAQ item (legacy support)
- */
-export function getFaqInlineAnswers(faq: FAQList): string[] {
-    return faq.answers ?? [];
-}

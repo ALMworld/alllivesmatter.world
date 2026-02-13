@@ -1,5 +1,12 @@
-import { ThanksLetterDatum } from '@/data/data_types';
+
 import React from 'react';
+
+export interface ThanksLetterDatum {
+  letterToUser: string;
+  letterTo: string;
+  content_paragraphs: Array<string[]>;
+  special?: boolean;
+}
 
 interface ThankYouLetterProps {
   letter: ThanksLetterDatum;

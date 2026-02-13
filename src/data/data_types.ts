@@ -23,9 +23,6 @@ export interface AboutData {
     sub_title: string;
     invitation_letter_text: string;
     posterFooter: PosterFooter;
-    thanks_letter_signature: string[];
-    thanks_letter_almworld_intro: string[];
-    thanks_letter_data: ThanksLetterDatum[];
     video_spirit_disclaimer: string;
     will_success_representation_hint: string;
     will_fail_representation_hint: string;
@@ -48,9 +45,7 @@ export interface FAQList {
     answer_image_list?: string[];
     posterNumber?: number;
     media?: Media;
-    answers?: string[];
-    answersFile?: string;
-    _answers?: string[];
+    answersFile: string;
     hide_answers?: string[];
 }
 
@@ -75,13 +70,6 @@ export interface Puppet {
 export interface PosterFooter {
     mainTitle: string;
     subtitle: string;
-}
-
-export interface ThanksLetterDatum {
-    letterToUser: string;
-    letterTo: string;
-    content_paragraphs: Array<string[]>;
-    special?: boolean;
 }
 
 export interface ThoughtPoster {
@@ -131,7 +119,6 @@ export interface CommonData {
     advocacy_in_anger: string;
     possible_hash_tags: string;
     common_hash_tags: string;
-    poem_a_boy_in_the_universe: string[];
     duki_terms_header: string;
     duki_terms: DukiTerm[];
 }
@@ -202,7 +189,7 @@ export interface Project {
     emoji: string;
     description: string;
     status: string;
-    link?: string;
+    link: string;
     tags: string[];
 }
 
@@ -432,9 +419,6 @@ const typeMap: any = {
         { json: "sub_title", js: "sub_title", typ: "" },
         { json: "invitation_letter_text", js: "invitation_letter_text", typ: "" },
         { json: "posterFooter", js: "posterFooter", typ: r("PosterFooter") },
-        { json: "thanks_letter_signature", js: "thanks_letter_signature", typ: a("") },
-        { json: "thanks_letter_almworld_intro", js: "thanks_letter_almworld_intro", typ: a("") },
-        { json: "thanks_letter_data", js: "thanks_letter_data", typ: a(r("ThanksLetterDatum")) },
         { json: "video_spirit_disclaimer", js: "video_spirit_disclaimer", typ: "" },
         { json: "will_success_representation_hint", js: "will_success_representation_hint", typ: "" },
         { json: "will_fail_representation_hint", js: "will_fail_representation_hint", typ: "" },
@@ -455,9 +439,7 @@ const typeMap: any = {
         { json: "answer_image_list", js: "answer_image_list", typ: u(undefined, a("")) },
         { json: "posterNumber", js: "posterNumber", typ: u(undefined, 0) },
         { json: "media", js: "media", typ: u(undefined, r("Media")) },
-        { json: "answers", js: "answers", typ: u(undefined, a("")) },
-        { json: "answersFile", js: "answersFile", typ: u(undefined, "") },
-        { json: "_answers", js: "_answers", typ: u(undefined, a("")) },
+        { json: "answersFile", js: "answersFile", typ: "" },
         { json: "hide_answers", js: "hide_answers", typ: u(undefined, a("")) },
     ], false),
     "Media": o([
@@ -478,12 +460,6 @@ const typeMap: any = {
     "PosterFooter": o([
         { json: "mainTitle", js: "mainTitle", typ: "" },
         { json: "subtitle", js: "subtitle", typ: "" },
-    ], false),
-    "ThanksLetterDatum": o([
-        { json: "letterToUser", js: "letterToUser", typ: "" },
-        { json: "letterTo", js: "letterTo", typ: "" },
-        { json: "content_paragraphs", js: "content_paragraphs", typ: a(a("")) },
-        { json: "special", js: "special", typ: u(undefined, true) },
     ], false),
     "ThoughtPoster": o([
         { json: "title", js: "title", typ: "" },
@@ -528,7 +504,6 @@ const typeMap: any = {
         { json: "advocacy_in_anger", js: "advocacy_in_anger", typ: "" },
         { json: "possible_hash_tags", js: "possible_hash_tags", typ: "" },
         { json: "common_hash_tags", js: "common_hash_tags", typ: "" },
-        { json: "poem_a_boy_in_the_universe", js: "poem_a_boy_in_the_universe", typ: a("") },
         { json: "duki_terms_header", js: "duki_terms_header", typ: "" },
         { json: "duki_terms", js: "duki_terms", typ: a(r("DukiTerm")) },
     ], false),
@@ -589,7 +564,7 @@ const typeMap: any = {
         { json: "emoji", js: "emoji", typ: "" },
         { json: "description", js: "description", typ: "" },
         { json: "status", js: "status", typ: "" },
-        { json: "link", js: "link", typ: u(undefined, "") },
+        { json: "link", js: "link", typ: "" },
         { json: "tags", js: "tags", typ: a("") },
     ], false),
     "WhyDukiCapturesAttention": o([

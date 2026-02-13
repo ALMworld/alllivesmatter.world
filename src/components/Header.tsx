@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useRef, useState } from 'react';
-import { Globe, Menu as MenuIcon } from 'lucide-react';
+import { Languages, Menu as MenuIcon } from 'lucide-react';
 import { useMenuData } from '../data/data_provider';
 import Link from 'next/link';
 import { LANGUAGES, Locale } from '@/assets/i18config';
@@ -75,18 +75,17 @@ export const Header = ({ lang }: { lang: Locale }) => {
                             className="flex items-center space-x-1 hover:text-yellow-400"
                             onClick={() => setLangMenuOpen(!langMenuOpen)}
                         >
-                            <Globe size={20} />
-                            <span>{lang.toUpperCase()}</span>
+                            <Languages size={20} />
                         </button>
                         {langMenuOpen && (
-                            <div className="absolute top-full left-0 mt-1 bg-gray-700 rounded shadow-lg z-10 min-w-[150px]">
+                            <div className="absolute top-full left-0 mt-1 bg-gray-700 rounded shadow-lg z-10 min-w-[120px]">
                                 {LANGUAGES.map(({ code, label }) => (
                                     <button
                                         key={code}
-                                        className="block w-full text-left px-4 py-2 hover:bg-gray-600 text-sm whitespace-nowrap"
+                                        className={`block w-full text-left px-4 py-2 hover:bg-gray-600 text-sm whitespace-nowrap ${code === lang ? 'text-yellow-400' : ''}`}
                                         onClick={() => onChangeLang(code)}
                                     >
-                                        {code.toUpperCase()} - {label}
+                                        {label}
                                     </button>
                                 ))}
                             </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
-import { ThanksLetterDatum } from '../data/data_types';
+import { ThanksLetterDatum } from './ThankYouLetter';
 import ThankYouLetter from './ThankYouLetter';
 
 interface ThankYouLetterModalProps {
@@ -58,9 +58,9 @@ const ThankYouLetterModal: React.FC<ThankYouLetterModalProps> = ({
                     >
                         <div className="w-full h-full overflow-auto bg-white rounded-lg">
                             <ThankYouLetter
-                            className='w-full lg:w-[500px] aspect-[3/4]'
+                                className='w-full lg:w-[500px] aspect-[3/4]'
                                 scale={1}
-                                letter = {letters[currentLetterIndex]}
+                                letter={letters[currentLetterIndex]}
                                 signature={signature}
                             />
                         </div>
@@ -71,8 +71,8 @@ const ThankYouLetterModal: React.FC<ThankYouLetterModalProps> = ({
                         <button
                             onClick={prevLetter}
                             className={`absolute left-1 top-1/2 transform -translate-y-1/2 rounded-full p-2 transition-colors ${currentLetterIndex === 0
-                                    ? 'bg-gray-500 bg-opacity-50 cursor-not-allowed'
-                                    : 'bg-[#d20033] bg-opacity-50 hover:bg-opacity-75'
+                                ? 'bg-gray-500 bg-opacity-50 cursor-not-allowed'
+                                : 'bg-[#d20033] bg-opacity-50 hover:bg-opacity-75'
                                 }`}
                             disabled={currentLetterIndex === 0}
                         >
@@ -81,8 +81,8 @@ const ThankYouLetterModal: React.FC<ThankYouLetterModalProps> = ({
                         <button
                             onClick={nextLetter}
                             className={`absolute right-1 top-1/2 transform -translate-y-1/2 rounded-full p-2 transition-colors ${currentLetterIndex === letters.length - 1
-                                    ? 'bg-gray-500 cursor-not-allowed'
-                                    : 'bg-[#d20033] bg-opacity-50 hover:bg-opacity-75'
+                                ? 'bg-gray-500 cursor-not-allowed'
+                                : 'bg-[#d20033] bg-opacity-50 hover:bg-opacity-75'
                                 }`}
                             disabled={currentLetterIndex === letters.length - 1}
                         >

@@ -1,0 +1,71 @@
+{
+    "attitude": "天地不仁，人間有情",
+    "bestwishes": "一曰慈，二曰儉，三曰不敢為天下先",
+    "dukige_definition": "普世上善<br />機構",
+    "duki_definition": "普世上善行動津貼",
+    "slogan": "上善若水，水善利萬物而不爭",
+    "slogan_headline": "所有人都很重要",
+    "slogan_headline_suffix": "世界",
+    "slogan_target_part": "所有人",
+    "slogan_highlight_part": "都很重要",
+    "mantraDao": "以愛為道，易生萬物。",
+    "mantra": "以愛為道，易善互利",
+    "mantra_details": [
+        {
+            "mantra": "首善當先",
+            "description": "上善若水，水善利萬物而不爭",
+            "buttonText": "瞭解更多",
+            "icon": "love",
+            "keyPoints": [
+                {
+                    "title": "愛自己",
+                    "description": "貴以身為天下，若可寄天下。愛以身為天下者，若可託天下。"
+                },
+                {
+                    "title": "愛世界",
+                    "description": "視人之國，若視其國；視人之家，若視其家；視人之身，若視其身。"
+                }
+            ]
+        },
+        {
+            "mantra": "永遠公正",
+            "description": "無言而不讎，無德而不報，投我以桃，報之以李",
+            "buttonText": "深入理解",
+            "icon": "law",
+            "keyPoints": [
+                {
+                    "title": "個人行為責任",
+                    "description": "自作自受，不作不受；父子兄弟，罪不相及。"
+                },
+                {
+                    "title": "以直報怨，以德報德",
+                    "description": "夫愛人者，人必從而愛之；利人者，人必從而利之；惡人者，人必從而惡之；害人者，人必從而害之。"
+                },
+                {
+                    "title": "過而能改，善莫大焉",
+                    "description": "《象》曰：雷雨作，解。君子以赦過宥罪"
+                }
+            ]
+        },
+        {
+            "mantra": "普世上善行動",
+            "icon": "money",
+            "buttonText": "探索更多",
+            "description": "以兼相愛、交相利之法易之",
+            "keyPoints": [
+                {
+                    "title": "義，利也",
+                    "description": "天下熙熙，皆為利來；天下攘攘，皆為利往。"
+                },
+                {
+                    "title": "利人者，人亦從而利之",
+                    "description": "既以為人，己愈有；既以與人，己愈多。天之道，利而不害。"
+                },
+                {
+                    "title": "果行育德",
+                    "description": "非知之艱，行之惟艱。"
+                }
+            ]
+        }
+    ]
+}

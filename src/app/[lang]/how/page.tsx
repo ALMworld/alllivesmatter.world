@@ -1,6 +1,17 @@
 import { Locale, i18n } from "@/assets/i18config";
-import { useAboutData, useAdvocacyData, useCommonData, useHowData } from "@/data/data_provider";
+import { useHowData, useMenuData } from "@/data/data_provider";
 import How from "@/app/views/How";
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const menu = useMenuData(lang);
+  const how = useHowData(lang);
+  return {
+    title: menu.how,
+    description: how.header.subtitle,
+  };
+}
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -9,12 +20,6 @@ export async function generateStaticParams() {
 export default async function Page({ params }: { params: Promise<{ lang: Locale }> }) {
   const { lang } = await params;
   const howData = useHowData(lang);
-  // const advocacyData = useAdvocacyData(lang);
-  // const commonData = useCommonData(lang);
-  // data: HowData
-  // advocacyData: AdvocacyData
-  // commonData: CommonData
-
 
   return (
     <How data={howData} />

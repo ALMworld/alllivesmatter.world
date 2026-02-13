@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /_next/
+
+Sitemap: https://alllivesmatter.world/sitemap.xml

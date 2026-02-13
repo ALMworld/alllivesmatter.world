@@ -177,21 +177,9 @@ const FAQItem = ({ number, item, aboutData, mdxContent }: FAQItemProps) => {
                     )}
 
                     {/* MDX content or fallback to inline answers */}
-                    {mdxContent ? (
-                        <div className="faq-mdx-content">
-                            {mdxContent}
-                        </div>
-                    ) : item.answers && item.answers.length > 0 ? (
-                        <ul className="list-none pl-0">
-                            {item.answers.map((answer, index) => (
-                                <li
-                                    key={index}
-                                    className="selectable-text text-lg text-gray-300 relative pl-4 mb-2 faq-list-item"
-                                    dangerouslySetInnerHTML={{ __html: answer }}
-                                />
-                            ))}
-                        </ul>
-                    ) : null}
+                    <div className="faq-mdx-content">
+                        {mdxContent}
+                    </div>
                 </div>
             )}
         </div>

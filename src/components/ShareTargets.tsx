@@ -57,11 +57,11 @@ import { useState } from "react";
 
 export default function ShareTargets({ shareUrl, shareContent }) {
 
-    // const shareUrl = 'https://www.alllivesmatter.world';
+    // const shareUrl = 'https://alllivesmatter.world';
     // const shareUrl = data.share_url;
     // const title = data.share_title;
     // const title = data.share_advocacy;
-    const exampleImage = "/alm.jpg"
+    const exampleImage = "/alm.png"
     // <img src="" alt="ALM" width={64} height={64} />
     const iconSize = 42;
 
