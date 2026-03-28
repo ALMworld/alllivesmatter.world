@@ -50,7 +50,7 @@ const AdvocacyPoster = ({ mantra, allMantras, headline, mantraIndex = 0, onClose
                 {onClose && (
                     <button
                         onClick={onClose}
-                        className="absolute top-4 right-4 z-50 text-[#cab331]/70 hover:text-[#cab331] transition-colors"
+                        className="absolute top-4 right-4 z-50 md:hidden text-[#cab331]/70 hover:text-[#cab331] transition-colors"
                         aria-label="Close"
                     >
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
