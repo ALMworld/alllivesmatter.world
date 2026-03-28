@@ -204,6 +204,8 @@ export interface MenuData {
     why: string;
     how: string;
     advocacy: string;
+    tagline: string;
+    tagline_sub: string;
 }
 
 export interface WhyData {
@@ -577,6 +579,8 @@ const typeMap: any = {
         { json: "why", js: "why", typ: "" },
         { json: "how", js: "how", typ: "" },
         { json: "advocacy", js: "advocacy", typ: "" },
+        { json: "tagline", js: "tagline", typ: "" },
+        { json: "tagline_sub", js: "tagline_sub", typ: "" },
     ], false),
     "WhyData": o([
         { json: "highlight", js: "highlight", typ: r("Highlight") },

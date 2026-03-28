@@ -57,7 +57,6 @@ const ThankYouLetter: React.FC<ThankYouLetterProps> = ({ letter, signature, clas
         {/* Content Paragraphs and Lines */}
         {letter.content_paragraphs.flatMap((paragraph, pIndex) => {
           // Increment Y for the start of a new paragraph (except the first one)
-          console.log(paragraph, pIndex);
           if (pIndex > 0) {
             currentY += paragraphSpacing;
           }

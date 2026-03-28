@@ -5,8 +5,6 @@ function AllLivesMatterWorldSunflowPetal({ media }) {
     // watch_interview_text, watch_news_text, disclaimer
     // { watch_interview_text: string, watch_news_text: string, disclaimer: string }
     const [isLoading, setIsLoading] = useState(true);
-    console.log('item', media);
-    console.log('item.url', media.url);
 
     const [iframeOpacity, setIframeOpacity] = useState(0);
     useEffect(() => {

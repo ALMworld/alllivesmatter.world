@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DollarSign, Gavel, AlertCircle, CircleDollarSign, Scale, Heart, Building, Users, Landmark, Network, ImageUp, MailOpen, Mail } from 'lucide-react';
+import { DollarSign, Gavel, AlertCircle, CircleDollarSign, Scale, HandHeart, Building, Users, Landmark, Network, ImageUp, MailOpen, Mail } from 'lucide-react';
 
 const AlmIconUnit = ({ value, ...props }) => {
     let IconComponent;
@@ -12,7 +12,7 @@ const AlmIconUnit = ({ value, ...props }) => {
             colorClass = principleColorClass; // Special color for 'law'
             break;
         case 'love':
-            IconComponent = Heart;
+            IconComponent = HandHeart;
             colorClass = principleColorClass; // Special color for 'law'
             break;
         case 'law':
@@ -35,7 +35,7 @@ const AlmIconUnit = ({ value, ...props }) => {
             IconComponent = Mail;
             break;
         default:
-            IconComponent = Heart; // Default icon if no match is found
+            IconComponent = HandHeart; // Default icon if no match is found
     }
 
     // return <IconComponent className={`${colorClass}`}

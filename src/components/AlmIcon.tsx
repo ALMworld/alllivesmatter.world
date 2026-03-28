@@ -92,7 +92,12 @@ const AlmIcon = ({ value, expand_image_list = [],
     }
 
     return (
-        <div onClick={handleIconClick} className="cursor-pointer">
+        <button
+            type="button"
+            onClick={handleIconClick}
+            className="cursor-pointer bg-transparent border-none p-0"
+            aria-label="View gallery"
+        >
             <ActionIconUnit value={value} {...props} />
 
             <ImageGalleryModal
@@ -100,7 +105,7 @@ const AlmIcon = ({ value, expand_image_list = [],
                 isOpen={isExpanded}
                 onClose={handleCloseGallery}
             />
-        </div>
+        </button>
     );
 };
 

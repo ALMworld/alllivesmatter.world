@@ -46,6 +46,18 @@ const AdvocacyPoster = ({ mantra, allMantras, headline, mantraIndex = 0, onClose
                 className="relative bg-black flex flex-col items-center rounded-lg overflow-hidden"
                 style={{ height: '95vh', width: 'calc(95vh * 0.80)', maxWidth: '95vw' }}
             >
+                {/* Close button */}
+                {onClose && (
+                    <button
+                        onClick={onClose}
+                        className="absolute top-4 right-4 z-50 text-[#cab331]/70 hover:text-[#cab331] transition-colors"
+                        aria-label="Close"
+                    >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </button>
+                )}
                 {/* WebGL Sunrise Animation at top */}
                 <div className="absolute top-0 left-0 right-0 h-[25%] overflow-hidden">
                     <EclipseShader step={sunStep} />

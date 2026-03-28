@@ -64,7 +64,12 @@ const AlmIconPoster = ({ value = "mail-up", posterData, posterFooter, ...props }
 
 
     return (
-        <div onClick={handleIconClick} className="cursor-pointer">
+        <button
+            type="button"
+            onClick={handleIconClick}
+            className="cursor-pointer bg-transparent border-none p-0"
+            aria-label="View poster"
+        >
             <ActionIconUnit value={value} {...props} />
 
             {
@@ -82,7 +87,7 @@ const AlmIconPoster = ({ value = "mail-up", posterData, posterFooter, ...props }
                     </div>
                 )
             }
-        </div>
+        </button>
     );
 };
 

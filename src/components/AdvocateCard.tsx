@@ -14,9 +14,9 @@ const AdvocateCard = ({ mantra, mantraIndex, allMantras, headline, commonData, i
                 {
                     dukiCard && (
                         <div className="absolute top-6 right-2 flex items-center">
-                            <span className="text-yellow-400 text-sm mr-4 cursor-help" onClick={() =>
+                            <button type="button" className="text-yellow-400 text-sm mr-4 cursor-help bg-transparent border-none p-0" onClick={() =>
                                 setShowDukiTerms(!showDukiTerms)
-                            }>DUKI ? </span>
+                            }>DUKI ? </button>
                             <span className="relative">
                                 {showDukiTerms && (
                                     <div className="absolute right-0 top-full h-full mb-2 p-2 text-sm text-white bg-gray-700 rounded-md shadow-lg z-10">
@@ -35,13 +35,14 @@ const AdvocateCard = ({ mantra, mantraIndex, allMantras, headline, commonData, i
                 }
 
                 <div className="flex justify-center mb-4">
-                    <div
-                        className="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center text-black cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-yellow-400/50 transition-all duration-300"
+                    <button
+                        type="button"
+                        className="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center text-black cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-yellow-400/50 transition-all duration-300 border-none"
                         onClick={() => setShowPosterCard(true)}
-                        title="Click to view poster"
+                        aria-label="View advocacy poster"
                     >
                         <AlmIconUnit value={mantra.icon} size={32} />
-                    </div>
+                    </button>
                 </div>
                 <h2 className="text-2xl font-bold mb-2 selectable-text" dangerouslySetInnerHTML={{ __html: mantra.content }} />
                 <p className="text-gray-400 selectable-text">{mantra.description}</p>

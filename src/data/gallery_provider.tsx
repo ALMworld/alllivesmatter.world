@@ -10,12 +10,6 @@ type LoadingState = 'idle' | 'loading' | 'loaded' | 'error';
 
 
 
-// interface GalleryContextType {
-//     prefill: (lang: string) => Promise<MegaFilesPack>;
-
-// }
-// const GalleryContext = createContext<GalleryContextType | undefined>(undefined);
-
 interface GalleryContextType {
     loadingState: LoadingState;
     error: string | null;
@@ -75,7 +69,6 @@ export const GalleryProvider: React.FC<GalleryProviderProps> = ({ children }) =>
     const language = pathname?.split('/')[1] || i18n.defaultLocale;
 
     const loadGalleryData = useCallback(async (lang: string): Promise<MegaFilesPack | void> => {
-        console.log(`loadGalleryData called for language: ${lang}`);
         setLoadingState('loading');
         setError(null);
 
@@ -88,7 +81,7 @@ export const GalleryProvider: React.FC<GalleryProviderProps> = ({ children }) =>
                 return cachedPack;
             }
 
-            console.log(`Loading new data for language: ${lang}`);
+
             let data: MegaFilesPack = metadata[lang];
             if (!data) {
                 data = metadata[i18n.defaultLocale];
@@ -98,7 +91,6 @@ export const GalleryProvider: React.FC<GalleryProviderProps> = ({ children }) =>
 
             // Fetch the blob if it doesn't exist
             if (!data.blob) {
-                console.log(`Fetching blob for language: ${lang}`);
                 const response = await fetch(getBlobUri(data), {
                     method: 'GET',
                     headers: {
@@ -171,7 +163,6 @@ export const GalleryProvider: React.FC<GalleryProviderProps> = ({ children }) =>
 
     return (
         <GalleryContext.Provider value={{ loadingState, error, getImageFiles }}>
-            {/* <GalleryContext.Provider value={{ prefill }}> */}
             {children}
         </GalleryContext.Provider>
     );

@@ -64,22 +64,19 @@ function detectBrowserLocale(): string | null {
         ...(navigator.languages || [])
     ];
 
-    console.log('Browser languages detected:', browserLanguages);
 
     for (const lang of browserLanguages) {
         // Extract the primary language code (e.g., 'en' from 'en-US')
         const primaryLang = lang.split('-')[0].toLowerCase();
 
-        console.log('Checking language:', primaryLang);
 
         // Check if we support this language
         if (i18n.locales.includes(primaryLang as Locale)) {
-            console.log('Matched supported locale:', primaryLang);
             return primaryLang;
         }
     }
 
-    console.log('No matching locale found, using default');
+
     return null;
 }
 

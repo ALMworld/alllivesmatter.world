@@ -3,6 +3,7 @@ import "@/app/globals.css";
 import { i18n, Locale, LOCALE_TAGS, ogLocale } from "@/assets/i18config";
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
+import HtmlLang from "@/components/HtmlLang";
 import PeaceMusicPlayer from "@/components/PeaceMusicPlayer";
 import GalleryProvider from "@/data/gallery_provider";
 import { Metadata } from "next";
@@ -127,6 +128,7 @@ export default async function Root({ params, children }: { params: Promise<{ lan
     const { lang } = await params;
     return (
         <GalleryProvider>
+            <HtmlLang lang={lang} />
             <JsonLd lang={lang} />
             <Header lang={lang} />
             {children}

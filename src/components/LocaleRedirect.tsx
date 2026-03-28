@@ -19,7 +19,6 @@ export function LocaleRedirect({ children }: LocaleRedirectProps) {
         // Redirect quickly without showing text
         const redirectTimer = setTimeout(() => {
             const preferredLocale = getPreferredLocale();
-            console.log('Redirecting to locale:', preferredLocale);
 
             // Use replace to avoid adding to history
             router.replace(`/${preferredLocale}`);
@@ -48,7 +47,6 @@ export function LocaleRedirect({ children }: LocaleRedirectProps) {
                             height={256}
                             className={`mx-auto animate-pulse transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-70'}`}
                             onLoad={() => {
-                                console.log('Image loaded successfully');
                                 setImageLoaded(true);
                             }}
                             onError={() => {

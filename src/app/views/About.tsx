@@ -17,18 +17,15 @@ type AboutProps = {
 }
 
 const About = ({ lang, aboutData, faqData, faqMdxContent }: AboutProps) => {
-    // const aboutData = useAboutData(lang);
-    // const faqData = aboutData.faq_list;
-
     return (
         <div className="bg-gray-900 text-white p-8">
             <div className='mx-auto max-w-4xl' >
-                <h2 className="text-xl text-yellow-400 mb-4 selectable-text">
+                <h1 className="text-xl text-yellow-400 mb-4 selectable-text">
                     {aboutData.title}
                     <p className="text-sm text-[#d20033] mb-4 selectable-text">
                         {aboutData.sub_title}
                     </p>
-                </h2>
+                </h1>
 
                 <WillGallery
                     aboutData={aboutData}
@@ -105,9 +102,17 @@ const FAQItem = ({ number, item, aboutData, mdxContent }: FAQItemProps) => {
         <div className="mb-4">
             <div
                 className="w-full flex items-start p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors cursor-pointer"
+                role="button"
+                tabIndex={0}
+                aria-expanded={isOpen}
                 onClick={(e) => {
-                    // Only toggle if the click is on the main area, not on interactive elements
                     if (e.target === e.currentTarget || !((e.target as HTMLElement).closest('[data-interactive]'))) {
+                        setIsOpen(!isOpen);
+                    }
+                }}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
                         setIsOpen(!isOpen);
                     }
                 }}

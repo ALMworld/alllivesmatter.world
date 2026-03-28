@@ -23,8 +23,6 @@ type WhyProps = {
 }
 
 const Why = ({ data }: WhyProps) => {
-    // const data = useWhyData();
-    // // if (!emphasis || !text.includes(emphasis)) return text;
     const parts = data.highlight.question.split(data.highlight.question_emphasis);
 
     return (
@@ -89,11 +87,11 @@ const Why = ({ data }: WhyProps) => {
                             </div>
                             <div className="bg-gray-800 p-6 rounded-lg flex flex-col justify-between col-span-1 md:col-span-3">
                                 <div>
-                                    <h3 className="text-lg font-semibold text-yellow-600 selectable-text">{book.topic1.headline}</h3>
+                                    <h2 className="text-lg font-semibold text-yellow-600 selectable-text">{book.topic1.headline}</h2>
                                     <p className="text-sm selectable-text">{book.topic1.content}</p>
                                 </div>
                                 <div className='mt-2'>
-                                    <h3 className="text-lg font-semibold text-[#d20033] selectable-text">{book.topic2.headline}</h3>
+                                    <h2 className="text-lg font-semibold text-[#d20033] selectable-text">{book.topic2.headline}</h2>
                                     <p className="text-sm selectable-text">{book.topic2.content}</p>
                                 </div>
                             </div>

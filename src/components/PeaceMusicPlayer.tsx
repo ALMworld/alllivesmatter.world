@@ -24,12 +24,15 @@ const PeaceMusicPlayer = ({ lang }: { lang: Locale }) => {
 
     if (playerState === 'hidden') {
         return (
-            <div
-                className="fixed bottom-14 right-8 z-50 w-12 h-12 rounded-full bg-[#d20033] text-white flex items-center justify-center shadow-lg bg-opacity-80 flex items-center justify-center cursor-pointer"
-                onClick={toggleExpand}             >
+            <button
+                type="button"
+                className="fixed bottom-14 right-8 z-50 w-12 h-12 rounded-full bg-[#d20033] text-white flex items-center justify-center shadow-lg bg-opacity-80 cursor-pointer border-none"
+                onClick={toggleExpand}
+                aria-label="Play peace music"
+            >
                 {/* <Music size={24} color="yellow" className="slow-float"  /> */}
                 <Music size={24} color="yellow" className="slow-float slow-bounce" />
-            </div>
+            </button>
         );
     }
 
